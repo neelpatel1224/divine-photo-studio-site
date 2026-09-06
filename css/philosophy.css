@@ -40,7 +40,7 @@
 .philosophy__figure { margin: 0; min-width: 0; }
 .philosophy__figure--primary {
     grid-column: 2;
-    grid-row: 1 / 3;
+    grid-row: 1;
     width: 100%;
     max-width: 500px;
     justify-self: end;
@@ -48,7 +48,7 @@
 }
 .philosophy__figure--secondary {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2 / 4;
     width: 45%;
     min-width: 190px;
     margin-left: -24px;
@@ -84,8 +84,8 @@
     .philosophy__inner { column-gap: 40px; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
     .philosophy__content { grid-column: 1 / -1; }
     .philosophy__title { font-size: 64px; }
-    .philosophy__figure--primary { grid-row: 2 / 4; margin-top: 0; }
-    .philosophy__figure--secondary { grid-row: 4; margin-top: 0; }
+    .philosophy__figure--primary { grid-row: 2; margin-top: 0; }
+    .philosophy__figure--secondary { grid-row: 3 / 5; margin-top: 0; }
     .philosophy__closing { align-self: end; }
 }
 @media (max-width: 767px) {
