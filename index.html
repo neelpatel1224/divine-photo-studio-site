@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Variables for easy theming -->
+    <link rel="stylesheet" href="css/variables.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/philosophy.css">
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="site-header__brand">
+            <a href="/" class="divine-logo" aria-label="Divine Photo Studio home">
+                <span class="divine-name">DiViNE</span>
+                <span class="divine-photo">PHOTO</span>
+                <span class="divine-studio">STUDIO</span>
+            </a>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+            <ul class="main-nav__list" id="main-nav-list">
+
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">HOME</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">ABOUT</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-info">
+                        INFO <span class="toggle-icon">+</span>
+                    </button>
+                    <ul class="dropdown-menu" id="submenu-info">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">FAQ</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">PRICING</a></li>
+                    </ul>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">SERVICES</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-portfolio">
+                        PORTFOLIO <span class="toggle-icon">+</span>
+                    </button>
+                    <ul class="dropdown-menu" id="submenu-portfolio">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">EDITORIAL</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">PORTRAITS</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">WEDDINGS</a></li>
+                    </ul>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">CONTACT</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">NEW PAGE</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Open navigation">
+            <span class="mobile-nav-toggle__line"></span>
+            <span class="mobile-nav-toggle__line"></span>
+        </button>
+
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <p class="hero__eyebrow">WEDDINGS • STORIES • LEGACY</p>
+                <h1 class="hero__title" id="hero-title">
+                    Stories worth remembering,<br>
+                    <em>moments worth keeping.</em>
+                </h1>
+                <div class="hero__divider" aria-hidden="true">
+                    <span class="hero__divider-line"></span>
+                    <span class="hero__divider-mark">◇</span>
+                    <span class="hero__divider-line"></span>
+                </div>
+                <p class="hero__description">
+                    Honest moments, artfully preserved<br>
+                    for generations.
+                </p>
+                <a href="#portfolio" class="hero__link">
+                    VIEW OUR STORIES <span class="hero__link-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+
+        <section class="dps-gallery" aria-label="Featured photography">
+            <div class="dps-gallery__viewport" id="galleryViewport">
+                <div class="dps-gallery__track" id="galleryTrack"></div>
+
+                <button class="dps-gallery__control dps-gallery__control--prev"
+                        id="prevButton"
+                        type="button"
+                        aria-label="Previous photograph">
+                <span aria-hidden="true">←</span>
+                </button>
+
+                <button class="dps-gallery__control dps-gallery__control--next"
+                        id="nextButton"
+                        type="button"
+                        aria-label="Next photograph">
+                <span aria-hidden="true">→</span>
+                </button>
+            </div>
+
+            <div class="dps-gallery__caption" aria-live="polite">
+                <span class="dps-gallery__counter" id="counter">01 / 05</span>
+
+                <div class="dps-gallery__story">
+                <span class="dps-gallery__category" id="metaCategory">Wedding Story</span>
+                <span class="dps-gallery__location" id="metaLocation">Gujarat</span>
+                <span class="dps-gallery__year" id="metaYear">2026</span>
+                </div>
+            </div>
+
+            <p class="sr-only" id="galleryStatus">
+                Photograph 1 of 5: Wedding Story, Gujarat, 2026
+            </p>
+        </section>
+    </section>
+        <section class="philosophy" id="philosophy" aria-labelledby="philosophy-title">
+            <div class="philosophy__inner">
+                <span class="philosophy__index" aria-hidden="true">03</span>
+                <div class="philosophy__content">
+                    <p class="philosophy__eyebrow" data-philosophy-reveal>OUR PHILOSOPHY</p>
+                    <span class="philosophy__mark" aria-hidden="true">◇</span>
+                    <h2 class="philosophy__title" id="philosophy-title" data-philosophy-reveal>
+                        <span>We don't photograph<br>how it looked.</span>
+                        <span class="philosophy__thought">We preserve<br><em>how it felt.</em></span>
+                    </h2>
+                </div>
+                <figure class="philosophy__figure philosophy__figure--primary" data-philosophy-reveal>
+                    <!-- Replace with a final DIVINE photograph of human connection; update alt to describe it. -->
+                    <img class="philosophy__image" src="assets/images/philosophy-primary.jpg" width="960" height="1200" loading="lazy" decoding="async" alt="Primary photograph placeholder — a moment of human connection">
+                    <figcaption class="philosophy__placeholder">A moment of connection · photograph to come</figcaption>
+                </figure>
+                <div class="philosophy__body" data-philosophy-reveal>
+                    <p>The quiet glances.<br>The unplanned laughter.<br>The hands that hold a little tighter.</p>
+                    <p>We believe the photographs that matter most<br class="philosophy__body-break"> are rarely the ones you planned.</p>
+                    <p>They are the moments you felt.</p>
+                </div>
+                <figure class="philosophy__figure philosophy__figure--secondary" data-philosophy-reveal>
+                    <!-- Replace with a connected DIVINE detail photograph: hands, fabric, or a quiet ritual. Update alt. -->
+                    <img class="philosophy__image" src="assets/images/philosophy-detail.jpg" width="720" height="480" loading="lazy" decoding="async" alt="Detail photograph placeholder — a small memory from the same story">
+                    <figcaption class="philosophy__placeholder">A small memory · photograph to come</figcaption>
+                </figure>
+                <div class="philosophy__closing" data-philosophy-reveal>
+                    <p class="philosophy__signature">Honest moments.<br>Artfully preserved.</p>
+                    <!-- The future homepage About / Our Story section must use id="our-story". -->
+                    <a class="philosophy__link" href="#our-story">OUR STORY <span class="philosophy__link-arrow" aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/main.js?v=1.2"></script>
+    <script src="js/philosophy.js"></script>
+</body>
+
+</html>

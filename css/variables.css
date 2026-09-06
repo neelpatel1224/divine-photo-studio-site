@@ -1,0 +1,36 @@
+/* Heritage Sage Editorial Color Palette */
+:root {
+    /* Colors */
+    --color-text: #1A1B18;
+    --color-background: #F6F4EE;
+
+    --color-primary: #5A7262;
+    --color-primary-light: #A9BCAF;
+
+    --color-secondary: #91876E;
+    --color-secondary-light: #D3CFC5;
+
+    --color-accent: #B4794B;
+    --color-accent-light: #D2AE93;
+
+    --color-surface: #EEEADD;
+    --color-surface-dark: #2D3931;
+
+    --color-text-muted: #666B61;
+    --color-border: #D3CFC5;
+
+    --color-white: #FFFDF8;
+
+    /* Typography */
+    --font-logo: "Montserrat", "Avenir Next", "Futura PT", "Helvetica Neue", Arial, sans-serif;
+    --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --font-ui: "Inter", Arial, Helvetica, sans-serif;
+    
+    /* Z-Index */
+    --z-dropdown: 100;
+    --z-header: 1000;
+    --z-mobile-nav: 2000;
+
+    /* Spacing */
+    --gallery-frame-gap: clamp(32px, 3.5vw, 52px);
+}
