@@ -53,3 +53,5 @@
 @media (prefers-reduced-motion:reduce) {
 .selected-stories .story, .selected-stories .story__image, .selected-stories .story__title, .selected-stories__cta span { animation:none; transition:none; transform:none!important; }
 }
+
+.selected-stories .story--portrait .story__image { object-position:72% center; }
