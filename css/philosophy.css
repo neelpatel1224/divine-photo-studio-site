@@ -106,7 +106,6 @@
     .philosophy--motion [data-philosophy-reveal]:not(.philosophy__revealed) { opacity: 0; transform: translateY(14px); }
     .philosophy--motion .philosophy__eyebrow:not(.philosophy__revealed) { transform: translateY(12px); }
     .philosophy--motion .philosophy__title:not(.philosophy__revealed) { transform: translateY(20px); }
-    .philosophy--motion .philosophy__figure--primary:not(.philosophy__revealed) { clip-path: inset(0 0 100% 0); transform: none; }
     .philosophy--motion .philosophy__title { transition-delay: 80ms; }
     .philosophy--motion .philosophy__figure--secondary { transition-delay: 100ms; }
     .philosophy--motion .philosophy__closing { transition-delay: 180ms; }
