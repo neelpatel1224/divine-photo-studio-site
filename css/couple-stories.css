@@ -1,0 +1,464 @@
+/* ==========================================================================
+   DIVINE PHOTO STUDIO — COUPLE STORIES PAGE STYLES
+   Theme: Heritage Sage Editorial (Warm Ivory Archive)
+   ========================================================================== */
+
+:root {
+  --stories-bg: #F6F4EE;
+  --stories-surface: #EEEADD;
+  --stories-border: rgba(90, 114, 98, 0.12);
+  --stories-border-rule: rgba(90, 114, 98, 0.14);
+  --stories-text: #1A1B18;
+  --stories-text-muted: #666B61;
+  --stories-text-taupe: #91876E;
+  --stories-sage: #5A7262;
+  --stories-accent: #B4794B;
+  --stories-accent-hover: #9E6438;
+}
+
+body.stories-body {
+  background-color: var(--stories-bg);
+  color: var(--stories-text);
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(ellipse at 15% 10%, rgba(90, 114, 98, 0.025) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 55%, rgba(145, 135, 110, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 90%, rgba(90, 114, 98, 0.02) 0%, transparent 45%);
+}
+
+/* --------------------------------------------------------------------------
+   00. Site Header Integration
+   -------------------------------------------------------------------------- */
+.stories-body .site-header {
+  background-color: var(--stories-bg);
+  border-bottom: 1px solid rgba(90, 114, 98, 0.10);
+  transition: background-color 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   01. Hero / Intro Section (Compact Editorial Header)
+   -------------------------------------------------------------------------- */
+.stories-intro {
+  padding-top: clamp(64px, 8vw, 110px);
+  padding-bottom: clamp(44px, 5.5vw, 76px);
+  background-color: var(--stories-bg);
+  position: relative;
+}
+
+.stories-intro__container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 860px;
+}
+
+.stories-intro__eyebrow {
+  display: inline-block;
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: var(--stories-sage);
+  margin-bottom: clamp(14px, 1.8vw, 22px);
+}
+
+.stories-intro__title {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(38px, 5.8vw, 76px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--stories-text);
+  margin-bottom: clamp(16px, 2vw, 24px);
+}
+
+.stories-intro__title em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--stories-text);
+}
+
+.stories-intro__body {
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--stories-text-muted);
+  max-width: 580px;
+}
+
+/* --------------------------------------------------------------------------
+   02. Main Stories Archive Grid
+   -------------------------------------------------------------------------- */
+.stories-archive {
+  padding-top: clamp(20px, 3vw, 40px);
+  padding-bottom: clamp(110px, 14vw, 160px);
+  background-color: var(--stories-bg);
+  position: relative;
+}
+
+.stories-archive__container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Desktop Grid: 3 Equal Columns */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: clamp(32px, 3vw, 40px);
+  row-gap: clamp(36px, 4vw, 52px);
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   03. Story Tile (Clean Photographic Card)
+   -------------------------------------------------------------------------- */
+.story-tile {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.4s ease;
+}
+
+/* Keyboard accessibility focus ring */
+.story-tile:focus-visible {
+  outline: 1px solid var(--stories-accent);
+  outline-offset: 4px;
+}
+
+.story-tile__image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #121310;
+}
+
+.story-tile__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+/* --------------------------------------------------------------------------
+   04. Hover Overlay & Text Reveal (Desktop)
+   -------------------------------------------------------------------------- */
+.story-tile__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(18, 18, 16, 0.38);
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.story-tile__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: clamp(24px, 2.5vw, 36px);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.story-tile__category {
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: 9.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #FFFDF8;
+  margin-bottom: 6px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.story-tile__name {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(28px, 2.4vw, 38px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0.05em;
+  color: #FFFDF8;
+  margin: 0 0 14px 0;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.48s ease 0.06s, transform 0.48s cubic-bezier(0.22, 1, 0.36, 1) 0.06s;
+}
+
+.story-tile__divider {
+  width: 100%;
+  max-width: 140px;
+  height: 1px;
+  background-color: rgba(255, 253, 248, 0.55);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;
+}
+
+/* Hover Interaction: Fine Pointer Only */
+@media (hover: hover) and (pointer: fine) {
+  .story-tile:hover .story-tile__image {
+    transform: scale(1.025);
+  }
+
+  .story-tile:hover .story-tile__overlay {
+    opacity: 1;
+  }
+
+  .story-tile:hover .story-tile__category,
+  .story-tile:hover .story-tile__name {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .story-tile:hover .story-tile__divider {
+    transform: scaleX(1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   05. Load More Action
+   -------------------------------------------------------------------------- */
+.stories-load-more {
+  margin-top: clamp(54px, 6.5vw, 84px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stories-load-more__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--stories-text);
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.stories-load-more__btn::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 4px;
+  height: 1px;
+  background-color: var(--stories-accent);
+  transform: scaleX(0.4);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.stories-load-more__btn:hover {
+  color: var(--stories-accent);
+}
+
+.stories-load-more__btn:hover::after {
+  transform: scaleX(1);
+}
+
+.stories-load-more__btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  fill: none;
+  transition: transform 0.3s ease;
+}
+
+.stories-load-more__btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* Additional items hidden initially */
+.stories-enhanced .story-tile--extra {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.stories-enhanced .story-tile--extra.is-revealed {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   06. Tablet Responsiveness (768px - 1023px)
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .stories-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 36px;
+  }
+
+  .story-tile__name {
+    font-size: clamp(26px, 3.2vw, 32px);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   07. Mobile Responsiveness (max-width: 767px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .stories-intro {
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+
+  .stories-intro__container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .stories-archive {
+    padding-top: 16px;
+    padding-bottom: 90px;
+  }
+
+  .stories-archive__container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .story-tile__content {
+    padding: 20px;
+  }
+
+  /* Mobile: Persistent subtle bottom gradient overlay */
+  .story-tile__overlay {
+    opacity: 1;
+    background: linear-gradient(
+      to top,
+      rgba(18, 18, 16, 0.68) 0%,
+      rgba(18, 18, 16, 0.28) 45%,
+      rgba(18, 18, 16, 0) 100%
+    );
+  }
+
+  /* Always visible metadata on mobile */
+  .story-tile__category {
+    font-size: 9px;
+    letter-spacing: 0.20em;
+    opacity: 0.92;
+    transform: none;
+    margin-bottom: 4px;
+  }
+
+  .story-tile__name {
+    font-size: clamp(26px, 7.5vw, 32px);
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    opacity: 1;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  .story-tile__divider {
+    transform: scaleX(1);
+    max-width: 90px;
+    opacity: 0.7;
+  }
+}
+
+/* Touch devices without hover support (e.g. iPad, touch laptops) */
+@media (hover: none) {
+  .story-tile__overlay {
+    opacity: 1;
+    background: linear-gradient(
+      to top,
+      rgba(18, 18, 16, 0.65) 0%,
+      rgba(18, 18, 16, 0.25) 45%,
+      rgba(18, 18, 16, 0) 100%
+    );
+  }
+
+  .story-tile__category,
+  .story-tile__name {
+    opacity: 1;
+    transform: none;
+  }
+
+  .story-tile__divider {
+    transform: scaleX(1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   08. Scroll Reveal Motion
+   -------------------------------------------------------------------------- */
+.story-motion [data-story-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.story-motion [data-story-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   09. Accessibility & Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .story-motion [data-story-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .story-tile__image,
+  .story-tile__overlay,
+  .story-tile__category,
+  .story-tile__name,
+  .story-tile__divider,
+  .stories-enhanced .story-tile--extra {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .story-tile__category,
+  .story-tile__name,
+  .story-tile__overlay,
+  .story-tile__divider {
+    opacity: 1 !important;
+  }
+}
+
+.stories-load-more { display: none; }
+.stories-enhanced .stories-load-more:not([hidden]) { display: flex; }
+.story-tile__name { overflow-wrap: anywhere; }

@@ -1,0 +1,168 @@
+/* Trust / Recognition Section Styles — Heritage Sage Editorial */
+.trust {
+    background-color: #EEEADD;
+    padding-top: clamp(100px, 10vw, 150px);
+    padding-bottom: clamp(100px, 11vw, 160px);
+    overflow: hidden;
+    position: relative;
+}
+
+.trust__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(60px, 8vw, 90px);
+}
+
+.trust__header {
+    max-width: 700px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trust__eyebrow {
+    font-family: var(--font-ui);
+    font-size: clamp(9px, 1.2vw, 11px);
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #91876E;
+    margin: 0;
+}
+
+.trust__title {
+    font-family: var(--font-display);
+    font-size: clamp(44px, 5vw, 70px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: #1A1B18;
+    margin: 0;
+}
+
+.trust__title em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.trust__intro {
+    font-family: var(--font-ui);
+    font-size: clamp(14px, 1.4vw, 16px);
+    line-height: 1.65;
+    color: #4A4A45;
+    margin: 0;
+}
+
+/* Horizontal credentials row */
+.trust__credentials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0;
+}
+
+.trust-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 clamp(16px, 2.5vw, 32px);
+    position: relative;
+}
+
+.trust-stat:first-child {
+    padding-left: 0;
+}
+
+.trust-stat:last-child {
+    padding-right: 0;
+}
+
+.trust-stat:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+    background-color: #D3CFC5;
+    opacity: 0.7;
+}
+
+.trust-stat__value {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 5vw, 72px);
+    font-weight: 400;
+    line-height: 1;
+    color: #1A1B18;
+}
+
+.trust-stat__label {
+    font-family: var(--font-ui);
+    font-size: clamp(9px, 1.1vw, 11px);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    color: #91876E;
+    line-height: 1.4;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 767px) {
+    .trust__credentials {
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(32px, 5vw, 48px) 0;
+    }
+
+    .trust-stat {
+        padding: 0 16px;
+    }
+
+    .trust-stat:nth-child(2n+1) {
+        padding-left: 0;
+    }
+
+    .trust-stat:nth-child(2n) {
+        padding-right: 0;
+    }
+
+    .trust-stat:not(:first-child)::before {
+        display: none;
+    }
+
+    .trust-stat:nth-child(2n)::before {
+        display: block;
+        left: 0;
+        top: 10%;
+        bottom: 10%;
+    }
+}
+
+/* Scroll reveal motion */
+.trust--motion [data-trust-reveal] {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.trust--motion .trust__header.trust__revealed,
+.trust--motion .trust__eyebrow.trust__revealed,
+.trust--motion .trust__title.trust__revealed,
+.trust--motion .trust__intro.trust__revealed,
+.trust--motion .trust__credentials.trust__revealed,
+.trust--motion .trust-stat.trust__revealed {
+    opacity: 1;
+    transform: none;
+}
+
+.trust--motion .trust-stat:nth-child(1) { transition-delay: 0.08s; }
+.trust--motion .trust-stat:nth-child(2) { transition-delay: 0.16s; }
+.trust--motion .trust-stat:nth-child(3) { transition-delay: 0.24s; }
+.trust--motion .trust-stat:nth-child(4) { transition-delay: 0.32s; }

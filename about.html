@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | DIVINE PHOTO STUDIO</title>
+    <meta name="description" content="Discover the story, vision, and people behind Divine Photo Studio. Two perspectives, one shared instinct for honest moments and timeless photography.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Dedicated About Page Stylesheet -->
+    <link rel="stylesheet" href="css/about-page.css">
+    <!-- TODO: Add the approved favicon and production social URLs when supplied. -->
+</head>
+
+<body class="about-page">
+
+    <!-- ======================================================================
+         01. Inner Page Navbar
+         ====================================================================== -->
+    <header class="site-header">
+        <div class="site-header__brand">
+            <a href="index.html" class="divine-logo" aria-label="Divine Photo Studio home">
+                <span class="divine-name">DiViNE</span>
+                <span class="divine-photo">PHOTO</span>
+                <span class="divine-studio">STUDIO</span>
+            </a>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+            <ul class="main-nav__list" id="main-nav-list">
+
+                <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link">HOME</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="about.html" class="main-nav__link main-nav__link--active" aria-current="page">ABOUT</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link">SERVICES</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <a href="photography.html" class="main-nav__link">PHOTOGRAPHY</a>
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-photography" aria-label="Toggle Photography Submenu">
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <ul class="dropdown-menu" id="submenu-photography">
+                        <li class="dropdown-menu__item"><a href="weddings.html" class="dropdown-menu__link">WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#pre-weddings" class="dropdown-menu__link">PRE-WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#reception" class="dropdown-menu__link">RECEPTION</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#engagement" class="dropdown-menu__link">ENGAGEMENT</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#corporate" class="dropdown-menu__link">CORPORATE</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#baby-shower" class="dropdown-menu__link">BABY SHOWER</a></li>
+                    </ul>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="films.html" class="main-nav__link">FILMS</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="couple-stories.html" class="main-nav__link">COUPLE STORIES</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="contact.html" class="main-nav__link">CONTACT</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Open navigation">
+            <span class="mobile-nav-toggle__line"></span>
+            <span class="mobile-nav-toggle__line"></span>
+        </button>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ==================================================================
+             02. Section 02 — About Hero
+             ================================================================== -->
+        <section class="about-hero" aria-labelledby="about-hero-title">
+            <!-- Subtle Faint Lens Arc Vector -->
+            <svg class="about-hero__svg-arc" viewBox="0 0 500 500" aria-hidden="true" focusable="false">
+                <circle cx="250" cy="250" r="230" fill="none" stroke="#5A7262" stroke-width="1.2" stroke-dasharray="3 7" />
+                <circle cx="250" cy="250" r="190" fill="none" stroke="#91876E" stroke-width="0.8" />
+            </svg>
+
+            <div class="about-container">
+                <div class="about-hero__grid">
+                    <div class="about-hero__content" data-about-reveal>
+                        <span class="about-eyebrow">OUR STORY</span>
+                        <h1 class="about-hero__title" id="about-hero-title">
+                            Two perspectives.<br>
+                            <em>One shared way of seeing.</em>
+                        </h1>
+                        <p class="about-hero__subcopy">
+                            DIVINE began with a simple belief — the strongest photographs are not always the ones you planned.
+                            <span>They are the moments you felt.</span>
+                        </p>
+                    </div>
+
+                    <figure class="about-hero__figure" data-about-reveal>
+                        <img class="about-hero__image" src="assets/images/about/divine-team.jpg" alt="Divine Photo Studio founders in an environmental portrait" width="1200" height="800" fetchpriority="high" loading="eager" decoding="async">
+                        <figcaption class="about-hero__caption">DIVINE PHOTO STUDIO • GUJARAT, INDIA</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             03. Section 03 — Our Story (How It Began)
+             ================================================================== -->
+        <section class="about-story" aria-labelledby="about-story-title">
+            <!-- Subtle Contour Vector Accent -->
+            <svg class="about-story__contour" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+                <path d="M50,200 Q120,80 200,200 T350,200" fill="none" stroke="#B4794B" stroke-width="1.2" stroke-dasharray="4 6" />
+                <circle cx="200" cy="200" r="120" fill="none" stroke="#5A7262" stroke-width="0.8" />
+            </svg>
+
+            <div class="about-container">
+                <div class="about-story__grid">
+                    <div class="about-story__content" data-about-reveal>
+                        <span class="about-eyebrow">HOW IT BEGAN</span>
+                        <h2 class="about-story__heading" id="about-story-title">
+                            Built from observation,<br>
+                            trust and a love for real moments.
+                        </h2>
+                        <div class="about-story__body">
+                            <p>DIVINE is built around two people who learned to see a story from different angles.</p>
+                            <p class="about-story__emphasis">One notices the emotion before the frame.</p>
+                            <p class="about-story__emphasis">The other notices the composition around it.</p>
+                            <p>Together, those perspectives became the way DIVINE photographs people —</p>
+                            <div class="about-story__rhythm" aria-label="Editorial cadence">
+                                <span>honestly,</span>
+                                <span>carefully,</span>
+                                <span>and without forcing the moment.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure class="about-story__figure" data-about-reveal>
+                        <img class="about-story__image" src="assets/images/about/our-story-detail.jpg" alt="Sacred details and authentic elements captured by Divine Photo Studio" width="800" height="1200" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             04. Section 04 — Two Partners
+             ================================================================== -->
+        <section class="about-partners" aria-labelledby="about-partners-title">
+            <div class="about-container">
+                <header class="about-partners__header" data-about-reveal>
+                    <span class="about-eyebrow">THE PEOPLE BEHIND DIVINE</span>
+                    <h2 class="about-partners__title" id="about-partners-title">
+                        Two ways of seeing.<br>
+                        One shared instinct.
+                    </h2>
+                </header>
+
+                <div class="about-partners__grid">
+                    <!-- Partner 01 -->
+                    <!-- TODO: Replace placeholder name with real co-founder name -->
+                    <article class="about-partner about-partner--01" data-about-reveal>
+                        <figure class="about-partner__figure">
+                            <img class="about-partner__image" src="assets/images/about/partner-01.jpg" alt="Portrait of Partner 01, Co-Founder &amp; Photographer at Divine Photo Studio" width="1200" height="1500" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="about-partner__meta">
+                            <h3 class="about-partner__name">[NAME]</h3>
+                            <p class="about-partner__role">CO-FOUNDER • PHOTOGRAPHER</p>
+                            <p class="about-partner__note">
+                                Drawn to people, emotion and the quiet moments that often happen before anyone notices the camera.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Partner 02 -->
+                    <!-- TODO: Replace placeholder name with real co-founder name -->
+                    <article class="about-partner about-partner--02" data-about-reveal>
+                        <figure class="about-partner__figure">
+                            <img class="about-partner__image" src="assets/images/about/partner-02.jpg" alt="Portrait of Partner 02, Co-Founder &amp; Photographer at Divine Photo Studio" width="1200" height="1500" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="about-partner__meta">
+                            <h3 class="about-partner__name">[NAME]</h3>
+                            <p class="about-partner__role">CO-FOUNDER • PHOTOGRAPHER</p>
+                            <p class="about-partner__note">
+                                Focused on composition, atmosphere and the visual details that make a story feel complete.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             05. Section 05 — How We See (Principles)
+             ================================================================== -->
+        <section class="about-principles" aria-labelledby="about-principles-title">
+            <div class="about-container">
+                <header class="about-principles__header" data-about-reveal>
+                    <span class="about-eyebrow">HOW WE SEE</span>
+                    <h2 class="about-principles__title" id="about-principles-title">
+                        Less posing.<br>
+                        More presence.
+                    </h2>
+                </header>
+
+                <div class="about-principles__grid">
+                    <!-- Principle 01 -->
+                    <article class="about-principle" data-about-reveal>
+                        <div class="about-principle__marker">
+                            <span class="about-principle__crop-mark" aria-hidden="true">◇</span>
+                            <span class="about-principle__num">01</span>
+                        </div>
+                        <h3 class="about-principle__title">PEOPLE FIRST</h3>
+                        <p class="about-principle__desc">
+                            We begin with the people, not the pose. Genuine connection naturally creates the most memorable frames.
+                        </p>
+                    </article>
+
+                    <!-- Principle 02 -->
+                    <article class="about-principle" data-about-reveal>
+                        <div class="about-principle__marker">
+                            <span class="about-principle__crop-mark" aria-hidden="true">◇</span>
+                            <span class="about-principle__num">02</span>
+                        </div>
+                        <h3 class="about-principle__title">FEELING OVER PERFECTION</h3>
+                        <p class="about-principle__desc">
+                            A genuine moment matters more than a perfect arrangement. We prioritize unforced laughter, touch, and truth.
+                        </p>
+                    </article>
+
+                    <!-- Principle 03 -->
+                    <article class="about-principle" data-about-reveal>
+                        <div class="about-principle__marker">
+                            <span class="about-principle__crop-mark" aria-hidden="true">◇</span>
+                            <span class="about-principle__num">03</span>
+                        </div>
+                        <h3 class="about-principle__title">DETAILS MATTER</h3>
+                        <p class="about-principle__desc">
+                            The small gestures, the in-between frames, the subtle expressions you might otherwise miss in the rush of the day.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             06. Section 06 — Behind The Scenes
+             ================================================================== -->
+        <section class="about-bts" aria-labelledby="about-bts-title">
+            <div class="about-container">
+                <header class="about-bts__header" data-about-reveal>
+                    <span class="about-eyebrow">BEHIND THE FRAME</span>
+                    <h2 class="about-bts__title" id="about-bts-title">
+                        The work you rarely see.
+                    </h2>
+                </header>
+
+                <div class="about-bts__mosaic">
+                    <!-- BTS Item 01: Creative Direction -->
+                    <figure class="about-bts__item about-bts__item--1" data-about-reveal>
+                        <img class="about-bts__img" src="assets/images/about/bts-01.jpg" alt="Behind the scenes: Creative direction and outdoor styling" width="1200" height="800" loading="lazy" decoding="async">
+                        <figcaption class="about-bts__tag">DIRECTION • NATURAL LIGHT</figcaption>
+                    </figure>
+
+                    <!-- BTS Item 02: Framing & Gear -->
+                    <figure class="about-bts__item about-bts__item--2" data-about-reveal>
+                        <img class="about-bts__img" src="assets/images/about/bts-02.jpg" alt="Behind the scenes: Organic environmental framing" width="900" height="1200" loading="lazy" decoding="async">
+                        <figcaption class="about-bts__tag">OBSERVATION • DEPTH</figcaption>
+                    </figure>
+
+                    <!-- BTS Item 03: Celebration Crew -->
+                    <figure class="about-bts__item about-bts__item--3" data-about-reveal>
+                        <img class="about-bts__img" src="assets/images/about/bts-03.jpg" alt="Behind the scenes: Capturing grand celebrations and dynamic lighting" width="1200" height="800" loading="lazy" decoding="async">
+                        <figcaption class="about-bts__tag">ENERGY • SPONTANEITY</figcaption>
+                    </figure>
+
+                    <!-- BTS Item 04: Quiet Moment -->
+                    <figure class="about-bts__item about-bts__item--4" data-about-reveal>
+                        <img class="about-bts__img" src="assets/images/about/bts-04.jpg" alt="Behind the scenes: Quiet documentary storytelling" width="1000" height="750" loading="lazy" decoding="async">
+                        <figcaption class="about-bts__tag">STORY • INTIMACY</figcaption>
+                    </figure>
+
+                    <!-- BTS Item 05: Golden Hour -->
+                    <figure class="about-bts__item about-bts__item--5" data-about-reveal>
+                        <img class="about-bts__img" src="assets/images/about/bts-05.jpg" alt="Behind the scenes: Sunset golden hour silhouette" width="1000" height="750" loading="lazy" decoding="async">
+                        <figcaption class="about-bts__tag">ATMOSPHERE • SUNSET</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             07. Section 07 — What We Believe (Quiet Statement)
+             ================================================================== -->
+        <section class="about-belief" aria-labelledby="about-belief-title">
+            <!-- Faint Ellipse Vector Background -->
+            <svg class="about-belief__arc" viewBox="0 0 760 440" aria-hidden="true" focusable="false">
+                <ellipse cx="380" cy="220" rx="350" ry="190" fill="none" stroke="#5A7262" stroke-width="1.2" stroke-dasharray="4 8" />
+                <ellipse cx="380" cy="220" rx="310" ry="160" fill="none" stroke="#91876E" stroke-width="0.8" />
+            </svg>
+
+            <div class="about-container">
+                <div class="about-belief__inner" data-about-reveal>
+                    <h2 class="about-belief__heading" id="about-belief-title">
+                        A photograph should feel<br>
+                        more valuable with time.
+                    </h2>
+                    <p class="about-belief__body">
+                        The goal is not simply to make something beautiful today. It is to create something you will still want to return to years from now.
+                    </p>
+                    <div class="about-belief__divider" aria-hidden="true">
+                        <span class="about-belief__divider-line"></span>
+                        <span class="about-belief__divider-mark">◇</span>
+                        <span class="about-belief__divider-line"></span>
+                    </div>
+                    <p class="about-belief__signature">
+                        Honest moments.<br>
+                        Artfully preserved.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             08. Section 08 — Final CTA
+             ================================================================== -->
+        <section class="about-cta" aria-labelledby="about-cta-title">
+            <div class="about-container">
+                <div class="about-cta__inner" data-about-reveal>
+                    <span class="about-eyebrow">LET'S BEGIN</span>
+                    <h2 class="about-cta__title" id="about-cta-title">
+                        If the way we see<br>
+                        feels like you,<br>
+                        let's tell your story.
+                    </h2>
+                    <div class="about-cta__actions">
+                        <a href="contact.html" class="about-cta__btn-primary">
+                            START A CONVERSATION <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="couple-stories.html" class="about-cta__btn-secondary">
+                            VIEW OUR STORIES <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================================
+         09. Section 09 — Approved Light Editorial Footer
+         ====================================================================== -->
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+        <div class="site-footer__inner">
+
+            <!-- Mobile Only Brand Wordmark -->
+            <div class="site-footer__mobile-brand">
+                <a href="index.html" class="site-footer__brand-link" aria-label="DIVINE Photo Studio home">
+                    <span class="site-footer__brand-title">DIVINE PHOTO STUDIO</span>
+                </a>
+            </div>
+
+            <!-- Row A: Footer Navigation + Social -->
+            <div class="site-footer__nav-row">
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <ul class="site-footer__nav-list" role="list">
+                        <li class="site-footer__nav-item"><a href="index.html" class="site-footer__nav-link">HOME</a></li>
+                        <li class="site-footer__nav-item"><a href="about.html" class="site-footer__nav-link">ABOUT</a></li>
+                        <li class="site-footer__nav-item"><a href="services.html" class="site-footer__nav-link">SERVICES</a></li>
+                        <li class="site-footer__nav-item"><a href="photography.html" class="site-footer__nav-link">PHOTOGRAPHY</a></li>
+                        <li class="site-footer__nav-item"><a href="films.html" class="site-footer__nav-link">FILMS</a></li>
+                        <li class="site-footer__nav-item"><a href="couple-stories.html" class="site-footer__nav-link">COUPLE STORIES</a></li>
+                        <li class="site-footer__nav-item"><a href="contact.html" class="site-footer__nav-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social Icons (Far right on desktop, monochrome outline SVGs) -->
+                <div class="site-footer__social-icons">
+                    <!-- TODO: Replace # with verified studio Instagram URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Instagram">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio Facebook page URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Facebook">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio YouTube channel URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="YouTube">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"
+                                stroke="none"></polygon>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row B: Horizontal Editorial Image Strip (Contact-Sheet Frames) -->
+            <div class="site-footer__strip-container">
+                <div class="site-footer__strip" id="footer-image-strip" tabindex="0"
+                    aria-label="Curated photography contact sheet">
+                    <!-- Frame 01: Wedding (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-01.jpg"
+                            alt="Wedding photography by Divine Photo Studio" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 02: Pre-Wedding (portrait 3:4) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p34">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-02.jpg"
+                            alt="Pre-wedding portrait by Divine Photo Studio" width="375" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 03: Reception (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-03.jpg"
+                            alt="Reception celebration moment" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 04: Engagement (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-04.jpg"
+                            alt="Intimate engagement moment" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 05: Corporate (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32 site-footer__strip-item--wide">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-05.jpg"
+                            alt="Corporate event photography" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 06: Baby Shower (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-06.jpg"
+                            alt="Tender baby shower celebration" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 07: Emotional Detail Frame -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--detail">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-07.jpg"
+                            alt="Artful detail photograph" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+
+                <!-- Subtle desktop navigation arrows for strip scroll -->
+                <div class="site-footer__strip-controls" aria-hidden="true">
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--prev"
+                        id="footer-strip-prev" aria-label="Scroll images left">←</button>
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--next"
+                        id="footer-strip-next" aria-label="Scroll images right">→</button>
+                </div>
+            </div>
+
+            <!-- Row C: Bottom Information Row (Split Left/Right) -->
+            <div class="site-footer__info-row">
+                <!-- Left: Find us here -->
+                <div class="site-footer__info-col site-footer__info-col--left">
+                    <h3 class="site-footer__info-heading">Find us here</h3>
+                    <address class="site-footer__address">
+                        <!-- TODO: Replace placeholder address with real studio address -->
+                        <span class="site-footer__address-line">[STUDIO ADDRESS]</span>
+                        <span class="site-footer__address-line">Gujarat, India</span>
+                    </address>
+                </div>
+
+                <!-- Right: Contact us -->
+                <div class="site-footer__info-col site-footer__info-col--right">
+                    <h3 class="site-footer__info-heading">Contact us</h3>
+                    <div class="site-footer__contact-details">
+                        <!-- TODO: Replace placeholder phone number with real contact info -->
+                        <span class="site-footer__contact-link">[PHONE NUMBER]</span>
+                        <!-- TODO: Replace placeholder email with real contact info -->
+                        <span
+                            class="site-footer__contact-link">[EMAIL ADDRESS]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row D: Copyright + Back-to-Top -->
+            <div class="site-footer__copyright-row">
+                <p class="site-footer__copyright">
+                    © <span id="footer-year">2026</span> DIVINE PHOTO STUDIO
+                </p>
+                <button type="button" class="site-footer__back-to-top" id="footer-back-to-top" aria-label="Back to top">
+                    <span class="site-footer__back-to-top-text">BACK TO TOP</span>
+                    <span class="site-footer__back-to-top-arrow" aria-hidden="true">↑</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=1.2"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/about-page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DIVINE PHOTO STUDIO</title>
+    <meta name="description" content="Begin your story with Divine Photo Studio. Share your celebration plans, wedding date, and vision with our editorial photography team in Gujarat.">
+    <meta name="theme-color" content="#F6F4EE">
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Dedicated Contact Page Stylesheet -->
+    <link rel="stylesheet" href="css/contact-page.css">
+    <!-- TODO: Add the approved favicon and production social URLs when supplied. -->
+</head>
+
+<body class="contact-body">
+    <!-- ======================================================================
+         01. Site Header & Navigation (Approved Structure)
+         ====================================================================== -->
+    <header class="site-header">
+        <div class="site-header__brand">
+            <a href="index.html" class="divine-logo" aria-label="Divine Photo Studio home">
+                <span class="divine-name">DiViNE</span>
+                <span class="divine-photo">PHOTO</span>
+                <span class="divine-studio">STUDIO</span>
+            </a>
+        </div>
+
+        <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+            <ul class="main-nav__list" id="main-nav-list" role="list">
+                <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link">HOME</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="about.html" class="main-nav__link">ABOUT</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link">SERVICES</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <a href="photography.html" class="main-nav__link">PHOTOGRAPHY</a>
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-photography" aria-label="Toggle Photography Submenu">
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <ul class="dropdown-menu" id="submenu-photography">
+                        <li class="dropdown-menu__item"><a href="weddings.html" class="dropdown-menu__link">WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#pre-weddings" class="dropdown-menu__link">PRE-WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#reception" class="dropdown-menu__link">RECEPTION</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#engagement" class="dropdown-menu__link">ENGAGEMENT</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#corporate" class="dropdown-menu__link">CORPORATE</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#baby-shower" class="dropdown-menu__link">BABY SHOWER</a></li>
+                    </ul>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="films.html" class="main-nav__link">FILMS</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="couple-stories.html" class="main-nav__link">COUPLE STORIES</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="contact.html" class="main-nav__link main-nav__link--active" aria-current="page">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Open navigation">
+            <span class="mobile-nav-toggle__line"></span>
+            <span class="mobile-nav-toggle__line"></span>
+        </button>
+    </header>
+
+    <main id="main-content">
+        <!-- ======================================================================
+             02. Section 02 — Contact Hero
+             ====================================================================== -->
+        <section class="contact-hero" aria-labelledby="contact-hero-title">
+            <!-- Subtle Signature Lens Arc Background SVG -->
+            <svg class="contact-hero__lens-arc" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+                <circle cx="400" cy="400" r="370" fill="none" stroke="#5A7262" stroke-width="1.5" stroke-dasharray="6 10" />
+                <circle cx="400" cy="400" r="320" fill="none" stroke="#5A7262" stroke-width="1" />
+            </svg>
+
+            <div class="contact-hero__inner">
+                <p class="contact-hero__eyebrow">CONTACT</p>
+                <h1 class="contact-hero__title" id="contact-hero-title">
+                    Tell us<br><em>about your story.</em>
+                </h1>
+                <div class="contact-hero__body">
+                    <p>Every celebration begins differently.</p>
+                    <p>Tell us what you’re planning, where it begins, and what matters most to you.</p>
+                    <p>We’ll take it from there.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+             03. Section 03 & 04 & 05 & 06 — Main Contact Section
+             Booking Introduction + 2-Column (Form 60% / Details 40%)
+             ====================================================================== -->
+        <section class="contact-main" aria-label="Enquiry and contact information">
+            <div class="contact-main__inner">
+
+                <!-- Section 03 — Booking Introduction -->
+                <div class="contact-intro">
+                    <p class="contact-intro__eyebrow">BEGIN HERE</p>
+                    <h2 class="contact-intro__title">
+                        A few details<br><em>help us understand your day.</em>
+                    </h2>
+                    <p class="contact-intro__lead">
+                        Share as much as you know right now. If some details are still undecided, that’s completely fine.
+                    </p>
+                </div>
+
+                <!-- 2-Column Contact Grid -->
+                <div class="contact-grid">
+
+                    <!-- LEFT COLUMN: Contact / Enquiry Form -->
+                    <div class="contact-form-col">
+                        <!-- TODO: Connect this form submission handler to a production API endpoint (e.g. Formspree, Netlify Forms, or custom backend mailer). Currently handled gracefully by js/contact.js with full validation. -->
+                        <form class="contact-form" id="contact-form" novalidate aria-label="Studio enquiry form">
+                    <noscript><p>Online booking is not connected. Please use the direct contact details below.</p></noscript>
+
+                            <!-- Field 01: Full Name -->
+                            <div class="contact-form__field" id="field-name">
+                                <label for="contact-name" class="contact-form__label">
+                                    YOUR NAME <span class="contact-form__required" aria-hidden="true">*</span>
+                                </label>
+                                <input type="text" id="contact-name" name="name" class="contact-form__input" autocomplete="name" required placeholder="Enter your full name" aria-describedby="error-name">
+                                <span class="contact-form__error" id="error-name" aria-live="polite"></span>
+                            </div>
+
+                            <!-- Field 02: Email Address -->
+                            <div class="contact-form__field" id="field-email">
+                                <label for="contact-email" class="contact-form__label">
+                                    EMAIL ADDRESS <span class="contact-form__required" aria-hidden="true">*</span>
+                                </label>
+                                <input type="email" id="contact-email" name="email" class="contact-form__input" autocomplete="email" required placeholder="name@domain.com" aria-describedby="error-email">
+                                <span class="contact-form__error" id="error-email" aria-live="polite"></span>
+                            </div>
+
+                            <!-- Field 03: Phone Number -->
+                            <div class="contact-form__field" id="field-phone">
+                                <label for="contact-phone" class="contact-form__label">
+                                    PHONE NUMBER <span class="contact-form__required" aria-hidden="true">*</span>
+                                </label>
+                                <input type="tel" id="contact-phone" name="phone" class="contact-form__input" autocomplete="tel" required placeholder="+91 or country code &amp; number" aria-describedby="error-phone">
+                                <span class="contact-form__error" id="error-phone" aria-live="polite"></span>
+                            </div>
+
+                            <!-- Field 04: Event Type -->
+                            <div class="contact-form__field" id="field-event-type">
+                                <label for="contact-event-type" class="contact-form__label">
+                                    WHAT ARE YOU PLANNING?
+                                </label>
+                                <div class="contact-form__select-wrap">
+                                    <select id="contact-event-type" name="event_type" class="contact-form__select">
+                                        <option value="" disabled selected>SELECT AN EVENT</option>
+                                        <option value="WEDDING">WEDDING</option>
+                                        <option value="PRE-WEDDING">PRE-WEDDING</option>
+                                        <option value="RECEPTION">RECEPTION</option>
+                                        <option value="ENGAGEMENT">ENGAGEMENT</option>
+                                        <option value="CORPORATE">CORPORATE</option>
+                                        <option value="BABY SHOWER">BABY SHOWER</option>
+                                        <option value="OTHER">OTHER</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Field 05: Event Date -->
+                            <div class="contact-form__field" id="field-date">
+                                <label for="contact-date" class="contact-form__label">
+                                    EVENT DATE
+                                </label>
+                                <input type="date" id="contact-date" name="event_date" class="contact-form__input contact-form__input--date">
+                            </div>
+
+                            <!-- Field 06: Event Location -->
+                            <div class="contact-form__field" id="field-location">
+                                <label for="contact-location" class="contact-form__label">
+                                    EVENT LOCATION
+                                </label>
+                                <input type="text" id="contact-location" name="event_location" class="contact-form__input" placeholder="City / Venue">
+                            </div>
+
+                            <!-- Field 07: Message -->
+                            <div class="contact-form__field" id="field-message">
+                                <label for="contact-message" class="contact-form__label">
+                                    TELL US A LITTLE ABOUT YOUR STORY
+                                </label>
+                                <textarea id="contact-message" name="message" class="contact-form__textarea" rows="6" placeholder="Share anything you’d like us to know..."></textarea>
+                            </div>
+
+                            <!-- Field 08: Optional Checkbox -->
+                            <div class="contact-form__checkbox-wrap">
+                                <input type="checkbox" id="contact-undecided" name="undecided_details" class="contact-form__checkbox">
+                                <label for="contact-undecided" class="contact-form__checkbox-label">
+                                    I’m still finalizing some details.
+                                </label>
+                            </div>
+
+                            <!-- Submit Action -->
+                            <div class="contact-form__action">
+                                <button type="submit" class="contact-form__submit-btn" id="contact-submit-btn" disabled>
+                                    <span class="contact-form__submit-text">SEND YOUR ENQUIRY</span>
+                                    <span class="contact-form__submit-arrow" aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Inline Confirmation State -->
+                        <div class="contact-form__confirmation" id="contact-confirmation" hidden aria-live="polite"><p>Your enquiry has not been sent. Online booking is not connected yet.</p></div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: Direct Contact & Studio Location Details -->
+                    <aside class="contact-info-col" aria-label="Direct contact and studio details">
+
+                        <!-- Section 05: Direct Contact Details -->
+                        <div class="contact-direct">
+                            <p class="contact-info__eyebrow">DIRECT CONTACT</p>
+                            <p class="contact-direct__note">
+                                Verified contact details will be listed here when available.
+                            </p>
+                            <ul class="contact-direct__list" role="list">
+                                <li class="contact-direct__item">
+                                    <span class="contact-direct__label">PHONE</span>
+                                    <span class="contact-direct__link">[PHONE NUMBER]</span>
+                                </li>
+                                <li class="contact-direct__item">
+                                    <span class="contact-direct__label">EMAIL</span>
+                                    <span class="contact-direct__link">[EMAIL ADDRESS]</span>
+                                </li>
+                                <li class="contact-direct__item">
+                                    <span class="contact-direct__label">INSTAGRAM</span>
+                                    <span class="contact-direct__link">[INSTAGRAM HANDLE]</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Section 06: Studio / Location Information -->
+                        <div class="contact-location">
+                            <p class="contact-info__eyebrow">FIND US</p>
+                            <h3 class="contact-location__title">
+                                Where stories<br><em>begin in person.</em>
+                            </h3>
+                            <address class="contact-location__address">
+                                <span class="contact-location__address-line">[STUDIO ADDRESS]</span>
+                                <span class="contact-location__address-line">Gujarat, India</span>
+                            </address>
+                            <!-- TODO: Replace # with verified Google Maps URL when coordinates are confirmed -->
+                            <!-- TODO: Add a map link after the studio address is verified. -->
+                        </div>
+
+                        <!-- Optional Availability Note -->
+                        <div class="contact-availability">
+                            <p class="contact-info__eyebrow">AVAILABLE FOR</p>
+                            <p class="contact-availability__list">
+                                Weddings • Pre-Weddings • Reception • Engagement • Corporate • Baby Shower
+                            </p>
+                        </div>
+
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+             04. Section 07 — Optional Booking Notes / Editorial FAQs
+             ====================================================================== -->
+        <section class="contact-notes" aria-labelledby="contact-notes-title">
+            <div class="contact-notes__inner">
+                <header class="contact-notes__header">
+                    <p class="contact-notes__eyebrow">BEFORE YOU REACH OUT</p>
+                    <h2 class="contact-notes__title" id="contact-notes-title">
+                        A few gentle <em>notes.</em>
+                    </h2>
+                </header>
+
+                <div class="contact-notes__grid">
+                    <article class="contact-note-item">
+                        <h3 class="contact-note-item__q">WHEN SHOULD WE ENQUIRE?</h3>
+                        <p class="contact-note-item__a">
+                            Share your preferred date and location when making an enquiry.
+                        </p>
+                    </article>
+
+                    <article class="contact-note-item">
+                        <h3 class="contact-note-item__q">WHAT IF OUR DATE ISN’T FINAL?</h3>
+                        <p class="contact-note-item__a">
+                            Share a tentative date or leave the date blank if your plans are still taking shape.
+                        </p>
+                    </article>
+
+                    <article class="contact-note-item">
+                        <h3 class="contact-note-item__q">HOW DOES WORKING TOGETHER BEGIN?</h3>
+                        <p class="contact-note-item__a">
+                            An enquiry can include your celebration details, photography preferences, and any film requirements.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================================
+         05. Section 08 — Approved Light Editorial Footer
+         ====================================================================== -->
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+        <div class="site-footer__inner">
+
+            <!-- Mobile Only Brand Wordmark -->
+            <div class="site-footer__mobile-brand">
+                <a href="index.html" class="site-footer__brand-link" aria-label="DIVINE Photo Studio home">
+                    <span class="site-footer__brand-title">DIVINE PHOTO STUDIO</span>
+                </a>
+            </div>
+
+            <!-- Row A: Footer Navigation + Social -->
+            <div class="site-footer__nav-row">
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <ul class="site-footer__nav-list" role="list">
+                        <li class="site-footer__nav-item"><a href="index.html" class="site-footer__nav-link">HOME</a></li>
+                        <li class="site-footer__nav-item"><a href="about.html" class="site-footer__nav-link">ABOUT</a></li>
+                        <li class="site-footer__nav-item"><a href="services.html" class="site-footer__nav-link">SERVICES</a></li>
+                        <li class="site-footer__nav-item"><a href="photography.html" class="site-footer__nav-link">PHOTOGRAPHY</a></li>
+                        <li class="site-footer__nav-item"><a href="films.html" class="site-footer__nav-link">FILMS</a></li>
+                        <li class="site-footer__nav-item"><a href="couple-stories.html" class="site-footer__nav-link">COUPLE STORIES</a></li>
+                        <li class="site-footer__nav-item"><a href="contact.html" class="site-footer__nav-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social Icons (Far right on desktop, monochrome outline SVGs) -->
+                <div class="site-footer__social-icons">
+                    <!-- TODO: Replace # with verified studio Instagram URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Instagram">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio Facebook page URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Facebook">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio YouTube channel URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="YouTube">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"
+                                stroke="none"></polygon>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row B: Horizontal Editorial Image Strip (Contact-Sheet Frames) -->
+            <div class="site-footer__strip-container">
+                <div class="site-footer__strip" id="footer-image-strip" tabindex="0"
+                    aria-label="Curated photography contact sheet">
+                    <!-- Frame 01: Wedding (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-01.jpg"
+                            alt="Wedding photography by Divine Photo Studio" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 02: Pre-Wedding (portrait 3:4) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p34">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-02.jpg"
+                            alt="Pre-wedding portrait by Divine Photo Studio" width="375" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 03: Reception (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-03.jpg"
+                            alt="Reception celebration moment" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 04: Engagement (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-04.jpg"
+                            alt="Intimate engagement moment" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 05: Corporate (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32 site-footer__strip-item--wide">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-05.jpg"
+                            alt="Corporate event photography" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 06: Baby Shower (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-06.jpg"
+                            alt="Tender baby shower celebration" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 07: Emotional Detail Frame -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--detail">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-07.jpg"
+                            alt="Artful detail photograph" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+
+                <!-- Subtle desktop navigation arrows for strip scroll -->
+                <div class="site-footer__strip-controls" aria-hidden="true">
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--prev"
+                        id="footer-strip-prev" aria-label="Scroll images left">←</button>
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--next"
+                        id="footer-strip-next" aria-label="Scroll images right">→</button>
+                </div>
+            </div>
+
+            <!-- Row C: Bottom Information Row (Split Left/Right) -->
+            <div class="site-footer__info-row">
+                <!-- Left: Find us here -->
+                <div class="site-footer__info-col site-footer__info-col--left">
+                    <h3 class="site-footer__info-heading">Find us here</h3>
+                    <address class="site-footer__address">
+                        <!-- TODO: Replace placeholder address with real studio address -->
+                        <span class="site-footer__address-line">[STUDIO ADDRESS]</span>
+                        <span class="site-footer__address-line">Gujarat, India</span>
+                    </address>
+                </div>
+
+                <!-- Right: Contact us -->
+                <div class="site-footer__info-col site-footer__info-col--right">
+                    <h3 class="site-footer__info-heading">Contact us</h3>
+                    <div class="site-footer__contact-details">
+                        <!-- TODO: Replace placeholder phone number with real contact info -->
+                        <span class="site-footer__contact-link">[PHONE NUMBER]</span>
+                        <!-- TODO: Replace placeholder email with real contact info -->
+                        <span
+                            class="site-footer__contact-link">[EMAIL ADDRESS]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row D: Copyright + Back-to-Top -->
+            <div class="site-footer__copyright-row">
+                <p class="site-footer__copyright">
+                    © <span id="footer-year">2026</span> DIVINE PHOTO STUDIO
+                </p>
+                <button type="button" class="site-footer__back-to-top" id="footer-back-to-top" aria-label="Back to top">
+                    <span class="site-footer__back-to-top-text">BACK TO TOP</span>
+                    <span class="site-footer__back-to-top-arrow" aria-hidden="true">↑</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=1.2"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

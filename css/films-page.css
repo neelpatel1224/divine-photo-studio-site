@@ -1,0 +1,629 @@
+/* ==========================================================================
+   DIVINE PHOTO STUDIO — FILMS PAGE STYLES
+   Theme: Warm Ivory Light Editorial (Cinematic Luxury Journal)
+   ========================================================================== */
+
+:root {
+  --films-bg: #F6F4EE;
+  --films-surface: #EEEADD;
+  --films-border: rgba(90, 114, 98, 0.12);
+  --films-border-rule: rgba(90, 114, 98, 0.14);
+  --films-text: #1A1B18;
+  --films-text-muted: #666B61;
+  --films-text-taupe: #91876E;
+  --films-sage: #5A7262;
+  --films-accent: #B4794B;
+  --films-accent-hover: #9E6438;
+}
+
+body.films-body {
+  background-color: var(--films-bg);
+  color: var(--films-text);
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(ellipse at 18% 12%, rgba(90, 114, 98, 0.025) 0%, transparent 45%),
+    radial-gradient(ellipse at 82% 64%, rgba(145, 135, 110, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 25% 88%, rgba(90, 114, 98, 0.02) 0%, transparent 45%);
+}
+
+/* --------------------------------------------------------------------------
+   00. Site Header Integration (Inherits Approved Global Light Header)
+   -------------------------------------------------------------------------- */
+.films-body .site-header {
+  background-color: var(--films-bg);
+  border-bottom: 1px solid rgba(90, 114, 98, 0.10);
+  transition: background-color 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   01. Films Hero Section (Light Editorial Introduction)
+   -------------------------------------------------------------------------- */
+.films-hero {
+  padding-top: clamp(64px, 8vw, 110px);
+  padding-bottom: clamp(54px, 6.5vw, 86px);
+  background-color: var(--films-bg);
+  position: relative;
+  border-bottom: 1px solid var(--films-border-rule);
+}
+
+.films-hero__container {
+  width: min(92vw, 1400px);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.films-hero__content {
+  max-width: 860px;
+}
+
+.films-eyebrow {
+  display: inline-block;
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: var(--films-sage);
+  margin-bottom: clamp(14px, 1.8vw, 22px);
+}
+
+.films-hero__title {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(38px, 5.8vw, 76px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--films-text);
+  margin-bottom: clamp(18px, 2.2vw, 28px);
+}
+
+.films-hero__title em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--films-text);
+}
+
+.films-hero__body {
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--films-text-muted);
+  max-width: 580px;
+}
+
+/* --------------------------------------------------------------------------
+   02. Film Entries Stream & Alternating Rhythm
+   -------------------------------------------------------------------------- */
+.films-stream {
+  padding-top: clamp(60px, 7vw, 100px);
+  padding-bottom: clamp(90px, 11vw, 150px);
+  background-color: var(--films-bg);
+  position: relative;
+}
+
+.films-stream__list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(70px, 9vw, 130px);
+  width: 100%;
+}
+
+.film-entry {
+  position: relative;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Background Rhythm: Subtle Surface Variation (#EEEADD) for Films 03 & 06 */
+.film-entry--surface {
+  position: relative;
+  padding-top: clamp(50px, 6.5vw, 88px);
+  padding-bottom: clamp(50px, 6.5vw, 88px);
+}
+
+.film-entry--surface::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: var(--films-surface);
+  z-index: 0;
+  pointer-events: none;
+  border-top: 1px solid var(--films-border-rule);
+  border-bottom: 1px solid var(--films-border-rule);
+}
+
+.film-entry--surface > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Thin Editorial Separator between warm ivory entries */
+.film-separator {
+  width: min(88vw, 1420px);
+  margin: 0 auto;
+  height: 1px;
+  background-color: var(--films-border-rule);
+}
+
+/* Specific Rhythm per Film Entry on Desktop (>= 768px) */
+@media screen and (min-width: 768px) {
+  /* Film 01: Dominant centered near full-width frame */
+  .film-entry--01 {
+    width: min(88vw, 1420px);
+    margin: 0 auto;
+  }
+
+  /* Film 02: Narrower frame, aligned right */
+  .film-entry--02 {
+    width: min(68vw, 1080px);
+    margin: 0 4vw 0 auto;
+  }
+
+  /* Film 03: Wide frame, aligned left (Surface #EEEADD) */
+  .film-entry--03 {
+    width: min(76vw, 1220px);
+    margin: 0 auto 0 4vw;
+  }
+
+  /* Film 04: Dominant wide centered frame */
+  .film-entry--04 {
+    width: min(86vw, 1380px);
+    margin: 0 auto;
+  }
+
+  /* Film 05: Intimate centered frame */
+  .film-entry--05 {
+    width: min(64vw, 1020px);
+    margin: 0 auto;
+  }
+
+  /* Film 06: Wide right-weighted frame (Surface #EEEADD) */
+  .film-entry--06 {
+    width: min(76vw, 1200px);
+    margin: 0 4vw 0 auto;
+  }
+
+  /* Film 07: Large final frame, closing visual statement */
+  .film-entry--07 {
+    width: min(88vw, 1420px);
+    margin: 0 auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   03. Cinematic Video Frame & Click-to-Load Player
+   -------------------------------------------------------------------------- */
+.film-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #0E0F0D; /* Dark interior boundary for cinema video content */
+  border: 1px solid var(--films-border);
+  overflow: hidden;
+  box-shadow: 0 10px 32px rgba(26, 27, 24, 0.05);
+}
+
+.film-frame__poster-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.film-frame__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.6s ease;
+}
+
+.film-frame__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(14, 15, 13, 0.32) 0%,
+    rgba(14, 15, 13, 0.02) 45%,
+    rgba(14, 15, 13, 0.18) 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+/* Click-to-load trigger button covering the full frame */
+.film-frame__trigger {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Minimal Outlined Play Icon (Sits on Video Poster) */
+.film-play-btn {
+  width: clamp(56px, 5.5vw, 76px);
+  height: clamp(56px, 5.5vw, 76px);
+  border-radius: 50%;
+  border: 1px solid rgba(246, 244, 238, 0.85);
+  background-color: rgba(26, 27, 24, 0.38);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-color 0.4s ease,
+              background-color 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+.film-play-btn__icon {
+  width: 16px;
+  height: 18px;
+  fill: #FFFDF8;
+  margin-left: 3px; /* Optically centers the play triangle */
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover & Focus Interactions */
+@media (hover: hover) {
+  .film-frame:hover .film-frame__poster {
+    transform: scale(1.012);
+  }
+
+  .film-frame__trigger:hover .film-play-btn {
+    transform: scale(1.05);
+    border-color: var(--films-accent);
+    background-color: rgba(180, 121, 75, 0.32);
+    box-shadow: 0 0 28px rgba(180, 121, 75, 0.32);
+  }
+
+  .film-frame__trigger:hover .film-play-btn__icon {
+    fill: #FFFDF8;
+  }
+}
+
+.film-frame__trigger:focus-visible {
+  outline: 2px solid var(--films-accent);
+  outline-offset: -2px;
+}
+
+.film-frame__trigger:focus-visible .film-play-btn {
+  border-color: var(--films-accent);
+  transform: scale(1.05);
+}
+
+/* Active State: Video Loaded & Playing Inline */
+.film-frame.is-playing .film-frame__poster-wrap,
+.film-frame.is-playing .film-frame__trigger {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease, visibility 0.35s;
+}
+
+.film-frame__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------------------------
+   04. YouTube Unavailable / Fallback State
+   -------------------------------------------------------------------------- */
+.film-frame.has-fallback .film-frame__poster-wrap {
+  opacity: 1;
+  visibility: visible;
+}
+
+.film-frame__fallback-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgba(26, 27, 24, 0.42);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 3;
+  padding: 24px;
+  text-align: center;
+  animation: filmFadeIn 0.35s ease forwards;
+}
+
+@keyframes filmFadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.film-frame__fallback-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #FFFDF8;
+  background-color: var(--films-sage);
+  border: 1px solid rgba(246, 244, 238, 0.65);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.film-frame__fallback-btn:hover {
+  background-color: var(--films-accent);
+  border-color: var(--films-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(180, 121, 75, 0.35);
+  color: #FFFDF8;
+}
+
+.film-frame__fallback-btn svg {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+}
+
+.film-frame__fallback-note {
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: rgba(246, 244, 238, 0.88);
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   05. Film Captions & Typography
+   -------------------------------------------------------------------------- */
+.film-caption {
+  margin-top: clamp(18px, 2.4vw, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.film-meta {
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: clamp(9px, 0.78vw, 10px);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--films-text-taupe);
+}
+
+.film-title {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--films-text);
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.film-title:hover {
+  color: var(--films-accent);
+}
+
+.film-action {
+  margin-top: 6px;
+}
+
+.film-watch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: 10.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.20em;
+  color: var(--films-sage);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.film-watch-link:hover {
+  color: var(--films-accent);
+  transform: translateX(3px);
+}
+
+.film-watch-link svg {
+  width: 12px;
+  height: 12px;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  fill: none;
+  transition: transform 0.3s ease;
+}
+
+.film-watch-link:hover svg {
+  transform: translateX(3px);
+}
+
+.film-watch-link--direct {
+  color: var(--films-accent);
+}
+
+/* --------------------------------------------------------------------------
+   06. Natural Footer Transition
+   -------------------------------------------------------------------------- */
+/* Ensure approved footer retains light ivory theme seamlessly */
+.films-body .site-footer {
+  background-color: var(--films-bg);
+  color: var(--films-text);
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid var(--films-border-rule);
+}
+
+/* --------------------------------------------------------------------------
+   07. Scroll Reveal Motion
+   -------------------------------------------------------------------------- */
+.film-motion [data-film-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.film-motion [data-film-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   08. Responsive Adaptations: Mobile & Tablet
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .films-hero {
+    padding-top: 48px;
+    padding-bottom: 44px;
+  }
+
+  .films-hero__container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .films-stream {
+    padding-top: 48px;
+    padding-bottom: 72px;
+  }
+
+  .films-stream__list {
+    gap: 60px;
+  }
+
+  .film-entry {
+    width: 92vw !important;
+    margin: 0 auto !important;
+  }
+
+  .film-entry--surface {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .film-separator {
+    width: 92vw;
+  }
+
+  .film-play-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .film-play-btn__icon {
+    width: 13px;
+    height: 15px;
+  }
+
+  .film-caption {
+    margin-top: 16px;
+    gap: 6px;
+  }
+
+  .film-meta {
+    font-size: 9px;
+    letter-spacing: 0.20em;
+  }
+
+  .film-title {
+    font-size: clamp(32px, 9vw, 44px);
+  }
+
+  .film-watch-link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .film-entry--01 {
+    width: 90vw;
+  }
+
+  .film-entry--02 {
+    width: 80vw;
+    margin: 0 4vw 0 auto;
+  }
+
+  .film-entry--03 {
+    width: 82vw;
+    margin: 0 auto 0 4vw;
+  }
+
+  .film-entry--04 {
+    width: 90vw;
+  }
+
+  .film-entry--05 {
+    width: 74vw;
+    margin: 0 auto;
+  }
+
+  .film-entry--06 {
+    width: 82vw;
+    margin: 0 4vw 0 auto;
+  }
+
+  .film-entry--07 {
+    width: 90vw;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   09. Accessibility & Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .film-motion [data-film-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .film-frame__poster,
+  .film-play-btn,
+  .film-watch-link,
+  .film-watch-link svg {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Contain the intentional full-width background of offset film entries. */
+.films-body main { overflow-x: clip; }

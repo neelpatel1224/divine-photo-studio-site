@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couple Stories | DIVINE PHOTO STUDIO</title>
+    <meta name="description" content="A curated visual archive of real couple stories, weddings, and unhurried intimacies preserved with timeless editorial elegance by Divine Photo Studio.">
+    <meta name="theme-color" content="#F6F4EE">
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Dedicated Couple Stories Stylesheet -->
+    <link rel="stylesheet" href="css/couple-stories.css">
+    <!-- TODO: Add the approved favicon and production social URLs when supplied. -->
+</head>
+
+<body class="stories-body">
+    <!-- ======================================================================
+         01. Site Header & Navigation (Approved Structure)
+         ====================================================================== -->
+    <header class="site-header">
+        <div class="site-header__brand">
+            <a href="index.html" class="divine-logo" aria-label="Divine Photo Studio home">
+                <span class="divine-name">DiViNE</span>
+                <span class="divine-photo">PHOTO</span>
+                <span class="divine-studio">STUDIO</span>
+            </a>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+            <ul class="main-nav__list" id="main-nav-list">
+                <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link">HOME</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="about.html" class="main-nav__link">ABOUT</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link">SERVICES</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <a href="photography.html" class="main-nav__link">PHOTOGRAPHY</a>
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-photography" aria-label="Toggle Photography Submenu">
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <ul class="dropdown-menu" id="submenu-photography">
+                        <li class="dropdown-menu__item"><a href="weddings.html" class="dropdown-menu__link">WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#pre-weddings" class="dropdown-menu__link">PRE-WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#reception" class="dropdown-menu__link">RECEPTION</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#engagement" class="dropdown-menu__link">ENGAGEMENT</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#corporate" class="dropdown-menu__link">CORPORATE</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#baby-shower" class="dropdown-menu__link">BABY SHOWER</a></li>
+                    </ul>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="films.html" class="main-nav__link">FILMS</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="couple-stories.html" class="main-nav__link main-nav__link--active" aria-current="page">COUPLE STORIES</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="contact.html" class="main-nav__link">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Open navigation">
+            <span class="mobile-nav-toggle__line"></span>
+            <span class="mobile-nav-toggle__line"></span>
+        </button>
+    </header>
+
+    <main id="main-content">
+        <!-- ==================================================================
+             02. Section 01 — Couple Stories Intro
+             ================================================================== -->
+        <section class="stories-intro" aria-labelledby="stories-intro-title">
+            <div class="stories-intro__container" data-story-reveal>
+                <span class="stories-intro__eyebrow">COUPLE STORIES</span>
+                <h1 class="stories-intro__title" id="stories-intro-title">
+                    Every story<br>
+                    <em>has its own rhythm.</em>
+                </h1>
+                <p class="stories-intro__body">
+                    A collection of people, places and moments we were lucky enough to witness.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             03. Section 02 — Main Couple Stories Grid (3 Columns)
+             ================================================================== -->
+        <section class="stories-archive" aria-label="Couple Stories Archive">
+            <div class="stories-archive__container">
+                <div class="stories-grid">
+
+                    <!-- ------------------------------------------------------
+                         Story 01: Deep & Pankti
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Wedding Story: Deep &amp; Pankti">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/stories/story-01.jpg" alt="Deep &amp; Pankti wedding celebration" width="800" height="600" fetchpriority="high" loading="eager" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">WEDDING STORY</span>
+                                    <h2 class="story-tile__name">DEEP &amp; PANKTI</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 02: Vyomesh & Bhumi
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Pre-Wedding Story: Vyomesh &amp; Bhumi">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/stories/story-02.jpg" alt="Vyomesh &amp; Bhumi pre-wedding session" width="800" height="600" fetchpriority="high" loading="eager" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">PRE-WEDDING STORY</span>
+                                    <h2 class="story-tile__name">VYOMESH &amp; BHUMI</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 03: Raghav & Vaidehi
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Wedding Story: Raghav &amp; Vaidehi">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/wedding-01.jpg" alt="Raghav &amp; Vaidehi wedding ritual" width="800" height="600" fetchpriority="high" loading="eager" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">WEDDING STORY</span>
+                                    <h2 class="story-tile__name">RAGHAV &amp; VAIDEHI</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 04: Nidhi & Abhi
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Pre-Wedding Story: Nidhi &amp; Abhi">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/stories/story-03.jpg" alt="Nidhi &amp; Abhi sunset pre-wedding portraits" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">PRE-WEDDING STORY</span>
+                                    <h2 class="story-tile__name">NIDHI &amp; ABHI</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 05: Dolly & Jacky
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Wedding Story: Dolly &amp; Jacky">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/wedding-04.jpg" alt="Dolly &amp; Jacky ceremony moments" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">WEDDING STORY</span>
+                                    <h2 class="story-tile__name">DOLLY &amp; JACKY</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 06: Chirag & Manali
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Reception Story: Chirag &amp; Manali">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/reception-01.jpg" alt="Chirag &amp; Manali evening reception portraits" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">RECEPTION STORY</span>
+                                    <h2 class="story-tile__name">CHIRAG &amp; MANALI</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 07: Harsh & Riddhi
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Engagement Story: Harsh &amp; Riddhi">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/engagement-01.jpg" alt="Harsh &amp; Riddhi engagement ceremony" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">ENGAGEMENT STORY</span>
+                                    <h2 class="story-tile__name">HARSH &amp; RIDDHI</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 08: Kunal & Sneha
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Wedding Story: Kunal &amp; Sneha">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/wedding-05.jpg" alt="Kunal &amp; Sneha intimate portraits" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">WEDDING STORY</span>
+                                    <h2 class="story-tile__name">KUNAL &amp; SNEHA</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 09: Aniket & Prerna
+                         ------------------------------------------------------ -->
+                    <article class="story-item" data-story-reveal>
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Pre-Wedding Story: Aniket &amp; Prerna">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/pre-wedding-01.jpg" alt="Aniket &amp; Prerna architectural pre-wedding session" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">PRE-WEDDING STORY</span>
+                                    <h2 class="story-tile__name">ANIKET &amp; PRERNA</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 10: Siddharth & Meera (Progressive Load)
+                         ------------------------------------------------------ -->
+                    <article class="story-item story-tile--extra">
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Reception Story: Siddharth &amp; Meera">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/reception-03.jpg" alt="Siddharth &amp; Meera grand reception celebration" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">RECEPTION STORY</span>
+                                    <h2 class="story-tile__name">SIDDHARTH &amp; MEERA</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 11: Rohan & Alisha (Progressive Load)
+                         ------------------------------------------------------ -->
+                    <article class="story-item story-tile--extra">
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Engagement Story: Rohan &amp; Alisha">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/engagement-02.jpg" alt="Rohan &amp; Alisha ring ceremony" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">ENGAGEMENT STORY</span>
+                                    <h2 class="story-tile__name">ROHAN &amp; ALISHA</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                    <!-- ------------------------------------------------------
+                         Story 12: Kabir & Tanya (Progressive Load)
+                         ------------------------------------------------------ -->
+                    <article class="story-item story-tile--extra">
+                        <!-- TODO: Add the verified individual story destination. -->
+                        <article class="story-tile" tabindex="0" aria-label="Wedding Story: Kabir &amp; Tanya">
+                            <div class="story-tile__image-wrap">
+                                <img class="story-tile__image" src="assets/images/photography/wedding-06.jpg" alt="Kabir &amp; Tanya traditional heritage wedding" width="800" height="600" loading="lazy" decoding="async">
+                                <div class="story-tile__overlay" aria-hidden="true"></div>
+                                <div class="story-tile__content">
+                                    <span class="story-tile__category">WEDDING STORY</span>
+                                    <h2 class="story-tile__name">KABIR &amp; TANYA</h2>
+                                    <div class="story-tile__divider" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+
+                </div>
+
+                <!-- Progressive Expand Action -->
+                <div class="stories-load-more">
+                    <button type="button" class="stories-load-more__btn" id="load-more-stories" aria-label="Load more couple stories">
+                        VIEW MORE STORIES
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================================
+         04. Site Footer (Approved Light Editorial Structure)
+         ====================================================================== -->
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+        <div class="site-footer__inner">
+
+            <!-- Mobile Only Brand Wordmark -->
+            <div class="site-footer__mobile-brand">
+                <a href="index.html" class="site-footer__brand-link" aria-label="DIVINE Photo Studio home">
+                    <span class="site-footer__brand-title">DIVINE PHOTO STUDIO</span>
+                </a>
+            </div>
+
+            <!-- Row A: Footer Navigation + Social -->
+            <div class="site-footer__nav-row">
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <ul class="site-footer__nav-list" role="list">
+                        <li class="site-footer__nav-item"><a href="index.html" class="site-footer__nav-link">HOME</a></li>
+                        <li class="site-footer__nav-item"><a href="about.html" class="site-footer__nav-link">ABOUT</a></li>
+                        <li class="site-footer__nav-item"><a href="services.html" class="site-footer__nav-link">SERVICES</a></li>
+                        <li class="site-footer__nav-item"><a href="photography.html" class="site-footer__nav-link">PHOTOGRAPHY</a></li>
+                        <li class="site-footer__nav-item"><a href="films.html" class="site-footer__nav-link">FILMS</a></li>
+                        <li class="site-footer__nav-item"><a href="couple-stories.html" class="site-footer__nav-link">COUPLE STORIES</a></li>
+                        <li class="site-footer__nav-item"><a href="contact.html" class="site-footer__nav-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social Icons (Far right on desktop, monochrome outline SVGs) -->
+                <div class="site-footer__social-icons">
+                    <!-- TODO: Replace # with verified studio Instagram URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Instagram">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio Facebook page URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Facebook">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio YouTube channel URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="YouTube">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"
+                                stroke="none"></polygon>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row B: Horizontal Editorial Image Strip (Contact-Sheet Frames) -->
+            <div class="site-footer__strip-container">
+                <div class="site-footer__strip" id="footer-image-strip" tabindex="0"
+                    aria-label="Curated photography contact sheet">
+                    <!-- Frame 01: Wedding (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-01.jpg"
+                            alt="Wedding photography by Divine Photo Studio" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 02: Pre-Wedding (portrait 3:4) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p34">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-02.jpg"
+                            alt="Pre-wedding portrait by Divine Photo Studio" width="375" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 03: Reception (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-03.jpg"
+                            alt="Reception celebration moment" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 04: Engagement (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-04.jpg"
+                            alt="Intimate engagement moment" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 05: Corporate (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32 site-footer__strip-item--wide">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-05.jpg"
+                            alt="Corporate event photography" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 06: Baby Shower (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-06.jpg"
+                            alt="Tender baby shower celebration" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 07: Emotional Detail Frame -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--detail">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-07.jpg"
+                            alt="Artful detail photograph" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+
+                <!-- Subtle desktop navigation arrows for strip scroll -->
+                <div class="site-footer__strip-controls" aria-hidden="true">
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--prev"
+                        id="footer-strip-prev" aria-label="Scroll images left">←</button>
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--next"
+                        id="footer-strip-next" aria-label="Scroll images right">→</button>
+                </div>
+            </div>
+
+            <!-- Row C: Bottom Information Row (Split Left/Right) -->
+            <div class="site-footer__info-row">
+                <!-- Left: Find us here -->
+                <div class="site-footer__info-col site-footer__info-col--left">
+                    <h3 class="site-footer__info-heading">Find us here</h3>
+                    <address class="site-footer__address">
+                        <!-- TODO: Replace placeholder address with real studio address -->
+                        <span class="site-footer__address-line">[STUDIO ADDRESS]</span>
+                        <span class="site-footer__address-line">Gujarat, India</span>
+                    </address>
+                </div>
+
+                <!-- Right: Contact us -->
+                <div class="site-footer__info-col site-footer__info-col--right">
+                    <h3 class="site-footer__info-heading">Contact us</h3>
+                    <div class="site-footer__contact-details">
+                        <!-- TODO: Replace placeholder phone number with real contact info -->
+                        <span class="site-footer__contact-link">[PHONE NUMBER]</span>
+                        <!-- TODO: Replace placeholder email with real contact info -->
+                        <span
+                            class="site-footer__contact-link">[EMAIL ADDRESS]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row D: Copyright + Back-to-Top -->
+            <div class="site-footer__copyright-row">
+                <p class="site-footer__copyright">
+                    © <span id="footer-year">2026</span> DIVINE PHOTO STUDIO
+                </p>
+                <button type="button" class="site-footer__back-to-top" id="footer-back-to-top" aria-label="Back to top">
+                    <span class="site-footer__back-to-top-text">BACK TO TOP</span>
+                    <span class="site-footer__back-to-top-arrow" aria-hidden="true">↑</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=1.2"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/couple-stories.js"></script>
+</body>
+
+</html>

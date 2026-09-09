@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | DIVINE PHOTO STUDIO</title>
+    <meta name="description" content="Discover what Divine Photo Studio photographs: Weddings, Pre-Weddings, Receptions, Engagements, Corporate events, and Baby Showers. Timeless editorial visual storytelling.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Dedicated Services Page Stylesheet -->
+    <link rel="stylesheet" href="css/services-page.css">
+    <!-- TODO: Add the approved favicon and production social URLs when supplied. -->
+</head>
+
+<body class="services-page">
+
+    <!-- ======================================================================
+         01. Inner Page Navbar
+         ====================================================================== -->
+    <header class="site-header">
+        <div class="site-header__brand">
+            <a href="index.html" class="divine-logo" aria-label="Divine Photo Studio home">
+                <span class="divine-name">DiViNE</span>
+                <span class="divine-photo">PHOTO</span>
+                <span class="divine-studio">STUDIO</span>
+            </a>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+            <ul class="main-nav__list" id="main-nav-list">
+
+                <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link">HOME</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="about.html" class="main-nav__link">ABOUT</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link main-nav__link--active" aria-current="page">SERVICES</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <a href="photography.html" class="main-nav__link">PHOTOGRAPHY</a>
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-photography" aria-label="Toggle Photography Submenu">
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <ul class="dropdown-menu" id="submenu-photography">
+                        <li class="dropdown-menu__item"><a href="weddings.html" class="dropdown-menu__link">WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#pre-weddings" class="dropdown-menu__link">PRE-WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#reception" class="dropdown-menu__link">RECEPTION</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#engagement" class="dropdown-menu__link">ENGAGEMENT</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#corporate" class="dropdown-menu__link">CORPORATE</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#baby-shower" class="dropdown-menu__link">BABY SHOWER</a></li>
+                    </ul>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="films.html" class="main-nav__link">FILMS</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="couple-stories.html" class="main-nav__link">COUPLE STORIES</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="contact.html" class="main-nav__link">CONTACT</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Open navigation">
+            <span class="mobile-nav-toggle__line"></span>
+            <span class="mobile-nav-toggle__line"></span>
+        </button>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ==================================================================
+             02. Section 02 — Services Hero
+             ================================================================== -->
+        <section class="services-hero" aria-labelledby="services-hero-title">
+            <div class="services-container">
+                <div class="services-hero__grid">
+                    <div class="services-hero__content" data-service-reveal>
+                        <span class="services-eyebrow">OUR SERVICES</span>
+                        <h1 class="services-hero__title" id="services-hero-title">
+                            Every chapter<br>
+                            deserves <em>its own frame.</em>
+                        </h1>
+                        <p class="services-hero__body">
+                            From intimate beginnings to grand celebrations, we photograph each story with honesty, emotion and a cinematic eye.
+                        </p>
+                        <p class="services-hero__tagline">
+                            Weddings • Pre-Weddings • Reception • Engagement • Corporate • Baby Shower
+                        </p>
+                    </div>
+
+                    <figure class="services-hero__figure" data-service-reveal>
+                        <img class="services-hero__image" src="assets/images/services/hero.jpg" alt="Divine Photo Studio editorial portrait in warm natural light" width="1200" height="800" fetchpriority="high" loading="eager" decoding="async">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             03. Section 03 — Service 01: Wedding (Image Left, Text Right)
+             ================================================================== -->
+        <section class="service-chapter service-chapter--haze" id="wedding" aria-labelledby="service-01-title">
+            <div class="services-container">
+                <div class="service-chapter__grid service-chapter__grid--image-left">
+                    <!-- Image Left (58%) -->
+                    <div class="service-chapter__media" data-service-reveal>
+                        <div class="service-chapter__media-inner">
+                            <div class="service-chapter__media-frame service-chapter__media-frame--has-detail">
+                                <div class="service-chapter__image-wrap">
+                                    <img class="service-chapter__image service-chapter__image--32" src="assets/images/services/wedding.jpg" alt="Sacred wedding ceremony and rituals photographed by Divine Photo Studio" width="1200" height="800" loading="lazy" decoding="async">
+                                </div>
+                                <!-- Secondary Detail Image: ritual hands -->
+                                <div class="service-chapter__detail-wrap" aria-hidden="true">
+                                    <img class="service-chapter__detail-img" src="assets/images/services/wedding-detail.jpg" alt="Intricate wedding jewelry and ritual detail" width="400" height="400" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                            
+                            <a href="weddings.html" class="service-chapter__cta">
+                                EXPLORE WEDDINGS <span class="cta-arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text Right (42%) -->
+                    <div class="service-chapter__content" data-service-reveal>
+                        <span class="service-chapter__number">01</span>
+                        <h2 class="service-chapter__title" id="service-01-title">WEDDING</h2>
+                        <div class="service-chapter__body">
+                            <p>The vows, the rituals, the laughter and everything in between.</p>
+                            <p>We document the day as it unfolds — the grand moments, the quiet glances, and the people who make it yours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             04. Section 04 — Service 02: Pre-Wedding (Text Left, Image Right)
+             ================================================================== -->
+        <section class="service-chapter service-chapter--alt" id="pre-wedding" aria-labelledby="service-02-title">
+            <div class="services-container">
+                <div class="service-chapter__grid service-chapter__grid--text-left">
+                    <!-- Text Left (42%) -->
+                    <div class="service-chapter__content" data-service-reveal>
+                        <span class="service-chapter__number">02</span>
+                        <h2 class="service-chapter__title" id="service-02-title">PRE-WEDDING</h2>
+                        <div class="service-chapter__body">
+                            <p>Unhurried portraits shaped by place, personality and connection.</p>
+                            <p>More than posed frames, we create photographs that feel natural, cinematic and entirely your own.</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Right (58%) -->
+                    <div class="service-chapter__media" data-service-reveal>
+                        <div class="service-chapter__media-inner service-chapter__media-inner--portrait">
+                            <div class="service-chapter__media-frame">
+                                <div class="service-chapter__image-wrap">
+                                    <img class="service-chapter__image service-chapter__image--45" src="assets/images/services/pre-wedding.jpg" alt="Natural environmental pre-wedding couple portrait by Divine Photo Studio" width="800" height="1000" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                            
+                            <a href="photography.html#pre-weddings" class="service-chapter__cta">
+                                EXPLORE PRE-WEDDINGS <span class="cta-arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             05. Section 05 — Service 03: Reception (Image Left, Text Right)
+             ================================================================== -->
+        <section class="service-chapter service-chapter--haze-left" id="reception" aria-labelledby="service-03-title">
+            <div class="services-container">
+                <div class="service-chapter__grid service-chapter__grid--image-left">
+                    <!-- Image Left (58%) -->
+                    <div class="service-chapter__media" data-service-reveal>
+                        <div class="service-chapter__media-inner">
+                            <div class="service-chapter__media-frame service-chapter__media-frame--has-detail">
+                                <div class="service-chapter__image-wrap">
+                                    <img class="service-chapter__image service-chapter__image--32" src="assets/images/services/reception.jpg" alt="Evening wedding reception celebration and sparkler entrance" width="1200" height="800" loading="lazy" decoding="async">
+                                </div>
+                                <!-- Secondary Detail Image: celebration lights -->
+                                <div class="service-chapter__detail-wrap" aria-hidden="true">
+                                    <img class="service-chapter__detail-img" src="assets/images/services/reception-detail.jpg" alt="Atmospheric evening celebration lights detail" width="400" height="400" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                            
+                            <a href="photography.html#reception" class="service-chapter__cta">
+                                EXPLORE RECEPTIONS <span class="cta-arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text Right (42%) -->
+                    <div class="service-chapter__content" data-service-reveal>
+                        <span class="service-chapter__number">03</span>
+                        <h2 class="service-chapter__title" id="service-03-title">RECEPTION</h2>
+                        <div class="service-chapter__body">
+                            <p>An evening of celebration, movement and unforgettable energy.</p>
+                            <p>From entrances and speeches to dance floors and spontaneous moments, we preserve the atmosphere of the night.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             06. Section 06 — Service 04: Engagement (Text Left, Image Right)
+             ================================================================== -->
+        <section class="service-chapter" id="engagement" aria-labelledby="service-04-title">
+            <div class="services-container">
+                <div class="service-chapter__grid service-chapter__grid--text-left">
+                    <!-- Text Left (42%) -->
+                    <div class="service-chapter__content" data-service-reveal>
+                        <span class="service-chapter__number">04</span>
+                        <h2 class="service-chapter__title" id="service-04-title">ENGAGEMENT</h2>
+                        <div class="service-chapter__body">
+                            <p>The beginning of a promise, preserved with intimacy and elegance.</p>
+                            <p>We focus on the connection, the anticipation, and the moments that make the day personal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Right (58%) -->
+                    <div class="service-chapter__media" data-service-reveal>
+                        <div class="service-chapter__media-inner service-chapter__media-inner--portrait">
+                            <div class="service-chapter__media-frame">
+                                <div class="service-chapter__image-wrap">
+                                    <img class="service-chapter__image service-chapter__image--45" src="assets/images/services/engagement.jpg" alt="Intimate engagement ring exchange and loving glance" width="800" height="1000" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                            
+                            <a href="photography.html#engagement" class="service-chapter__cta">
+                                EXPLORE ENGAGEMENTS <span class="cta-arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             07. Section 07 — Service 05: Corporate (Image Left, Text Right)
+             ================================================================== -->
+        <section class="service-chapter service-chapter--alt" id="corporate" aria-labelledby="service-05-title">
+            <div class="services-container">
+                <div class="service-chapter__grid service-chapter__grid--image-left">
+                    <!-- Image Left (58%) -->
+                    <div class="service-chapter__media" data-service-reveal>
+                        <div class="service-chapter__media-inner">
+                            <div class="service-chapter__media-frame">
+                                <div class="service-chapter__image-wrap">
+                                    <img class="service-chapter__image service-chapter__image--32" src="assets/images/services/corporate.jpg" alt="Corporate leadership conference and executive audience visual storytelling" width="1200" height="750" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                            
+                            <a href="photography.html#corporate" class="service-chapter__cta">
+                                EXPLORE CORPORATE <span class="cta-arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text Right (42%) -->
+                    <div class="service-chapter__content" data-service-reveal>
+                        <span class="service-chapter__number">05</span>
+                        <h2 class="service-chapter__title" id="service-05-title">CORPORATE</h2>
+                        <div class="service-chapter__body">
+                            <p>Professional visual storytelling for people, teams, brands and events.</p>
+                            <p>We photograph with clarity and intention, creating images that feel polished without losing authenticity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             08. Section 08 — Service 06: Baby Shower (Text Left, Image Right)
+             ================================================================== -->
+        <section class="service-chapter service-chapter--haze" id="baby-shower" aria-labelledby="service-06-title">
+            <div class="services-container">
+                <div class="service-chapter__grid service-chapter__grid--text-left">
+                    <!-- Text Left (42%) -->
+                    <div class="service-chapter__content" data-service-reveal>
+                        <span class="service-chapter__number">06</span>
+                        <h2 class="service-chapter__title" id="service-06-title">BABY SHOWER</h2>
+                        <div class="service-chapter__body">
+                            <p>Tender anticipation, family warmth, and the joy before a new beginning.</p>
+                            <p>We preserve the little gestures, the laughter, and the people already waiting with love.</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Right (58%) -->
+                    <div class="service-chapter__media" data-service-reveal>
+                        <div class="service-chapter__media-inner service-chapter__media-inner--portrait">
+                            <div class="service-chapter__media-frame service-chapter__media-frame--has-detail">
+                                <div class="service-chapter__image-wrap">
+                                    <img class="service-chapter__image service-chapter__image--45" src="assets/images/services/baby-shower.jpg" alt="Maternal family love and celebration during a baby shower" width="800" height="1000" loading="lazy" decoding="async">
+                                </div>
+                                <!-- Secondary Detail Image: family celebration detail -->
+                                <div class="service-chapter__detail-wrap" aria-hidden="true">
+                                    <img class="service-chapter__detail-img" src="assets/images/services/baby-shower-detail.jpg" alt="Warm family celebration and floral detail" width="400" height="400" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                            
+                            <a href="photography.html#baby-shower" class="service-chapter__cta">
+                                EXPLORE BABY SHOWERS <span class="cta-arrow" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             09. Section 09 — The DIVINE Approach
+             ================================================================== -->
+        <section class="services-approach" aria-labelledby="services-approach-title">
+            <div class="services-container">
+                <header class="services-approach__header" data-service-reveal>
+                    <span class="services-eyebrow">OUR APPROACH</span>
+                    <h2 class="services-approach__title" id="services-approach-title">
+                        Present first.<br>
+                        Photograph second.
+                    </h2>
+                    <p class="services-approach__body">
+                        We believe the best photographs happen when people feel comfortable enough to forget the camera is there.
+                    </p>
+                </header>
+
+                <div class="services-approach__grid">
+                    <!-- Principle 01 -->
+                    <article class="services-approach__col" data-service-reveal>
+                        <span class="services-approach__principle-num">01 — LISTEN FIRST</span>
+                        <h3 class="services-approach__principle-title">Understand the Essence</h3>
+                        <p class="services-approach__principle-desc">
+                            Understand the people, the rhythm and what matters most.
+                        </p>
+                    </article>
+
+                    <!-- Principle 02 -->
+                    <article class="services-approach__col" data-service-reveal>
+                        <span class="services-approach__principle-num">02 — STAY PRESENT</span>
+                        <h3 class="services-approach__principle-title">Gentle Guidance</h3>
+                        <p class="services-approach__principle-desc">
+                            Guide when needed, step back when the moment is already happening.
+                        </p>
+                    </article>
+
+                    <!-- Principle 03 -->
+                    <article class="services-approach__col" data-service-reveal>
+                        <span class="services-approach__principle-num">03 — PRESERVE HONESTLY</span>
+                        <h3 class="services-approach__principle-title">Unfiltered Truth</h3>
+                        <p class="services-approach__principle-desc">
+                            Create photographs that still feel true years from now.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             10. Section 10 — Final Booking CTA
+             ================================================================== -->
+        <section class="services-cta" aria-labelledby="services-cta-title">
+            <div class="services-container">
+                <div class="services-cta__inner" data-service-reveal>
+                    <span class="services-eyebrow">YOUR STORY</span>
+                    <h2 class="services-cta__heading" id="services-cta-title">
+                        Whatever the celebration,<br>
+                        let it feel like yours.
+                    </h2>
+                    <p class="services-cta__subcopy">
+                        Tell us what you’re planning.
+                    </p>
+                    <!-- Real booking destination: contact.html -->
+                    <a href="contact.html" class="services-cta__link">
+                        START A CONVERSATION <span class="cta-arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================================
+         11. Section 11 — Approved Light Editorial Footer
+         ====================================================================== -->
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+        <div class="site-footer__inner">
+
+            <!-- Mobile Only Brand Wordmark -->
+            <div class="site-footer__mobile-brand">
+                <a href="index.html" class="site-footer__brand-link" aria-label="DIVINE Photo Studio home">
+                    <span class="site-footer__brand-title">DIVINE PHOTO STUDIO</span>
+                </a>
+            </div>
+
+            <!-- Row A: Footer Navigation + Social -->
+            <div class="site-footer__nav-row">
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <ul class="site-footer__nav-list" role="list">
+                        <li class="site-footer__nav-item"><a href="index.html" class="site-footer__nav-link">HOME</a></li>
+                        <li class="site-footer__nav-item"><a href="about.html" class="site-footer__nav-link">ABOUT</a></li>
+                        <li class="site-footer__nav-item"><a href="services.html" class="site-footer__nav-link">SERVICES</a></li>
+                        <li class="site-footer__nav-item"><a href="photography.html" class="site-footer__nav-link">PHOTOGRAPHY</a></li>
+                        <li class="site-footer__nav-item"><a href="films.html" class="site-footer__nav-link">FILMS</a></li>
+                        <li class="site-footer__nav-item"><a href="couple-stories.html" class="site-footer__nav-link">COUPLE STORIES</a></li>
+                        <li class="site-footer__nav-item"><a href="contact.html" class="site-footer__nav-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social Icons (Far right on desktop, monochrome outline SVGs) -->
+                <div class="site-footer__social-icons">
+                    <!-- TODO: Replace # with verified studio Instagram URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Instagram">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio Facebook page URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Facebook">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio YouTube channel URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="YouTube">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"
+                                stroke="none"></polygon>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row B: Horizontal Editorial Image Strip (Contact-Sheet Frames) -->
+            <div class="site-footer__strip-container">
+                <div class="site-footer__strip" id="footer-image-strip" tabindex="0"
+                    aria-label="Curated photography contact sheet">
+                    <!-- Frame 01: Wedding (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-01.jpg"
+                            alt="Wedding photography by Divine Photo Studio" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 02: Pre-Wedding (portrait 3:4) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p34">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-02.jpg"
+                            alt="Pre-wedding portrait by Divine Photo Studio" width="375" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 03: Reception (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-03.jpg"
+                            alt="Reception celebration moment" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 04: Engagement (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-04.jpg"
+                            alt="Intimate engagement moment" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 05: Corporate (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32 site-footer__strip-item--wide">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-05.jpg"
+                            alt="Corporate event photography" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 06: Baby Shower (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-06.jpg"
+                            alt="Tender baby shower celebration" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 07: Emotional Detail Frame -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--detail">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-07.jpg"
+                            alt="Artful detail photograph" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+
+                <!-- Subtle desktop navigation arrows for strip scroll -->
+                <div class="site-footer__strip-controls" aria-hidden="true">
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--prev"
+                        id="footer-strip-prev" aria-label="Scroll images left">←</button>
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--next"
+                        id="footer-strip-next" aria-label="Scroll images right">→</button>
+                </div>
+            </div>
+
+            <!-- Row C: Bottom Information Row (Split Left/Right) -->
+            <div class="site-footer__info-row">
+                <!-- Left: Find us here -->
+                <div class="site-footer__info-col site-footer__info-col--left">
+                    <h3 class="site-footer__info-heading">Find us here</h3>
+                    <address class="site-footer__address">
+                        <!-- TODO: Replace placeholder address with real studio address -->
+                        <span class="site-footer__address-line">[STUDIO ADDRESS]</span>
+                        <span class="site-footer__address-line">Gujarat, India</span>
+                    </address>
+                </div>
+
+                <!-- Right: Contact us -->
+                <div class="site-footer__info-col site-footer__info-col--right">
+                    <h3 class="site-footer__info-heading">Contact us</h3>
+                    <div class="site-footer__contact-details">
+                        <!-- TODO: Replace placeholder phone number with real contact info -->
+                        <span class="site-footer__contact-link">[PHONE NUMBER]</span>
+                        <!-- TODO: Replace placeholder email with real contact info -->
+                        <span
+                            class="site-footer__contact-link">[EMAIL ADDRESS]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row D: Copyright + Back-to-Top -->
+            <div class="site-footer__copyright-row">
+                <p class="site-footer__copyright">
+                    © <span id="footer-year">2026</span> DIVINE PHOTO STUDIO
+                </p>
+                <button type="button" class="site-footer__back-to-top" id="footer-back-to-top" aria-label="Back to top">
+                    <span class="site-footer__back-to-top-text">BACK TO TOP</span>
+                    <span class="site-footer__back-to-top-arrow" aria-hidden="true">↑</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=1.2"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/services-page.js"></script>
+</body>
+
+</html>

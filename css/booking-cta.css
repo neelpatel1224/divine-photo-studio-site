@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Section 12 — Final Booking CTA
+   Heritage Sage Editorial Theme
+   Theme: Your Story Begins Here
+   ========================================================================== */
+
+.booking-cta {
+  position: relative;
+  background-color: #EEEADD;
+  background-image:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(90, 114, 98, 0.055),
+      transparent 36%
+    ),
+    linear-gradient(
+      180deg,
+      #F6F4EE 0%,
+      #EEEADD 100%
+    );
+  padding-top: clamp(130px, 14vw, 220px);
+  padding-bottom: clamp(130px, 14vw, 220px);
+  overflow: hidden;
+  color: #1A1B18;
+  text-align: center;
+}
+
+/* Faint oversized signature ellipse arc behind heading */
+.booking-cta__background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(600px, 70vw, 1100px);
+  height: clamp(600px, 70vw, 1100px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+}
+
+.booking-cta__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1050px;
+  margin-inline: auto;
+  padding: 0 clamp(20px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Eyebrow
+   -------------------------------------------------------------------------- */
+.booking-cta__eyebrow {
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: clamp(10px, 1.1vw, 11px);
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #91876E;
+  margin: 0 0 clamp(20px, 2.5vw, 28px) 0;
+}
+
+/* --------------------------------------------------------------------------
+   Main Heading
+   -------------------------------------------------------------------------- */
+.booking-cta__title {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(64px, 7vw, 104px);
+  font-weight: 400;
+  line-height: 0.94;
+  color: #1A1B18;
+  max-width: 900px;
+  margin: 0 0 clamp(24px, 3vw, 36px) 0;
+  letter-spacing: -0.02em;
+}
+
+.booking-cta__title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* --------------------------------------------------------------------------
+   Secondary Line
+   -------------------------------------------------------------------------- */
+.booking-cta__subtitle {
+  font-family: var(--font-display, 'Cormorant Garamond', Georgia, serif);
+  font-style: italic;
+  font-size: clamp(22px, 2.5vw, 32px);
+  line-height: 1.3;
+  color: #5A7262;
+  margin: 0 0 clamp(32px, 4vw, 48px) 0;
+}
+
+/* --------------------------------------------------------------------------
+   Primary Call to Action Link
+   -------------------------------------------------------------------------- */
+.booking-cta__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: clamp(10px, 1.1vw, 11px);
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #1A1B18;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 6px;
+  transition: color 0.35s ease;
+  margin: 0 0 clamp(36px, 4.5vw, 56px) 0;
+}
+
+.booking-cta__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #B4794B;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.booking-cta__link-arrow {
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.booking-cta__link:hover {
+  color: #B4794B;
+}
+
+.booking-cta__link:hover::after {
+  width: 100%;
+}
+
+.booking-cta__link:hover .booking-cta__link-arrow {
+  transform: translateX(5px);
+}
+
+.booking-cta__link:focus-visible {
+  outline: 2px solid #5A7262;
+  outline-offset: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Services Line
+   -------------------------------------------------------------------------- */
+.booking-cta__services {
+  font-family: var(--font-ui, 'Inter', sans-serif);
+  font-size: clamp(8px, 1vw, 10px);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #91876E;
+  margin: 0;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Breakpoint (768px – 1023px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .booking-cta {
+    padding-top: clamp(110px, 12vw, 160px);
+    padding-bottom: clamp(110px, 12vw, 160px);
+  }
+
+  .booking-cta__title {
+    font-size: clamp(54px, 7vw, 82px);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Breakpoint (<= 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .booking-cta {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  .booking-cta__inner {
+    padding: 0 24px;
+  }
+
+  .booking-cta__eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .booking-cta__title {
+    font-size: clamp(44px, 13vw, 64px);
+    line-height: 0.98;
+    margin-bottom: 26px;
+  }
+
+  .booking-cta__subtitle {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .booking-cta__link {
+    margin-bottom: 38px;
+  }
+
+  .booking-cta__services {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    line-height: 2;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Scroll-Reveal Motion Language
+   -------------------------------------------------------------------------- */
+.booking-cta--motion [data-cta-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.booking-cta--motion [data-cta-reveal].booking-cta__revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.booking-cta--motion .booking-cta__title[data-cta-reveal] {
+  transition-delay: 0.08s;
+}
+
+.booking-cta--motion .booking-cta__subtitle[data-cta-reveal] {
+  transition-delay: 0.16s;
+}
+
+.booking-cta--motion .booking-cta__link[data-cta-reveal] {
+  transition-delay: 0.24s;
+}
+
+.booking-cta--motion .booking-cta__services[data-cta-reveal] {
+  transition-delay: 0.32s;
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .booking-cta--motion [data-cta-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .booking-cta__link::after,
+  .booking-cta__link-arrow {
+    transition: none !important;
+  }
+}

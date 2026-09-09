@@ -4,25 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Studio</title>
+    <title>DIVINE PHOTO STUDIO</title>
+    <meta name="description" content="Wedding photography, pre-wedding portraits and cinematic films from DIVINE PHOTO STUDIO. Honest moments, artfully preserved.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
     <!-- CSS Variables for easy theming -->
     <link rel="stylesheet" href="css/variables.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/philosophy.css?v=4">
     <link rel="stylesheet" href="css/selected-stories.css?v=6">
+    <link rel="stylesheet" href="css/services-editorial.css">
+    <link rel="stylesheet" href="css/films.css?v=2">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/signature-frames.css">
+    <link rel="stylesheet" href="css/trust.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/about-divine.css">
+    <link rel="stylesheet" href="css/booking-cta.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Section 03 background prototype: isolated additions. -->
+    <link rel="stylesheet" href="css/philosophy-vectors.css?v=2">
+    <!-- Section 04: isolated vector background enhancement. -->
+    <link rel="stylesheet" href="css/selected-stories-vectors.css?v=2">
+    <!-- TODO: Add the approved favicon and production social URLs when supplied. -->
+    <noscript><style>.dps-gallery__control { display: none; } .dps-gallery__track { justify-content: center; }</style></noscript>
 </head>
 
 <body>
     <header class="site-header">
 
         <div class="site-header__brand">
-            <a href="/" class="divine-logo" aria-label="Divine Photo Studio home">
+            <a href="index.html" class="divine-logo" aria-label="Divine Photo Studio home">
                 <span class="divine-name">DiViNE</span>
                 <span class="divine-photo">PHOTO</span>
                 <span class="divine-studio">STUDIO</span>
@@ -33,50 +51,49 @@
             <ul class="main-nav__list" id="main-nav-list">
 
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">HOME</a>
+                    <a href="index.html" class="main-nav__link main-nav__link--active" aria-current="page">HOME</a>
                 </li>
 
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">ABOUT</a>
+                    <a href="about.html" class="main-nav__link">ABOUT</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link">SERVICES</a>
                 </li>
 
                 <li class="main-nav__item main-nav__item--dropdown">
-                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-info">
-                        INFO <span class="toggle-icon">+</span>
+                    <a href="photography.html" class="main-nav__link">PHOTOGRAPHY</a>
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-photography" aria-label="Toggle Photography Submenu">
+                        <span class="toggle-icon">+</span>
                     </button>
-                    <ul class="dropdown-menu" id="submenu-info">
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">FAQ</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">PRICING</a></li>
+                    <ul class="dropdown-menu" id="submenu-photography">
+                        <li class="dropdown-menu__item"><a href="weddings.html" class="dropdown-menu__link">WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#pre-weddings" class="dropdown-menu__link">PRE-WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#reception" class="dropdown-menu__link">RECEPTION</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#engagement" class="dropdown-menu__link">ENGAGEMENT</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#corporate" class="dropdown-menu__link">CORPORATE</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#baby-shower" class="dropdown-menu__link">BABY SHOWER</a></li>
                     </ul>
                 </li>
 
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">SERVICES</a>
-                </li>
-
-                <li class="main-nav__item main-nav__item--dropdown">
-                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-portfolio">
-                        PORTFOLIO <span class="toggle-icon">+</span>
-                    </button>
-                    <ul class="dropdown-menu" id="submenu-portfolio">
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">EDITORIAL</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">PORTRAITS</a></li>
-                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">WEDDINGS</a></li>
-                    </ul>
+                    <a href="films.html" class="main-nav__link">FILMS</a>
                 </li>
 
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">CONTACT</a>
+                    <a href="couple-stories.html" class="main-nav__link">COUPLE STORIES</a>
                 </li>
 
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">NEW PAGE</a>
+                    <a href="contact.html" class="main-nav__link">CONTACT</a>
                 </li>
 
             </ul>
         </nav>
 
-        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Open navigation">
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list"
+            aria-label="Open navigation">
             <span class="mobile-nav-toggle__line"></span>
             <span class="mobile-nav-toggle__line"></span>
         </button>
@@ -100,46 +117,71 @@
                     Honest moments, artfully preserved<br>
                     for generations.
                 </p>
-                <a href="#portfolio" class="hero__link">
+                <a href="couple-stories.html" class="hero__link">
                     VIEW OUR STORIES <span class="hero__link-arrow" aria-hidden="true">→</span>
                 </a>
             </div>
 
-        <section class="dps-gallery" aria-label="Featured photography">
-            <div class="dps-gallery__viewport" id="galleryViewport">
-                <div class="dps-gallery__track" id="galleryTrack"></div>
+            <section class="dps-gallery" aria-label="Featured photography">
+                <div class="dps-gallery__viewport" id="galleryViewport">
+                    <div class="dps-gallery__track" id="galleryTrack">
+                        <figure class="dps-gallery__slide is-active"><img class="dps-gallery__image" src="assets/images/hero/hero1.JPG" alt="Editorial wedding portrait" width="1500" height="1000" fetchpriority="high" loading="eager"></figure>
+                    </div>
 
-                <button class="dps-gallery__control dps-gallery__control--prev"
-                        id="prevButton"
-                        type="button"
+                    <button class="dps-gallery__control dps-gallery__control--prev" id="prevButton" type="button"
                         aria-label="Previous photograph">
-                <span aria-hidden="true">←</span>
-                </button>
+                        <span aria-hidden="true">←</span>
+                    </button>
 
-                <button class="dps-gallery__control dps-gallery__control--next"
-                        id="nextButton"
-                        type="button"
+                    <button class="dps-gallery__control dps-gallery__control--next" id="nextButton" type="button"
                         aria-label="Next photograph">
-                <span aria-hidden="true">→</span>
-                </button>
-            </div>
-
-            <div class="dps-gallery__caption" aria-live="polite">
-                <span class="dps-gallery__counter" id="counter">01 / 05</span>
-
-                <div class="dps-gallery__story">
-                <span class="dps-gallery__category" id="metaCategory">Wedding Story</span>
-                <span class="dps-gallery__location" id="metaLocation">Gujarat</span>
-                <span class="dps-gallery__year" id="metaYear">2026</span>
+                        <span aria-hidden="true">→</span>
+                    </button>
                 </div>
-            </div>
 
-            <p class="sr-only" id="galleryStatus">
-                Photograph 1 of 5: Wedding Story, Gujarat, 2026
-            </p>
+                <div class="dps-gallery__caption" aria-live="polite">
+                    <span class="dps-gallery__counter" id="counter">01 / 05</span>
+
+                    <div class="dps-gallery__story">
+                        <span class="dps-gallery__category" id="metaCategory">Wedding Story</span>
+                        <span class="dps-gallery__location" id="metaLocation">Gujarat</span>
+                        <span class="dps-gallery__year" id="metaYear">2026</span>
+                    </div>
+                </div>
+
+                <p class="sr-only" id="galleryStatus">
+                    Photograph 1 of 5: Wedding Story, Gujarat, 2026
+                </p>
+            </section>
         </section>
-    </section>
         <section class="philosophy" id="philosophy" aria-labelledby="philosophy-title">
+            <!-- Section 03 prototype: decorative SVG only; keep before philosophy__inner. -->
+            <svg class="philosophy-vectors" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"
+                aria-hidden="true" focusable="false">
+                <g class="philosophy-vector-shell" data-vector-depth="6">
+                    <g class="philosophy-vector philosophy-vector--lens">
+                        <ellipse cx="1230" cy="220" rx="410" ry="360" />
+                        <ellipse cx="1230" cy="220" rx="355" ry="305" />
+                        <ellipse class="philosophy-vector__dashed" cx="1230" cy="220" rx="440" ry="390" />
+                    </g>
+                </g>
+                <g class="philosophy-vector-shell" data-vector-depth="4">
+                    <g class="philosophy-vector philosophy-vector--contour">
+                        <path
+                            d="M-120 714 C-54 620 80 633 144 707 S250 777 263 861 S112 987 16 935 S-178 818-120 714Z" />
+                        <path d="M-91 731 C-26 652 72 666 120 728 S219 791 231 855 S110 952 29 907 S-139 822-91 731Z" />
+                        <path d="M-62 750 C-5 685 66 693 101 749 S188 806 197 853 S105 919 40 881 S-105 824-62 750Z" />
+                        <path d="M-31 770 C15 717 59 724 82 770 S158 815 164 852 S98 887 50 856 S-73 824-31 770Z" />
+                    </g>
+                </g>
+                <g class="philosophy-vector-shell" data-vector-depth="2">
+                    <g class="philosophy-vector philosophy-vector--marks">
+                        <path d="M58 82 V68 H72" />
+                        <path d="M1358 795 H1372 V781" />
+                    </g>
+                </g>
+            </svg>
+            <!-- End Section 03 vector prototype. -->
             <div class="philosophy__inner">
                 <span class="philosophy__index" aria-hidden="true">03</span>
                 <div class="philosophy__content">
@@ -152,74 +194,734 @@
                 </div>
                 <figure class="philosophy__figure philosophy__figure--primary">
 
-                    <img class="philosophy__image" src="assets/images/philosophy-primary.jpg?v=4" width="2048" height="1365" loading="eager" decoding="async" alt="A couple holding hands at the edge of the sea as the sun sets">
+                    <img class="philosophy__image" src="assets/images/philosophy-primary.jpg?v=4" width="2048"
+                        height="1365" loading="lazy" decoding="async"
+                        alt="A couple holding hands at the edge of the sea as the sun sets">
                 </figure>
                 <div class="philosophy__body" data-philosophy-reveal>
-                    <p>A wedding brings your world together. The people who raised you, the friends who know you best, and the person you choose to walk beside.</p>
-                    <p>We take time to notice what makes it yours — the traditions, the personalities, and the little things you might otherwise miss.</p>
-                    <p>So when you return to these photographs, you find more than a beautiful day. You find your people, just as you remember them.</p>
+                    <p>A wedding brings your world together. The people who raised you, the friends who know you best,
+                        and the person you choose to walk beside.</p>
+                    <p>We take time to notice what makes it yours — the traditions, the personalities, and the little
+                        things you might otherwise miss.</p>
+                    <p>So when you return to these photographs, you find more than a beautiful day. You find your
+                        people, just as you remember them.</p>
                 </div>
                 <figure class="philosophy__figure philosophy__figure--secondary">
 
-                    <img class="philosophy__image" src="assets/images/philosophy-detail.jpg?v=3" width="2496" height="3744" loading="eager" decoding="async" alt="Ceremonial vessels and red fabric arranged for a wedding ritual">
+                    <img class="philosophy__image" src="assets/images/philosophy-detail.jpg?v=3" width="2496"
+                        height="3744" loading="lazy" decoding="async"
+                        alt="Ceremonial vessels and red fabric arranged for a wedding ritual">
                 </figure>
                 <div class="philosophy__closing" data-philosophy-reveal>
                     <p class="philosophy__signature">Made with care.<br>Kept close, always.</p>
-                    <!-- The future homepage About / Our Story section must use id="our-story". -->
-                    <a class="philosophy__link" href="#our-story">OUR STORY <span class="philosophy__link-arrow" aria-hidden="true">→</span></a>
+                    <a class="philosophy__link" href="#partners">OUR STORY <span class="philosophy__link-arrow"
+                            aria-hidden="true">→</span></a>
                 </div>
             </div>
         </section>
         <section class="selected-stories" id="portfolio" aria-labelledby="selected-stories-title">
+            <!-- Section 04 only: one elliptical arc and three static registration marks. -->
+            <svg class="selected-stories-vectors" viewBox="0 0 1440 2600" preserveAspectRatio="none" aria-hidden="true"
+                focusable="false">
+                <g class="selected-stories-vector selected-stories-vector--ellipse">
+                    <ellipse cx="1260" cy="1390" rx="440" ry="490" />
+                </g>
+                <g class="selected-stories-vector selected-stories-vector--marks">
+                    <path d="M54 118 V106 H66" />
+                    <path d="M1370 1650 H1382 V1638" />
+                    <path class="selected-stories-vector__lower-mark" d="M1290 2300 V2312 H1278" />
+                </g>
+            </svg>
+            <!-- Existing Selected Stories content remains unchanged below. -->
             <div class="selected-stories__inner">
                 <header class="selected-stories__header">
                     <p class="selected-stories__eyebrow">SELECTED STORIES</p>
-                    <h2 class="selected-stories__title" id="selected-stories-title">Stories of love,<br>told <em>without words.</em></h2>
-                    <p class="selected-stories__intro">A collection of moments that stayed with us — quiet, joyful, imperfect and entirely their own.</p>
+                    <h2 class="selected-stories__title" id="selected-stories-title">Stories of love,<br>told <em>without
+                            words.</em></h2>
+                    <p class="selected-stories__intro">A collection of moments that stayed with us — quiet, joyful,
+                        imperfect and entirely their own.</p>
                 </header>
                 <div class="selected-stories__list">
                     <!-- Selected from the supplied IMGS collection; descriptive titles avoid unverified couple identities. -->
                     <article class="story story--featured">
                         <!-- TODO: Replace # with the individual story page when it exists. -->
-                        <a class="story__link" href="#" aria-label="View Together, always — a couple story">
+                        <a class="story__link" href="couple-stories.html" aria-label="View Together, always — a couple story">
                             <figure class="story__figure">
                                 <!-- Source: IMGS/017A2769.jpg -->
-                                <img class="story__image" src="assets/images/stories/story-01.jpg?v=6" width="1800" height="1200" loading="lazy" decoding="async" alt="A couple shares a quiet embrace beside a woven screen">
+                                <img class="story__image" src="assets/images/stories/story-01.jpg?v=6" width="1800"
+                                    height="1200" loading="lazy" decoding="async"
+                                    alt="A couple shares a quiet embrace beside a woven screen">
                             </figure>
-                            <div class="story__content"><h3 class="story__title">Together, always</h3><p class="story__meta">Couple story</p></div>
+                            <div class="story__content">
+                                <h3 class="story__title">Together, always</h3>
+                                <p class="story__meta">Couple story</p>
+                            </div>
                         </a>
                     </article>
                     <article class="story story--portrait">
                         <!-- TODO: Replace # with the individual story page when it exists. -->
-                        <a class="story__link" href="#" aria-label="View A moment of her own — a bridal portrait">
+                        <a class="story__link" href="couple-stories.html" aria-label="View A moment of her own — a bridal portrait">
                             <figure class="story__figure">
                                 <!-- Source: IMGS/DSC00720.JPG -->
-                                <img class="story__image" src="assets/images/stories/story-02.jpg?v=6" width="1800" height="1200" loading="lazy" decoding="async" alt="A bride in a red lehenga stands in a softly lit stone corridor">
+                                <img class="story__image" src="assets/images/stories/story-02.jpg?v=6" width="1800"
+                                    height="1200" loading="lazy" decoding="async"
+                                    alt="A bride in a red lehenga stands in a softly lit stone corridor">
                             </figure>
-                            <div class="story__content"><h3 class="story__title">A moment of her own</h3><p class="story__meta">Bridal portrait</p></div>
+                            <div class="story__content">
+                                <h3 class="story__title">A moment of her own</h3>
+                                <p class="story__meta">Bridal portrait</p>
+                            </div>
                         </a>
                     </article>
                     <article class="story story--wide">
                         <!-- TODO: Replace # with the individual story page when it exists. -->
-                        <a class="story__link" href="#" aria-label="View Where the sea meets us — a pre-wedding story">
+                        <a class="story__link" href="couple-stories.html" aria-label="View Where the sea meets us — a pre-wedding story">
                             <figure class="story__figure">
                                 <!-- Source: IMGS/017A3724.jpg -->
-                                <img class="story__image" src="assets/images/stories/story-03.jpg?v=6" width="1800" height="1200" loading="lazy" decoding="async" alt="A couple holds hands on wet sand, their reflections mirrored beneath a dusk sky">
+                                <img class="story__image" src="assets/images/stories/story-03.jpg?v=6" width="1800"
+                                    height="1200" loading="lazy" decoding="async"
+                                    alt="A couple holds hands on wet sand, their reflections mirrored beneath a dusk sky">
                             </figure>
-                            <div class="story__content"><h3 class="story__title">Where the sea meets us</h3><p class="story__meta">Pre-wedding story</p></div>
+                            <div class="story__content">
+                                <h3 class="story__title">Where the sea meets us</h3>
+                                <p class="story__meta">Pre-wedding story</p>
+                            </div>
                         </a>
                     </article>
                 </div>
-                <!-- TODO: Link to the full portfolio page when it exists. -->
-                <a class="selected-stories__cta" href="#">VIEW ALL STORIES <span aria-hidden="true">→</span></a>
+                <a class="selected-stories__cta" href="couple-stories.html">VIEW ALL STORIES <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+        <!-- Section 05 — What we capture -->
+        <section class="services-editorial" id="services" aria-labelledby="services-title">
+            <div class="services-editorial__inner">
+                <header class="services-editorial__header">
+                    <p class="services-editorial__eyebrow">WHAT WE CAPTURE</p>
+                    <h2 class="services-editorial__title" id="services-title">Every chapter<br>deserves <em>its own
+                            frame.</em></h2>
+                    <p class="services-editorial__intro">From quiet beginnings to grand celebrations, we document each
+                        story with honesty, emotion and a cinematic eye.</p>
+                </header>
+                <div class="services-editorial__list">
+                    <article class="service-entry service-entry--left service-entry--landscape"
+                        aria-labelledby="service-wedding-title">
+                        <div class="service-entry__content">
+                            <span class="service-entry__number">01</span>
+                            <h3 class="service-entry__title" id="service-wedding-title">WEDDING</h3>
+                            <p class="service-entry__description">The vows, the rituals, the laughter and everything in
+                                between.</p>
+                            <!-- TODO: Replace # with the wedding category page when it exists. -->
+                            <a class="service-entry__link" href="weddings.html" aria-label="Explore wedding photography">EXPLORE
+                                <span aria-hidden="true">→</span></a>
+                        </div>
+                        <figure class="service-entry__figure">
+                            <!-- Selected from the supplied 06 Wedding/DSC00750.JPG. -->
+                            <img class="service-entry__image" src="assets/images/services/wedding.jpg" width="1800"
+                                height="1200" loading="lazy" decoding="async"
+                                alt="A groom leans toward his bride during their wedding ceremony">
+                        </figure>
+                    </article>
+                    <article class="service-entry service-entry--right service-entry--portrait"
+                        aria-labelledby="service-pre-wedding-title">
+                        <div class="service-entry__content">
+                            <span class="service-entry__number">02</span>
+                            <h3 class="service-entry__title" id="service-pre-wedding-title">PRE-WEDDING</h3>
+                            <p class="service-entry__description">Unhurried portraits shaped by place, personality and
+                                connection.</p>
+                            <!-- TODO: Replace # with the pre-wedding category page when it exists. -->
+                            <a class="service-entry__link" href="photography.html#pre-weddings" aria-label="Explore pre-wedding photography">EXPLORE
+                                <span aria-hidden="true">→</span></a>
+                        </div>
+                        <figure class="service-entry__figure">
+                            <!-- Selected from the supplied 04 Pre-wedding/017A2724.jpg. -->
+                            <img class="service-entry__image" src="assets/images/services/pre-wedding.jpg" width="1200"
+                                height="1500" loading="lazy" decoding="async"
+                                alt="A couple shares a close moment beneath woven pendant lamps">
+                        </figure>
+                    </article>
+                    <article class="service-entry service-entry--left service-entry--landscape"
+                        aria-labelledby="service-reception-title">
+                        <div class="service-entry__content">
+                            <span class="service-entry__number">03</span>
+                            <h3 class="service-entry__title" id="service-reception-title">RECEPTION</h3>
+                            <p class="service-entry__description">An evening of celebration, movement and unforgettable
+                                energy.</p>
+                            <!-- TODO: Replace # with the reception category page when it exists. -->
+                            <a class="service-entry__link" href="photography.html#reception" aria-label="Explore reception photography">EXPLORE
+                                <span aria-hidden="true">→</span></a>
+                        </div>
+                        <figure class="service-entry__figure">
+                            <!-- Selected from the supplied 05 Reception/0J6A1016.jpg. -->
+                            <img class="service-entry__image" src="assets/images/services/reception.jpg" width="1800"
+                                height="1200" loading="lazy" decoding="async"
+                                alt="A newly married couple celebrates surrounded by friends and lights">
+                        </figure>
+                    </article>
+                    <article class="service-entry service-entry--right service-entry--portrait"
+                        aria-labelledby="service-engagement-title">
+                        <div class="service-entry__content">
+                            <span class="service-entry__number">04</span>
+                            <h3 class="service-entry__title" id="service-engagement-title">ENGAGEMENT</h3>
+                            <p class="service-entry__description">The beginning of a promise, preserved with intimacy
+                                and elegance.</p>
+                            <!-- TODO: Replace # with the engagement category page when it exists. -->
+                            <a class="service-entry__link" href="photography.html#engagement" aria-label="Explore engagement photography">EXPLORE
+                                <span aria-hidden="true">→</span></a>
+                        </div>
+                        <figure class="service-entry__figure">
+                            <!-- Selected from the supplied 03 Engagement/_DSF4588.jpg. -->
+                            <img class="service-entry__image" src="assets/images/services/engagement.jpg" width="1200"
+                                height="1500" loading="lazy" decoding="async"
+                                alt="A couple exchanges a ring during their engagement ceremony">
+                        </figure>
+                    </article>
+                    <article class="service-entry service-entry--left service-entry--landscape"
+                        aria-labelledby="service-corporate-title">
+                        <div class="service-entry__content">
+                            <span class="service-entry__number">05</span>
+                            <h3 class="service-entry__title" id="service-corporate-title">CORPORATE</h3>
+                            <p class="service-entry__description">Professional visual storytelling for people, teams,
+                                brands and events.</p>
+                            <!-- TODO: Replace # with the corporate category page when it exists. -->
+                            <a class="service-entry__link" href="photography.html#corporate" aria-label="Explore corporate photography">EXPLORE
+                                <span aria-hidden="true">→</span></a>
+                        </div>
+                        <figure class="service-entry__figure">
+                            <!-- Selected from the supplied 02 Corporate/DPS00922= (3).JPG. -->
+                            <img class="service-entry__image" src="assets/images/services/corporate.jpg" width="1800"
+                                height="1125" loading="lazy" decoding="async"
+                                alt="An audience gathers for an outdoor corporate gathering">
+                        </figure>
+                    </article>
+                    <article class="service-entry service-entry--right service-entry--portrait"
+                        aria-labelledby="service-baby-shower-title">
+                        <div class="service-entry__content">
+                            <span class="service-entry__number">06</span>
+                            <h3 class="service-entry__title" id="service-baby-shower-title">BABY SHOWER</h3>
+                            <p class="service-entry__description">Tender anticipation, family warmth and the joy before
+                                a new beginning.</p>
+                            <!-- TODO: Replace # with the baby-shower category page when it exists. -->
+                            <a class="service-entry__link" href="photography.html#baby-shower" aria-label="Explore baby shower photography">EXPLORE
+                                <span aria-hidden="true">→</span></a>
+                        </div>
+                        <figure class="service-entry__figure">
+                            <!-- Selected from the supplied 01 Baby_shower/DSC06703.JPG. -->
+                            <img class="service-entry__image" src="assets/images/services/baby-shower.jpg" width="1200"
+                                height="1500" loading="lazy" decoding="async"
+                                alt="An expectant mother smiles beside a family member at her baby shower">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Section 06 — Cinematic films -->
+        <section class="films" id="films" aria-labelledby="films-title">
+            <div class="films__inner">
+                <header class="films__header" data-films-reveal>
+                    <p class="films__eyebrow">CINEMATIC FILMS</p>
+                    <h2 class="films__title" id="films-title">Some memories<br>deserve <em>to move.</em></h2>
+                    <div class="films__intro">
+                        <p>The voices, the laughter, the music,<br>the pauses in between.</p>
+                        <p>Our films preserve the atmosphere around the moments you never want to forget.</p>
+                    </div>
+                </header>
+                <!-- TODO: Link to the films collection when that page exists. For now, lead to the featured preview. -->
+                <a class="films__cta" href="films.html">WATCH OUR FILMS <span aria-hidden="true">→</span></a>
+                <figure class="films__featured" id="featured-film" data-films-reveal>
+                    <div class="films__media">
+                        <!-- Load the privacy-enhanced player on activation; keep the native YouTube link as fallback. -->
+                        <a class="films__video-cover" href="https://www.youtube.com/watch?v=7-dNhAKm2Eg" target="_blank"
+                            rel="noopener noreferrer" aria-label="Play featured cinematic film">
+                            <img class="films__poster" src="assets/images/films/featured-film.webp"
+                                width="1280" height="720" loading="lazy" decoding="async"
+                                alt="Featured DIVINE cinematic wedding film">
+                            <span class="films__overlay" aria-hidden="true"></span>
+                            <span class="films__play" aria-hidden="true"><span>▶</span></span>
+                        </a>
+                    </div>
+                    <figcaption class="films__meta">
+                        <p class="films__name">Memories in motion</p>
+                        <p class="films__details" id="films-availability" aria-live="polite">FEATURED FILM</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Section 07 — The Divine experience -->
+        <section class="experience" id="experience" aria-labelledby="experience-title">
+            <div class="experience__inner">
+                <header class="experience__header" data-experience-reveal>
+                    <p class="experience__eyebrow">THE DIVINE EXPERIENCE</p>
+                    <h2 class="experience__title" id="experience-title">More than photographs.<br><em>A story we create
+                            together.</em></h2>
+                    <p class="experience__intro">From the first conversation to the final frame, we keep the experience
+                        personal, effortless and true to you.</p>
+                </header>
+                <ol class="experience__steps" role="list">
+                    <li class="experience-step" data-experience-reveal>
+                        <span class="experience-step__number" aria-hidden="true">01</span>
+                        <h3 class="experience-step__title">LET'S TALK</h3>
+                        <p class="experience-step__text">We begin with a conversation — your story, your people, your
+                            vision.</p>
+                        <span class="experience-step__divider" aria-hidden="true"></span>
+                    </li>
+                    <li class="experience-step" data-experience-reveal>
+                        <span class="experience-step__number" aria-hidden="true">02</span>
+                        <h3 class="experience-step__title">WE DOCUMENT</h3>
+                        <p class="experience-step__text">Be present in the moment. We'll quietly notice everything else.
+                        </p>
+                        <span class="experience-step__divider" aria-hidden="true"></span>
+                    </li>
+                    <li class="experience-step" data-experience-reveal>
+                        <span class="experience-step__number" aria-hidden="true">03</span>
+                        <h3 class="experience-step__title">YOU RELIVE</h3>
+                        <p class="experience-step__text">Your memories return as photographs and films made to last for
+                            generations.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- Section 08 — Signature frames -->
+        <section class="signature-frames" id="signature-frames" aria-labelledby="signature-frames-title">
+            <div class="signature-frames__inner">
+                <header class="signature-frames__header">
+                    <p class="signature-frames__eyebrow">SIGNATURE FRAMES</p>
+                    <h2 class="signature-frames__title" id="signature-frames-title">The moments<br><em>we could never
+                            recreate.</em></h2>
+                    <p class="signature-frames__intro">A few frames that stayed with us.</p>
+                </header>
+                <div class="signature-frames__grid">
+                    <figure class="signature-frame signature-frame--01">
+                        <picture>
+                            <source srcset="assets/images/signature/frame-01.webp" type="image/webp">
+                            <img class="signature-frame__image" src="assets/images/signature/frame-01.jpg" width="1800"
+                                height="1200" loading="lazy" decoding="async"
+                                alt="A groom leans toward his bride during their wedding ceremony">
+                        </picture>
+                    </figure>
+                    <figure class="signature-frame signature-frame--02">
+                        <picture>
+                            <source srcset="assets/images/signature/frame-02.webp" type="image/webp">
+                            <img class="signature-frame__image" src="assets/images/signature/frame-02.jpg" width="1000"
+                                height="1250" loading="lazy" decoding="async"
+                                alt="A woman looks down in a quiet moment during her engagement celebration">
+                        </picture>
+                    </figure>
+                    <figure class="signature-frame signature-frame--03">
+                        <picture>
+                            <source srcset="assets/images/signature/frame-03.webp" type="image/webp">
+                            <img class="signature-frame__image" src="assets/images/signature/frame-03.jpg" width="1000"
+                                height="1000" loading="lazy" decoding="async"
+                                alt="A bride rests her hand on her partner’s arm, with wedding jewellery and embroidered fabric in view">
+                        </picture>
+                    </figure>
+                    <figure class="signature-frame signature-frame--04">
+                        <picture>
+                            <source srcset="assets/images/signature/frame-04.webp" type="image/webp">
+                            <img class="signature-frame__image" src="assets/images/signature/frame-04.jpg" width="1050"
+                                height="1400" loading="lazy" decoding="async"
+                                alt="A bride in red stands on a staircase in a softly lit interior">
+                        </picture>
+                    </figure>
+                    <figure class="signature-frame signature-frame--05">
+                        <picture>
+                            <source srcset="assets/images/signature/frame-05.webp" type="image/webp">
+                            <img class="signature-frame__image" src="assets/images/signature/frame-05.jpg" width="1600"
+                                height="1000" loading="lazy" decoding="async"
+                                alt="Wedding guests raise their hands and celebrate together">
+                        </picture>
+                    </figure>
+                    <figure class="signature-frame signature-frame--06">
+                        <picture>
+                            <source srcset="assets/images/signature/frame-06.webp" type="image/webp">
+                            <img class="signature-frame__image" src="assets/images/signature/frame-06.jpg" width="1000"
+                                height="1250" loading="lazy" decoding="async"
+                                alt="Family members share a close moment during an engagement ceremony">
+                        </picture>
+                    </figure>
+                    <figure class="signature-frame signature-frame--07">
+                        <picture>
+                            <source srcset="assets/images/signature/frame-07.webp" type="image/webp">
+                            <img class="signature-frame__image" src="assets/images/signature/frame-07.jpg" width="1800"
+                                height="1200" loading="lazy" decoding="async"
+                                alt="A couple holds hands on wet sand beneath a dusk sky">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust" aria-labelledby="trust-title" data-trust-reveal>
+            <div class="trust__inner">
+                <header class="trust__header" data-trust-reveal>
+                    <p class="trust__eyebrow" data-trust-reveal>TRUSTED WITH STORIES</p>
+                    <h2 class="trust__title" id="trust-title" data-trust-reveal>Built on trust.<br>Remembered
+                        <em>through stories.</em>
+                    </h2>
+                    <p class="trust__intro" data-trust-reveal>Every celebration we document begins with trust —<br>the
+                        kind that lets people forget the camera is there.</p>
+                </header>
+                <ul class="trust__credentials" data-trust-reveal>
+                    <li class="trust-stat" data-trust-reveal>
+                        <span class="trust-stat__value">XX+</span>
+                        <span class="trust-stat__label">STORIES DOCUMENTED</span>
+                    </li>
+                    <li class="trust-stat" data-trust-reveal>
+                        <span class="trust-stat__value">XX</span>
+                        <span class="trust-stat__label">YEARS OF EXPERIENCE</span>
+                    </li>
+                    <li class="trust-stat" data-trust-reveal>
+                        <span class="trust-stat__value">XX+</span>
+                        <span class="trust-stat__label">HAPPY FAMILIES</span>
+                    </li>
+                    <li class="trust-stat" data-trust-reveal>
+                        <span class="trust-stat__value">XX+</span>
+                        <span class="trust-stat__label">CELEBRATIONS CAPTURED</span>
+                    </li>
+                </ul>
+                <!-- TODO: replace placeholder numbers with real data -->
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+            <!-- Subtle editorial vector watermark: delicate single ellipse arc -->
+            <svg class="testimonials__vector" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+                <circle cx="680" cy="180" r="320" fill="none" stroke="#5A7262" stroke-width="1" stroke-opacity="0.07"
+                    stroke-dasharray="3 6" />
+                <circle cx="680" cy="180" r="280" fill="none" stroke="#91876E" stroke-width="0.75"
+                    stroke-opacity="0.05" />
+            </svg>
+
+            <div class="testimonials__inner">
+                <!-- Section Header -->
+                <header class="testimonials__header" data-testimonial-reveal>
+                    <p class="testimonials__eyebrow">WORDS FROM THE HEART</p>
+                    <h2 class="testimonials__title" id="testimonials-title">What they remember<br><em>after the day is
+                            over.</em></h2>
+                    <p class="testimonials__intro">The photographs stay.<br>So do the feelings behind them.</p>
+                </header>
+
+                <!-- Featured Emotional Testimonial -->
+                <!-- TODO: Replace with real testimonial when available -->
+                <div class="testimonials__featured">
+                    <div class="testimonials__featured-content" data-testimonial-reveal>
+                        <blockquote class="testimonial testimonial--featured">
+                            <span class="testimonial__mark" aria-hidden="true">“</span>
+                            <p class="testimonial__quote">Looking through these photographs felt like <em>stepping back
+                                    into the day.</em> The laughter, the people, the little moments we had already
+                                forgotten — they were all there.</p>
+                            <footer class="testimonial__attribution">
+                                <cite class="testimonial__client">Aditi &amp; Rohan</cite>
+                                <span class="testimonial__meta">Wedding • Ahmedabad</span>
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                    <figure class="testimonials__featured-figure" data-testimonial-reveal>
+                        <div class="testimonials__image-frame">
+                            <img class="testimonials__featured-img" src="assets/images/testimonials/featured-client.jpg"
+                                width="1200" height="1500" loading="lazy" decoding="async"
+                                alt="Candid wedding portrait of Aditi and Rohan sharing an honest moment" />
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Editorial Divider -->
+                <hr class="testimonials__divider" data-testimonial-reveal aria-hidden="true" />
+
+                <!-- Supporting Testimonial Notes (2 Curated Notes) -->
+                <div class="testimonials__supporting">
+                    <!-- Supporting Note 01 -->
+                    <!-- TODO: Replace with real testimonial when available -->
+                    <article class="testimonials__note" data-testimonial-reveal>
+                        <blockquote class="testimonial testimonial--supporting">
+                            <p class="testimonial__quote">“Looking at our photos, we didn’t just see how everything
+                                looked. We remembered exactly how it felt.”</p>
+                            <footer class="testimonial__attribution">
+                                <cite class="testimonial__client">Mira &amp; Nikhil</cite>
+                                <span class="testimonial__meta">Engagement • Goa</span>
+                            </footer>
+                        </blockquote>
+                    </article>
+
+                    <!-- Supporting Note 02 -->
+                    <!-- TODO: Replace with real testimonial when available -->
+                    <article class="testimonials__note" data-testimonial-reveal>
+                        <blockquote class="testimonial testimonial--supporting">
+                            <p class="testimonial__quote">“The quiet moments we didn’t even realize you were capturing
+                                became the ones we treasure most.”</p>
+                            <footer class="testimonial__attribution">
+                                <cite class="testimonial__client">Sameer &amp; Priya</cite>
+                                <span class="testimonial__meta">Wedding • Kerala</span>
+                            </footer>
+                        </blockquote>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners" id="partners" aria-labelledby="meet-divine-title">
+            <div id="our-story" style="position: relative; top: -40px; visibility: hidden;" aria-hidden="true"></div>
+            <div class="partners__inner">
+                <header class="partners__header" data-partner-reveal>
+                    <p class="partners__eyebrow">MEET DIVINE</p>
+                    <h2 class="partners__title" id="meet-divine-title">Two perspectives.<br><em>One story.</em></h2>
+                    <div class="partners__intro">
+                        <p>DIVINE is shaped by two people, two ways of seeing, and one shared love for honest
+                            photographs.</p>
+                        <p>Together, we look for the moments that happen naturally — the gestures, the laughter, the
+                            quiet in-between frames.</p>
+                        <p>Because the strongest stories are often seen differently, but remembered together.</p>
+                    </div>
+                </header>
+
+                <div class="partners__grid">
+                    <!-- Partner 01 -->
+                    <!-- TODO: Replace placeholder name and details with real partner info -->
+                    <article class="partner partner--01" data-partner-reveal>
+                        <figure class="partner__figure">
+                            <img class="partner__image" src="assets/images/about/partner-01.jpg" width="1200"
+                                height="1500" loading="lazy" decoding="async"
+                                alt="Portrait of Partner 01, Co-Founder and Photographer at DIVINE Photo Studio" />
+                        </figure>
+                        <div class="partner__details">
+                            <h3 class="partner__name">PARTNER NAME 01</h3>
+                            <p class="partner__role">CO-FOUNDER • PHOTOGRAPHER</p>
+                            <p class="partner__note">Drawn to emotion, people and the moments that happen before anyone
+                                notices the camera.</p>
+                        </div>
+                    </article>
+
+                    <!-- Mobile Divider -->
+                    <hr class="partners__divider" aria-hidden="true" />
+
+                    <!-- Partner 02 -->
+                    <!-- TODO: Replace placeholder name and details with real partner info -->
+                    <article class="partner partner--02" data-partner-reveal>
+                        <figure class="partner__figure">
+                            <img class="partner__image" src="assets/images/about/partner-02.jpg" width="1200"
+                                height="1500" loading="lazy" decoding="async"
+                                alt="Portrait of Partner 02, Co-Founder and Photographer at DIVINE Photo Studio" />
+                        </figure>
+                        <div class="partner__details">
+                            <h3 class="partner__name">PARTNER NAME 02</h3>
+                            <p class="partner__role">CO-FOUNDER • PHOTOGRAPHER</p>
+                            <p class="partner__note">Focused on composition, atmosphere and turning fleeting moments
+                                into lasting frames.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Shared closing signature -->
+                <div class="partners__closing" data-partner-reveal>
+                    <p class="partners__signature">Two perspectives.<br>One shared frame.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-cta" id="booking-cta" aria-labelledby="booking-cta-title">
+            <!-- Faint signature lens/ellipse arc behind heading -->
+            <svg class="booking-cta__background" viewBox="0 0 1000 1000" aria-hidden="true" focusable="false">
+                <circle cx="500" cy="500" r="440" fill="none" stroke="#5A7262" stroke-width="1.5"
+                    stroke-dasharray="4 8" />
+                <circle cx="500" cy="500" r="390" fill="none" stroke="#5A7262" stroke-width="1" />
+            </svg>
+
+            <div class="booking-cta__inner">
+                <p class="booking-cta__eyebrow" data-cta-reveal>YOUR STORY</p>
+                <h2 class="booking-cta__title" id="booking-cta-title" data-cta-reveal>Your story deserves<br><em>to be
+                        remembered.</em></h2>
+                <p class="booking-cta__subtitle" data-cta-reveal>Tell us where it begins.</p>
+
+                <!-- Link to dedicated contact page -->
+                <a class="booking-cta__link" href="contact.html" data-cta-reveal
+                    aria-label="Start a conversation with DIVINE Photo Studio">
+                    START A CONVERSATION <span class="booking-cta__link-arrow" aria-hidden="true">→</span>
+                </a>
+
+                <p class="booking-cta__services" data-cta-reveal>
+                    WEDDINGS • PRE-WEDDINGS • RECEPTION • ENGAGEMENT • CORPORATE • BABY SHOWER
+                </p>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+        <div class="site-footer__inner">
+
+            <!-- Mobile Only Brand Wordmark -->
+            <div class="site-footer__mobile-brand">
+                <a href="index.html" class="site-footer__brand-link" aria-label="DIVINE Photo Studio home">
+                    <span class="site-footer__brand-title">DIVINE PHOTO STUDIO</span>
+                </a>
+            </div>
+
+            <!-- Row A: Footer Navigation + Social -->
+            <div class="site-footer__nav-row">
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <ul class="site-footer__nav-list" role="list">
+                        <li class="site-footer__nav-item"><a href="index.html" class="site-footer__nav-link">HOME</a></li>
+                        <li class="site-footer__nav-item"><a href="about.html" class="site-footer__nav-link">ABOUT</a></li>
+                        <li class="site-footer__nav-item"><a href="services.html" class="site-footer__nav-link">SERVICES</a></li>
+                        <li class="site-footer__nav-item"><a href="photography.html" class="site-footer__nav-link">PHOTOGRAPHY</a></li>
+                        <li class="site-footer__nav-item"><a href="films.html" class="site-footer__nav-link">FILMS</a></li>
+                        <li class="site-footer__nav-item"><a href="couple-stories.html" class="site-footer__nav-link">COUPLE STORIES</a></li>
+                        <li class="site-footer__nav-item"><a href="contact.html" class="site-footer__nav-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social Icons (Far right on desktop, monochrome outline SVGs) -->
+                <div class="site-footer__social-icons">
+                    <!-- TODO: Replace # with verified studio Instagram URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Instagram">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio Facebook page URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="Facebook">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </span>
+
+                    <!-- TODO: Replace # with verified studio YouTube channel URL -->
+                    <!-- TODO: Supply verified social profile URL. -->
+<span class="site-footer__social-link" role="img" aria-label="YouTube">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"
+                                stroke="none"></polygon>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row B: Horizontal Editorial Image Strip (Contact-Sheet Frames) -->
+            <div class="site-footer__strip-container">
+                <div class="site-footer__strip" id="footer-image-strip" tabindex="0"
+                    aria-label="Curated photography contact sheet">
+                    <!-- Frame 01: Wedding (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-01.jpg"
+                            alt="Wedding photography by Divine Photo Studio" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 02: Pre-Wedding (portrait 3:4) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p34">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-02.jpg"
+                            alt="Pre-wedding portrait by Divine Photo Studio" width="375" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 03: Reception (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-03.jpg"
+                            alt="Reception celebration moment" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 04: Engagement (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-04.jpg"
+                            alt="Intimate engagement moment" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 05: Corporate (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32 site-footer__strip-item--wide">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-05.jpg"
+                            alt="Corporate event photography" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 06: Baby Shower (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-06.jpg"
+                            alt="Tender baby shower celebration" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 07: Emotional Detail Frame -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--detail">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-07.jpg"
+                            alt="Artful detail photograph" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+
+                <!-- Subtle desktop navigation arrows for strip scroll -->
+                <div class="site-footer__strip-controls" aria-hidden="true">
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--prev"
+                        id="footer-strip-prev" aria-label="Scroll images left">←</button>
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--next"
+                        id="footer-strip-next" aria-label="Scroll images right">→</button>
+                </div>
+            </div>
+
+            <!-- Row C: Bottom Information Row (Split Left/Right) -->
+            <div class="site-footer__info-row">
+                <!-- Left: Find us here -->
+                <div class="site-footer__info-col site-footer__info-col--left">
+                    <h3 class="site-footer__info-heading">Find us here</h3>
+                    <address class="site-footer__address">
+                        <!-- TODO: Replace placeholder address with real studio address -->
+                        <span class="site-footer__address-line">[STUDIO ADDRESS]</span>
+                        <span class="site-footer__address-line">Gujarat, India</span>
+                    </address>
+                </div>
+
+                <!-- Right: Contact us -->
+                <div class="site-footer__info-col site-footer__info-col--right">
+                    <h3 class="site-footer__info-heading">Contact us</h3>
+                    <div class="site-footer__contact-details">
+                        <!-- TODO: Replace placeholder phone number with real contact info -->
+                        <span class="site-footer__contact-link">[PHONE NUMBER]</span>
+                        <!-- TODO: Replace placeholder email with real contact info -->
+                        <span
+                            class="site-footer__contact-link">[EMAIL ADDRESS]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row D: Copyright + Back-to-Top -->
+            <div class="site-footer__copyright-row">
+                <p class="site-footer__copyright">
+                    © <span id="footer-year">2026</span> DIVINE PHOTO STUDIO
+                </p>
+                <button type="button" class="site-footer__back-to-top" id="footer-back-to-top" aria-label="Back to top">
+                    <span class="site-footer__back-to-top-text">BACK TO TOP</span>
+                    <span class="site-footer__back-to-top-arrow" aria-hidden="true">↑</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="js/main.js?v=1.2"></script>
     <script src="js/philosophy.js"></script>
     <script src="js/selected-stories.js"></script>
+    <script src="js/services-editorial.js"></script>
+    <script src="js/films.js?v=4"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/signature-frames.js"></script>
+    <!-- Section 03 background prototype: independent parallax controller. -->
+    <script src="js/philosophy-vectors.js"></script>
+    <script src="js/trust.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/about-divine.js"></script>
+    <script src="js/booking-cta.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>

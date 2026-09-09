@@ -1,0 +1,23 @@
+/* Section 03 prototype only. Loaded after existing styles; no geometry changes. */
+.philosophy { position:relative; overflow:hidden; }
+.philosophy > .philosophy__inner { position:relative; z-index:2; }
+.philosophy .philosophy-vectors { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:0; }
+.philosophy .philosophy-vector-shell, .philosophy .philosophy-vector { pointer-events:none; }
+.philosophy .philosophy-vector { fill:none; stroke-width:1px; }
+.philosophy .philosophy-vector--lens { stroke:#5A7262; opacity:.14; transform-origin:1230px 220px; }
+.philosophy .philosophy-vector__dashed { stroke-dasharray:3 10; opacity:.7; }
+.philosophy .philosophy-vector--contour { stroke:#91876E; opacity:.11; }
+.philosophy .philosophy-vector--marks { stroke:#B4794B; stroke-width:1px; opacity:.22; }
+@media (prefers-reduced-motion:no-preference) {
+    .philosophy .philosophy-vector--lens { animation:philosophy-lens-drift 18s ease-in-out infinite alternate; }
+    .philosophy .philosophy-vector--contour { animation:philosophy-contour-drift 16s ease-in-out infinite alternate; }
+    @keyframes philosophy-lens-drift { from { transform:rotate(0deg); } to { transform:rotate(1.5deg); } }
+    @keyframes philosophy-contour-drift { from { transform:translate3d(0,0,0); } to { transform:translate3d(3px,-5px,0); } }
+}
+@media (max-width:767px) {
+    .philosophy .philosophy-vector__dashed { display:none; }
+    .philosophy .philosophy-vector--contour { opacity:.08; }
+}
+@media (prefers-reduced-motion:reduce) {
+    .philosophy .philosophy-vector, .philosophy .philosophy-vector-shell { animation:none; transform:none!important; }
+}
