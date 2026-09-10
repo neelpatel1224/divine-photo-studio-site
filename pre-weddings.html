@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Weddings | DIVINE PHOTO STUDIO</title>
+    <meta name="description" content="A curated pre-wedding photography archive by DIVINE PHOTO STUDIO. Unhurried portraits, shared glances, open spaces and quiet connection.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Archive Lightbox & Animation Base -->
+    <link rel="stylesheet" href="css/category-archive.css">
+    <!-- Dedicated Pre-Weddings Stylesheet -->
+    <link rel="stylesheet" href="css/pre-weddings.css">
+</head>
+
+<body class="category-page preweddings-page">
+
+    <!-- ======================================================================
+         01. Existing Navbar (PHOTOGRAPHY active parent, PRE-WEDDINGS active link)
+         ====================================================================== -->
+    <header class="site-header">
+        <div class="site-header__brand">
+            <a href="index.html" class="divine-logo" aria-label="Divine Photo Studio home">
+                <span class="divine-name">DiViNE</span>
+                <span class="divine-photo">PHOTO</span>
+                <span class="divine-studio">STUDIO</span>
+            </a>
+        </div>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+            <ul class="main-nav__list" id="main-nav-list">
+
+                <li class="main-nav__item">
+                    <a href="index.html" class="main-nav__link">HOME</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="about.html" class="main-nav__link">ABOUT</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="services.html" class="main-nav__link">SERVICES</a>
+                </li>
+
+                <li class="main-nav__item main-nav__item--dropdown">
+                    <a href="photography.html" class="main-nav__link main-nav__link--active" aria-current="true">PHOTOGRAPHY</a>
+                    <button class="main-nav__toggle" aria-expanded="false" aria-controls="submenu-photography" aria-label="Toggle Photography Submenu">
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <ul class="dropdown-menu" id="submenu-photography">
+                        <li class="dropdown-menu__item"><a href="weddings.html" class="dropdown-menu__link">WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="pre-weddings.html" class="dropdown-menu__link" aria-current="page">PRE-WEDDINGS</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#reception" class="dropdown-menu__link">RECEPTION</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#engagement" class="dropdown-menu__link">ENGAGEMENT</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#corporate" class="dropdown-menu__link">CORPORATE</a></li>
+                        <li class="dropdown-menu__item"><a href="photography.html#baby-shower" class="dropdown-menu__link">BABY SHOWER</a></li>
+                    </ul>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="films.html" class="main-nav__link">FILMS</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="couple-stories.html" class="main-nav__link">COUPLE STORIES</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a href="contact.html" class="main-nav__link">CONTACT</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Open navigation">
+            <span class="mobile-nav-toggle__line"></span>
+            <span class="mobile-nav-toggle__line"></span>
+        </button>
+    </header>
+
+    <main id="main-content" data-category-archive>
+
+        <!-- ==================================================================
+             02. Pre-Weddings Hero Section
+             Large text block + wide environmental frame beneath per Rule 6
+             ================================================================== -->
+        <section class="pw-hero" aria-labelledby="hero-title">
+            <!-- Subtle ethereal lens arc vector per Rule 37 -->
+            <svg class="pw-vector-lens pw-hero__lens" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <circle cx="300" cy="300" r="280" stroke="currentColor" stroke-width="1" stroke-dasharray="4 8" />
+                <circle cx="300" cy="300" r="236" stroke="currentColor" stroke-width="0.75" />
+            </svg>
+
+            <div class="pw-container">
+                <div class="pw-hero__header">
+                    <div data-archive-reveal>
+                        <span class="pw-eyebrow">PRE-WEDDINGS</span>
+                        <h1 id="hero-title">Before the promises,<br>there was <em>simply us.</em></h1>
+                    </div>
+                    <div class="pw-copy pw-hero__body" data-archive-reveal>
+                        <p>Unhurried portraits, shared glances, open spaces, and the quiet rhythm of being together.</p>
+                    </div>
+                </div>
+
+                <figure class="pw-hero__frame" data-archive-reveal>
+                    <img class="pw-image" src="assets/images/pre-weddings/hero.webp"
+                         srcset="assets/images/pre-weddings/hero-900.webp 900w, assets/images/pre-weddings/hero.webp 1800w"
+                         sizes="(max-width: 767px) 90vw, (max-width: 1200px) 88vw, 1440px"
+                         width="1800" height="1199"
+                         alt="A couple walking hand in hand through gentle ocean waves during golden hour."
+                         loading="eager" decoding="async" fetchpriority="high">
+                </figure>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             03. Section 03 — Introduction
+             Spacious editorial split (heading left, body right) per Rule 9
+             ================================================================== -->
+        <section class="pw-section" aria-labelledby="intro-title">
+            <div class="pw-container pw-intro">
+                <div class="pw-intro__left" data-archive-reveal>
+                    <span class="pw-eyebrow">ABOUT PRE-WEDDINGS</span>
+                    <h2 class="pw-intro__heading" id="intro-title">Less posing.<br><em>More presence.</em></h2>
+                </div>
+                <div class="pw-copy pw-intro__right" data-archive-reveal>
+                    <p>A pre-wedding session should feel like time set aside for the two of you.</p>
+                    <p>We use movement, place, light, and quiet direction to create photographs that feel natural rather than arranged.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             04. Section 04 — Featured Pre-Wedding Story
+             Dominant wide photograph (82–90vw) with offset metadata per Rule 12
+             ================================================================== -->
+        <section class="pw-section pw-featured" aria-labelledby="featured-story-title">
+            <div class="pw-container--wide pw-featured__wrap">
+                <span class="pw-eyebrow" id="featured-story-eyebrow">FEATURED STORY</span>
+                <a class="pw-featured__image-link" href="assets/images/pre-weddings/featured.webp" data-archive-image data-archive-reveal aria-label="Enlarge featured pre-wedding photograph: Architectural alcoves with intricate mosaic rugs">
+                    <img class="pw-image" src="assets/images/pre-weddings/featured.webp"
+                         srcset="assets/images/pre-weddings/featured-900.webp 900w, assets/images/pre-weddings/featured.webp 1800w"
+                         sizes="(max-width: 767px) 90vw, (max-width: 1400px) 90vw, 1500px"
+                         width="1800" height="1199"
+                         alt="A couple framed across open architectural arches draped in rich woven tapestries."
+                         loading="lazy" decoding="async">
+                </a>
+                <div class="pw-featured__meta" data-archive-reveal>
+                    <div>
+                        <!-- Rule 11 & 45: Semantic H3 placeholder without inventing names or dates -->
+                        <h3 class="pw-featured__title" id="featured-story-title">COUPLE NAME</h3>
+                        <p class="pw-label">PRE-WEDDING STORY</p>
+                    </div>
+                    <a href="couple-stories.html" class="pw-link" aria-label="View full pre-wedding story">
+                        VIEW FULL STORY <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             05. Section 05 — Main Curated Gallery
+             Asymmetric rhythm, breathing room, 12 intentional frames per Rule 16
+             ================================================================== -->
+        <section class="pw-section pw-gallery-section" aria-labelledby="gallery-title">
+            <div class="pw-container">
+                <header class="pw-section-header" data-archive-reveal>
+                    <span class="pw-eyebrow">PRE-WEDDING FRAMES</span>
+                    <h2 id="gallery-title">A little less planned.<br><em>A little more felt.</em></h2>
+                </header>
+
+                <div class="pw-gallery-grid">
+                    <!-- Row 1: Large wide landscape -->
+                    <figure class="pw-frame pw-frame--wide">
+                        <a href="assets/images/pre-weddings/gallery-01.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Couple walking hand in hand in white attire with sun rays and tapestry">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-01.webp"
+                                 srcset="assets/images/pre-weddings/gallery-01-900.webp 900w, assets/images/pre-weddings/gallery-01.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 80vw" width="1800" height="1199"
+                                 alt="Couple walking hand in hand in white attire with sun rays and tapestry."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- Row 2: Portrait + empty breathing space + smaller portrait -->
+                    <figure class="pw-frame pw-frame--portrait">
+                        <a href="assets/images/pre-weddings/gallery-02.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Intimate moment beside a floor-to-ceiling ivy-draped bookcase">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-02.webp"
+                                 srcset="assets/images/pre-weddings/gallery-02-900.webp 600w, assets/images/pre-weddings/gallery-02.webp 1200w"
+                                 sizes="(max-width: 767px) 82vw, 32vw" width="1200" height="1800"
+                                 alt="Intimate moment beside a floor-to-ceiling ivy-draped bookcase."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <figure class="pw-frame pw-frame--portrait">
+                        <a href="assets/images/pre-weddings/gallery-03.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Outdoor lawn painting session with easel and sunflowers">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-03.webp"
+                                 srcset="assets/images/pre-weddings/gallery-03-900.webp 600w, assets/images/pre-weddings/gallery-03.webp 1200w"
+                                 sizes="(max-width: 767px) 70vw, 42vw" width="1200" height="1800"
+                                 alt="Outdoor lawn painting session with easel and sunflowers."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- Row 3: Wide location frame -->
+                    <figure class="pw-frame pw-frame--wide">
+                        <a href="assets/images/pre-weddings/gallery-04.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Flowing teal dress silhouette against sculptural white alcoves">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-04.webp"
+                                 srcset="assets/images/pre-weddings/gallery-04-900.webp 900w, assets/images/pre-weddings/gallery-04.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 78vw" width="1800" height="1199"
+                                 alt="Flowing teal dress silhouette against sculptural white alcoves."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- Row 4: Two close/intimate frames -->
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/gallery-05.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Couple seated on a wooden bench framed by woven rattan pendant lamps">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-05.webp"
+                                 srcset="assets/images/pre-weddings/gallery-05-900.webp 900w, assets/images/pre-weddings/gallery-05.webp 1800w"
+                                 sizes="(max-width: 767px) 84vw, 48vw" width="1800" height="1199"
+                                 alt="Couple seated on a wooden bench framed by woven rattan pendant lamps."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/gallery-06.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Spontaneous ocean water splashing in twilight waves">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-06.webp"
+                                 srcset="assets/images/pre-weddings/gallery-06-900.webp 900w, assets/images/pre-weddings/gallery-06.webp 1800w"
+                                 sizes="(max-width: 767px) 68vw, 38vw" width="1800" height="1199"
+                                 alt="Spontaneous ocean water splashing in twilight waves."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- Row 5: Intimate reading & woven macrame embrace -->
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/gallery-07.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Reading books together quietly in a green leather wingback armchair">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-07.webp"
+                                 srcset="assets/images/pre-weddings/gallery-07-900.webp 900w, assets/images/pre-weddings/gallery-07.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 48vw" width="1800" height="1199"
+                                 alt="Reading books together quietly in a green leather wingback armchair."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/gallery-08.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Warm embrace framed by woven macrame and natural textures">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-08.webp"
+                                 srcset="assets/images/pre-weddings/gallery-08-900.webp 900w, assets/images/pre-weddings/gallery-08.webp 1800w"
+                                 sizes="(max-width: 767px) 82vw, 32vw" width="1800" height="1199"
+                                 alt="Warm embrace framed by woven macrame and natural textures."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- Row 6: Dancing dip & chiaroscuro reading -->
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/gallery-09.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Dramatic dancing dip with flowing blue fabric in an open white room">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-09.webp"
+                                 srcset="assets/images/pre-weddings/gallery-09-900.webp 900w, assets/images/pre-weddings/gallery-09.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 54vw" width="1800" height="1199"
+                                 alt="Dramatic dancing dip with flowing blue fabric in an open white room."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/gallery-10.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Chiaroscuro back-to-back reading portrait in ambient shadows">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-10.webp"
+                                 srcset="assets/images/pre-weddings/gallery-10-900.webp 900w, assets/images/pre-weddings/gallery-10.webp 1800w"
+                                 sizes="(max-width: 767px) 70vw, 32vw" width="1800" height="1199"
+                                 alt="Chiaroscuro back-to-back reading portrait in ambient shadows."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- Row 7: Grand evening candelabras -->
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/gallery-11.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Evening garden banquet with glowing candelabras and velvet gown">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-11.webp"
+                                 srcset="assets/images/pre-weddings/gallery-11-900.webp 900w, assets/images/pre-weddings/gallery-11.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 76vw" width="1800" height="1199"
+                                 alt="Evening garden banquet with glowing candelabras and velvet gown."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- Row 8: Large environmental twilight beach torch reflection -->
+                    <figure class="pw-frame pw-frame--wide">
+                        <a href="assets/images/pre-weddings/gallery-12.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Twilight reflection in the ocean tide with flame torch">
+                            <img class="pw-image" src="assets/images/pre-weddings/gallery-12.webp"
+                                 srcset="assets/images/pre-weddings/gallery-12-900.webp 900w, assets/images/pre-weddings/gallery-12.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 84vw" width="1800" height="1199"
+                                 alt="Twilight reflection in the ocean tide with flame torch."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             06. Section 06 — Places & Atmosphere
+             Scale, light, texture and architecture per Rules 19–22
+             ================================================================== -->
+        <section class="pw-section pw-places" aria-labelledby="places-title">
+            <!-- Subtle registration mark vector per Rule 37 -->
+            <svg class="pw-vector-mark pw-places__vector" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M0 20H40M20 0V40" stroke="currentColor" stroke-width="0.75" />
+                <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="0.75" />
+            </svg>
+
+            <div class="pw-container">
+                <div class="pw-places__intro" data-archive-reveal>
+                    <div>
+                        <span class="pw-eyebrow">PLACES &amp; ATMOSPHERE</span>
+                        <h2 id="places-title">Sometimes the place<br><em>becomes part of the story.</em></h2>
+                    </div>
+                    <div class="pw-copy">
+                        <p>Open landscapes, quiet streets, architecture, light, and the spaces that give each session its own character.</p>
+                    </div>
+                </div>
+
+                <div class="pw-places__grid">
+                    <!-- 1. Panoramic wide frame -->
+                    <figure class="pw-frame">
+                        <a href="assets/images/pre-weddings/place-01.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Morning sunlit open lawn with sunflowers and easel">
+                            <img class="pw-image" src="assets/images/pre-weddings/place-01.webp"
+                                 srcset="assets/images/pre-weddings/place-01-900.webp 900w, assets/images/pre-weddings/place-01.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 88vw" width="1800" height="1199"
+                                 alt="Morning sunlit open lawn with sunflowers and easel."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- 2. Supporting landscape left -->
+                    <figure class="pw-frame">
+                        <a href="assets/images/pre-weddings/place-02.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Ivy-draped outdoor wooden bookcase and natural foliage">
+                            <img class="pw-image" src="assets/images/pre-weddings/place-02.webp"
+                                 srcset="assets/images/pre-weddings/place-02-900.webp 900w, assets/images/pre-weddings/place-02.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 44vw" width="1800" height="1199"
+                                 alt="Ivy-draped outdoor wooden bookcase and natural foliage."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- 3. Supporting landscape right -->
+                    <figure class="pw-frame">
+                        <a href="assets/images/pre-weddings/place-03.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Steaming incense urns in a sunlit open-air courtyard">
+                            <img class="pw-image" src="assets/images/pre-weddings/place-03.webp"
+                                 srcset="assets/images/pre-weddings/place-03-900.webp 900w, assets/images/pre-weddings/place-03.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 40vw" width="1800" height="1199"
+                                 alt="Steaming incense urns in a sunlit open-air courtyard."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- 4. Atmospheric detail frame -->
+                    <figure class="pw-frame">
+                        <a href="assets/images/pre-weddings/place-04.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Engraved brass teapot on carved low table with couple softly in background">
+                            <img class="pw-image" src="assets/images/pre-weddings/place-04.webp"
+                                 srcset="assets/images/pre-weddings/place-04-900.webp 900w, assets/images/pre-weddings/place-04.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 60vw" width="1800" height="1199"
+                                 alt="Engraved brass teapot on carved low table with couple softly in background."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             07. Section 07 — Quiet Moments / Closer Frames
+             Intimate portraits, whitespace, visually slowing down per Rules 23–25
+             ================================================================== -->
+        <section class="pw-section pw-close-section" aria-labelledby="closer-frames-title">
+            <div class="pw-container">
+                <div class="pw-close-header" data-archive-reveal>
+                    <span class="pw-eyebrow">CLOSER FRAMES</span>
+                    <h2 id="closer-frames-title">The quieter moments<br><em>matter too.</em></h2>
+                    <div class="pw-copy" style="margin-top: 18px; margin-inline: auto;">
+                        <p>Hands, expressions, small gestures, and the moments that happen between directions.</p>
+                    </div>
+                </div>
+
+                <div class="pw-close-grid">
+                    <!-- 1. Portrait hands on chest -->
+                    <figure class="pw-frame pw-frame--portrait">
+                        <a href="assets/images/pre-weddings/close-01.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Intimate close portrait with hand resting gently on chest in soft warm rim light">
+                            <img class="pw-image" src="assets/images/pre-weddings/close-01.webp"
+                                 srcset="assets/images/pre-weddings/close-01-900.webp 600w, assets/images/pre-weddings/close-01.webp 1200w"
+                                 sizes="(max-width: 767px) 84vw, 30vw" width="1200" height="1800"
+                                 alt="Intimate close portrait with hand resting gently on chest in soft warm rim light."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- 2. Ethereal smoke portrait -->
+                    <figure class="pw-frame pw-frame--portrait">
+                        <a href="assets/images/pre-weddings/close-02.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Ethereal sunlit smoke swirling gently around an off-shoulder white dress">
+                            <img class="pw-image" src="assets/images/pre-weddings/close-02.webp"
+                                 srcset="assets/images/pre-weddings/close-02-900.webp 600w, assets/images/pre-weddings/close-02.webp 1200w"
+                                 sizes="(max-width: 767px) 80vw, 30vw" width="1200" height="1800"
+                                 alt="Ethereal sunlit smoke swirling gently around an off-shoulder white dress."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- 3. Rattan detail frame -->
+                    <figure class="pw-frame pw-frame--wide">
+                        <a href="assets/images/pre-weddings/close-03.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Delicate hand touch resting against a woven rattan bell lamp">
+                            <img class="pw-image" src="assets/images/pre-weddings/close-03.webp"
+                                 srcset="assets/images/pre-weddings/close-03-900.webp 900w, assets/images/pre-weddings/close-03.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 60vw" width="1800" height="1199"
+                                 alt="Delicate hand touch resting against a woven rattan bell lamp."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- 4. Sunset kiss portrait -->
+                    <figure class="pw-frame pw-frame--portrait">
+                        <a href="assets/images/pre-weddings/close-04.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Golden hour sunset embrace and loving glance against the horizon">
+                            <img class="pw-image" src="assets/images/pre-weddings/close-04.webp"
+                                 srcset="assets/images/pre-weddings/close-04-900.webp 600w, assets/images/pre-weddings/close-04.webp 1200w"
+                                 sizes="(max-width: 767px) 84vw, 38vw" width="1200" height="1800"
+                                 alt="Golden hour sunset embrace and loving glance against the horizon."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+
+                    <!-- 5. Evening bokeh wine toast -->
+                    <figure class="pw-frame pw-frame--landscape">
+                        <a href="assets/images/pre-weddings/close-05.webp" data-archive-image data-archive-reveal aria-label="Enlarge photograph: Clinking wine glasses and spontaneous smile in evening warm bokeh">
+                            <img class="pw-image" src="assets/images/pre-weddings/close-05.webp"
+                                 srcset="assets/images/pre-weddings/close-05-900.webp 900w, assets/images/pre-weddings/close-05.webp 1800w"
+                                 sizes="(max-width: 767px) 90vw, 44vw" width="1800" height="1199"
+                                 alt="Clinking wine glasses and spontaneous smile in evening warm bokeh."
+                                 loading="lazy" decoding="async">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             08. Section 08 — More Pre-Wedding Stories
+             3 curated story tiles matching couple stories language per Rules 26–29
+             ================================================================== -->
+        <section class="pw-section pw-stories-section" aria-labelledby="more-stories-title">
+            <div class="pw-container">
+                <header class="pw-section-header" data-archive-reveal>
+                    <span class="pw-eyebrow">MORE PRE-WEDDING STORIES</span>
+                    <h2 id="more-stories-title">Every connection,<br><em>its own cadence.</em></h2>
+                </header>
+
+                <div class="pw-stories-grid">
+                    <!-- Story 1: Vyomesh & Bhumi -->
+                    <a href="couple-stories.html" class="pw-story-tile" data-archive-reveal aria-label="Explore Vyomesh &amp; Bhumi pre-wedding story">
+                        <img class="pw-story-tile__image" src="assets/images/stories/story-02.jpg" alt="Vyomesh &amp; Bhumi pre-wedding portrait session" width="800" height="600" loading="lazy" decoding="async">
+                        <div class="pw-story-tile__meta">
+                            <span class="pw-label">PRE-WEDDING STORY</span>
+                            <h3>VYOMESH &amp; BHUMI</h3>
+                            <span class="pw-story-tile__divider" aria-hidden="true"></span>
+                            <span class="pw-story-tile__cta">VIEW STORY <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+
+                    <!-- Story 2: Nidhi & Abhi -->
+                    <a href="couple-stories.html" class="pw-story-tile" data-archive-reveal aria-label="Explore Nidhi &amp; Abhi pre-wedding story">
+                        <img class="pw-story-tile__image" src="assets/images/stories/story-03.jpg" alt="Nidhi &amp; Abhi sunset pre-wedding portraits" width="800" height="600" loading="lazy" decoding="async">
+                        <div class="pw-story-tile__meta">
+                            <span class="pw-label">PRE-WEDDING STORY</span>
+                            <h3>NIDHI &amp; ABHI</h3>
+                            <span class="pw-story-tile__divider" aria-hidden="true"></span>
+                            <span class="pw-story-tile__cta">VIEW STORY <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+
+                    <!-- Story 3: Aniket & Prerna -->
+                    <a href="couple-stories.html" class="pw-story-tile" data-archive-reveal aria-label="Explore Aniket &amp; Prerna pre-wedding story">
+                        <img class="pw-story-tile__image" src="assets/images/photography/pre-wedding-01.jpg" alt="Aniket &amp; Prerna architectural pre-wedding session" width="800" height="1000" loading="lazy" decoding="async">
+                        <div class="pw-story-tile__meta">
+                            <span class="pw-label">PRE-WEDDING STORY</span>
+                            <h3>ANIKET &amp; PRERNA</h3>
+                            <span class="pw-story-tile__divider" aria-hidden="true"></span>
+                            <span class="pw-story-tile__cta">VIEW STORY <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             09. Section 09 — Optional Pre-Wedding Film
+             Verified real film from films.html: Film 02 Vyomesh & Bhumi per Rules 30–32
+             ================================================================== -->
+        <section class="pw-section pw-film-section" aria-labelledby="film-title">
+            <div class="pw-film-container">
+                <div class="pw-film-header" data-archive-reveal>
+                    <div>
+                        <span class="pw-eyebrow">PRE-WEDDING FILM</span>
+                        <h2 id="film-title">Some stories<br><em>feel different in motion.</em></h2>
+                    </div>
+                    <div class="pw-copy">
+                        <p>A moving frame captures what still portraits hold in silence — the sound of laughter, gentle wind, and unhurried paces.</p>
+                    </div>
+                </div>
+
+                <div class="pw-film-frame" data-pw-film data-video-id="S07cx6qZZGc" data-video-title="Vyomesh &amp; Bhumi Cinematic Pre-Wedding Film" data-archive-reveal>
+                    <img class="pw-film-poster"
+                         src="https://img.youtube.com/vi/S07cx6qZZGc/hqdefault.jpg"
+                         alt="Cinematic pre-wedding film poster for Vyomesh &amp; Bhumi"
+                         width="1280" height="720"
+                         loading="lazy" decoding="async">
+                    <div class="pw-film-overlay" aria-hidden="true"></div>
+
+                    <button type="button" class="pw-film-trigger" aria-label="Play cinematic pre-wedding film for Vyomesh &amp; Bhumi">
+                        <span class="pw-play-btn" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="pw-film-meta" data-archive-reveal>
+                    <div>
+                        <p class="pw-label" style="margin: 0 0 4px;">CINEMATIC FILM</p>
+                        <h3 class="pw-film-caption">Vyomesh &amp; Bhumi</h3>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=S07cx6qZZGc" target="_blank" rel="noopener noreferrer" class="pw-link" aria-label="Watch Film on YouTube (opens in a new tab)">
+                        WATCH FILM <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================================
+         10. Existing Approved Footer (Reused exactly per Rule 34)
+         ====================================================================== -->
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+        <div class="site-footer__inner">
+
+            <!-- Mobile Only Brand Wordmark -->
+            <div class="site-footer__mobile-brand">
+                <a href="index.html" class="site-footer__brand-link" aria-label="DIVINE Photo Studio home">
+                    <span class="site-footer__brand-title">DIVINE PHOTO STUDIO</span>
+                </a>
+            </div>
+
+            <!-- Row A: Footer Navigation + Social -->
+            <div class="site-footer__nav-row">
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <ul class="site-footer__nav-list" role="list">
+                        <li class="site-footer__nav-item"><a href="index.html" class="site-footer__nav-link">HOME</a></li>
+                        <li class="site-footer__nav-item"><a href="about.html" class="site-footer__nav-link">ABOUT</a></li>
+                        <li class="site-footer__nav-item"><a href="services.html" class="site-footer__nav-link">SERVICES</a></li>
+                        <li class="site-footer__nav-item"><a href="photography.html" class="site-footer__nav-link">PHOTOGRAPHY</a></li>
+                        <li class="site-footer__nav-item"><a href="films.html" class="site-footer__nav-link">FILMS</a></li>
+                        <li class="site-footer__nav-item"><a href="couple-stories.html" class="site-footer__nav-link">COUPLE STORIES</a></li>
+                        <li class="site-footer__nav-item"><a href="contact.html" class="site-footer__nav-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social Icons (Far right on desktop, monochrome outline SVGs) -->
+                <div class="site-footer__social-icons">
+                    <span class="site-footer__social-link" role="img" aria-label="Instagram">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+
+                    <span class="site-footer__social-link" role="img" aria-label="Facebook">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </span>
+
+                    <span class="site-footer__social-link" role="img" aria-label="YouTube">
+                        <svg class="site-footer__social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"
+                                stroke="none"></polygon>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Row B: Horizontal Editorial Image Strip (Contact-Sheet Frames) -->
+            <div class="site-footer__strip-container">
+                <div class="site-footer__strip" id="footer-image-strip" tabindex="0"
+                    aria-label="Curated photography contact sheet">
+                    <!-- Frame 01: Wedding (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-01.jpg"
+                            alt="Wedding photography by Divine Photo Studio" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 02: Pre-Wedding (portrait 3:4) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p34">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-02.jpg"
+                            alt="Pre-wedding portrait by Divine Photo Studio" width="375" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 03: Reception (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-03.jpg"
+                            alt="Reception celebration moment" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 04: Engagement (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-04.jpg"
+                            alt="Intimate engagement moment" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 05: Corporate (landscape 3:2) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--l32 site-footer__strip-item--wide">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-05.jpg"
+                            alt="Corporate event photography" width="600" height="400" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!-- Frame 06: Baby Shower (portrait 4:5) -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--p45">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-06.jpg"
+                            alt="Tender baby shower celebration" width="400" height="500" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <!-- Frame 07: Emotional Detail Frame -->
+                    <figure class="site-footer__strip-item site-footer__strip-item--detail">
+                        <img class="site-footer__strip-img" src="assets/images/footer/footer-07.jpg"
+                            alt="Artful detail photograph" width="400" height="500" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+
+                <!-- Subtle desktop navigation arrows for strip scroll -->
+                <div class="site-footer__strip-controls" aria-hidden="true">
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--prev"
+                        id="footer-strip-prev" aria-label="Scroll images left">←</button>
+                    <button type="button" class="site-footer__strip-btn site-footer__strip-btn--next"
+                        id="footer-strip-next" aria-label="Scroll images right">→</button>
+                </div>
+            </div>
+
+            <!-- Row C: Bottom Information Row (Split Left/Right) -->
+            <div class="site-footer__info-row">
+                <!-- Left: Find us here -->
+                <div class="site-footer__info-col site-footer__info-col--left">
+                    <h3 class="site-footer__info-heading">Find us here</h3>
+                    <address class="site-footer__address">
+                        <span class="site-footer__address-line">[STUDIO ADDRESS]</span>
+                        <span class="site-footer__address-line">Gujarat, India</span>
+                    </address>
+                </div>
+
+                <!-- Right: Contact us -->
+                <div class="site-footer__info-col site-footer__info-col--right">
+                    <h3 class="site-footer__info-heading">Contact us</h3>
+                    <div class="site-footer__contact-details">
+                        <span class="site-footer__contact-link">[PHONE NUMBER]</span>
+                        <span class="site-footer__contact-link">[EMAIL ADDRESS]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row D: Copyright + Back-to-Top -->
+            <div class="site-footer__copyright-row">
+                <p class="site-footer__copyright">
+                    © <span id="footer-year">2026</span> DIVINE PHOTO STUDIO
+                </p>
+                <button type="button" class="site-footer__back-to-top" id="footer-back-to-top" aria-label="Back to top">
+                    <span class="site-footer__back-to-top-text">BACK TO TOP</span>
+                    <span class="site-footer__back-to-top-arrow" aria-hidden="true">↑</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal per Rule 42 & category-archive.js compatibility -->
+    <dialog class="archive-lightbox" id="archive-lightbox" aria-label="Pre-wedding photograph viewer">
+        <button type="button" class="archive-lightbox__close" data-lightbox-close aria-label="Close photograph viewer">×</button>
+        <img class="archive-lightbox__image" alt="">
+        <div class="archive-lightbox__bar">
+            <p class="archive-lightbox__caption" data-lightbox-caption aria-live="polite"></p>
+            <div class="archive-lightbox__controls">
+                <button type="button" data-lightbox-prev aria-label="Previous photograph">←</button>
+                <button type="button" data-lightbox-next aria-label="Next photograph">→</button>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=1.2"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/category-archive.js"></script>
+    <script src="js/pre-weddings.js"></script>
+</body>
+
+</html>
