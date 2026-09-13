@@ -1,0 +1,814 @@
+/* ==========================================================================
+   DIVINE PHOTO STUDIO — CORPORATE PAGE STYLESHEET (css/corporate.css)
+   Aesthetic: Professional, Editorial, Clean, Confident, Modern, Human, Structured, Premium
+   Palette: Warm Ivory (#F6F4EE), Structured Surface (#FFFDF8), Surface (#EEEADD),
+            Soft Charcoal (#1A1B18), Heritage Sage (#5A7262), Earthy Taupe (#91876E)
+   ========================================================================== */
+
+.corporate-page {
+    --corp-space: clamp(84px, 8.5vw, 150px);
+    --corp-space-sm: clamp(48px, 5vw, 84px);
+    --corp-gap: clamp(24px, 3.8vw, 64px);
+    --corp-bg: #F6F4EE;
+    --corp-surface: #EEEADD;
+    --corp-surface-clean: #FFFDF8;
+    --corp-charcoal: #1A1B18;
+    --corp-sage: #5A7262;
+    --corp-taupe: #91876E;
+    --corp-border: rgba(26, 27, 24, 0.09);
+    --corp-border-subtle: rgba(26, 27, 24, 0.05);
+
+    background-color: var(--corp-bg);
+    color: var(--corp-charcoal);
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Containers
+   -------------------------------------------------------------------------- */
+.corporate-page .corp-container {
+    width: min(88%, 1440px);
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.corporate-page .corp-container--narrow {
+    width: min(82%, 1180px);
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.corporate-page .corp-container--wide {
+    width: min(92%, 1560px);
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.corporate-page .corp-section {
+    padding-block: var(--corp-space);
+    position: relative;
+}
+
+.corporate-page .corp-section--surface {
+    background-color: var(--corp-surface);
+}
+
+.corporate-page .corp-section--clean {
+    background-color: var(--corp-surface-clean);
+}
+
+/* --------------------------------------------------------------------------
+   Typography Tokens
+   -------------------------------------------------------------------------- */
+.corporate-page .corp-eyebrow {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--corp-sage);
+    margin-bottom: 24px;
+    display: block;
+}
+
+.corporate-page h1,
+.corporate-page h2:not(.corp-eyebrow),
+.corporate-page h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -.025em;
+    color: var(--corp-charcoal);
+}
+
+.corporate-page h2:not(.corp-eyebrow) {
+    font-size: clamp(38px, 4.4vw, 64px);
+    line-height: 1.04;
+}
+
+.corporate-page em {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.corporate-page .corp-copy {
+    font-family: var(--font-ui);
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--color-text-muted);
+    max-width: 480px;
+}
+
+.corporate-page .corp-copy p + p {
+    margin-top: 18px;
+}
+
+.corporate-page .corp-label {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.corporate-page .corp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-ui);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--corp-charcoal);
+    text-decoration: none;
+    padding-block: 10px;
+    position: relative;
+    transition: color .3s ease;
+}
+
+.corporate-page .corp-link span[aria-hidden="true"] {
+    transition: transform .3s ease;
+}
+
+.corporate-page .corp-link:hover {
+    color: var(--corp-sage);
+}
+
+.corporate-page .corp-link:hover span[aria-hidden="true"] {
+    transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   Image Base & Ratios
+   -------------------------------------------------------------------------- */
+.corporate-page .corp-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--corp-surface);
+    transition: transform .8s cubic-bezier(0.16, 1, 0.3, 1), filter .4s ease;
+}
+
+.corporate-page .corp-frame {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--corp-surface);
+}
+
+.corporate-page .corp-frame--16-10 {
+    aspect-ratio: 16 / 10;
+}
+
+.corporate-page .corp-frame--16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.corporate-page .corp-frame--3-2 {
+    aspect-ratio: 3 / 2;
+}
+
+.corporate-page .corp-frame--4-5 {
+    aspect-ratio: 4 / 5;
+}
+
+.corporate-page .corp-frame--1-1 {
+    aspect-ratio: 1 / 1;
+}
+
+.corporate-page a[data-archive-image] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .corporate-page .corp-frame:hover .corp-image {
+        transform: scale(1.015);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Registration Marks & Decorative Micro-Elements
+   -------------------------------------------------------------------------- */
+.corporate-page .corp-mark {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+    opacity: 0.035;
+    z-index: 2;
+}
+
+.corporate-page .corp-mark::before,
+.corporate-page .corp-mark::after {
+    content: '';
+    position: absolute;
+    background-color: var(--corp-charcoal);
+}
+
+.corporate-page .corp-mark::before {
+    top: 6px;
+    left: 0;
+    width: 14px;
+    height: 1px;
+}
+
+.corporate-page .corp-mark::after {
+    top: 0;
+    left: 6px;
+    width: 1px;
+    height: 14px;
+}
+
+.corporate-page .corp-mark--tl { top: 32px; left: 32px; }
+.corporate-page .corp-mark--tr { top: 32px; right: 32px; }
+.corporate-page .corp-mark--bl { bottom: 32px; left: 32px; }
+.corporate-page .corp-mark--br { bottom: 32px; right: 32px; }
+
+/* Thin Editorial Divider */
+.corporate-page .corp-divider {
+    height: 1px;
+    background-color: var(--corp-border);
+    margin-block: var(--corp-space);
+    border: none;
+}
+
+/* ==========================================================================
+   SECTION 02 — HERO
+   ========================================================================== */
+.corporate-page .corp-hero {
+    padding-top: clamp(140px, 14vw, 190px);
+    padding-bottom: clamp(60px, 7vw, 110px);
+    position: relative;
+    border-bottom: 1px solid var(--corp-border-subtle);
+}
+
+.corporate-page .corp-hero__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    gap: clamp(32px, 5vw, 84px);
+    align-items: flex-end;
+    margin-bottom: clamp(48px, 5.5vw, 84px);
+}
+
+.corporate-page .corp-hero__heading {
+    font-size: clamp(48px, 6.2vw, 88px);
+    line-height: 0.98;
+    letter-spacing: -.03em;
+    margin: 0;
+}
+
+.corporate-page .corp-hero__heading em {
+    display: inline;
+    font-style: italic;
+    color: var(--corp-charcoal);
+}
+
+.corporate-page .corp-hero__intro {
+    font-family: var(--font-ui);
+    font-size: clamp(15px, 1.15vw, 17px);
+    line-height: 1.85;
+    color: var(--color-text-muted);
+    max-width: 440px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.corporate-page .corp-hero__visual {
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+}
+
+.corporate-page .corp-hero__frame {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: var(--corp-surface);
+    box-shadow: 0 16px 40px -20px rgba(26, 27, 24, 0.08);
+}
+
+/* ==========================================================================
+   SECTION 03 — INTRODUCTION (Editorial Split)
+   ========================================================================== */
+.corporate-page .corp-intro {
+    padding-block: var(--corp-space);
+    background-color: var(--corp-surface-clean);
+    border-bottom: 1px solid var(--corp-border-subtle);
+}
+
+.corporate-page .corp-intro__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: clamp(40px, 7vw, 108px);
+    align-items: start;
+}
+
+.corporate-page .corp-intro__title {
+    font-size: clamp(36px, 4.2vw, 58px);
+    line-height: 1.05;
+    margin: 0;
+}
+
+.corporate-page .corp-intro__body {
+    padding-top: 6px;
+}
+
+.corporate-page .corp-intro__body p {
+    font-family: var(--font-ui);
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.corporate-page .corp-intro__body p + p {
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   SECTION 04 — FEATURED CORPORATE STORY
+   ========================================================================== */
+.corporate-page .corp-featured {
+    padding-block: var(--corp-space);
+}
+
+.corporate-page .corp-featured__wrapper {
+    width: min(86vw, 1400px);
+    margin-inline: auto;
+}
+
+.corporate-page .corp-featured__header {
+    margin-bottom: 24px;
+}
+
+.corporate-page .corp-featured__frame {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: var(--corp-surface);
+    margin-bottom: 32px;
+}
+
+.corporate-page .corp-featured__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    border-top: 1px solid var(--corp-border);
+}
+
+.corporate-page .corp-featured__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.corporate-page .corp-featured__client {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 2.4vw, 36px);
+    line-height: 1.1;
+    margin: 0;
+    color: var(--corp-charcoal);
+}
+
+.corporate-page .corp-featured__tag {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--corp-sage);
+    font-weight: 500;
+}
+
+.corporate-page .corp-featured__loc {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   SECTION 05 — MAIN CURATED CORPORATE GALLERY
+   ========================================================================== */
+.corporate-page .corp-gallery {
+    padding-block: var(--corp-space);
+    background-color: var(--corp-surface-clean);
+    border-top: 1px solid var(--corp-border-subtle);
+    border-bottom: 1px solid var(--corp-border-subtle);
+}
+
+.corporate-page .corp-gallery__header {
+    margin-bottom: clamp(48px, 6vw, 84px);
+    max-width: 640px;
+}
+
+.corporate-page .corp-gallery__title {
+    font-size: clamp(38px, 4.5vw, 64px);
+    line-height: 1.05;
+    margin: 0;
+}
+
+/* Clean Structured Editorial Grid Rhythm */
+.corporate-page .corp-grid {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(32px, 4.5vw, 68px);
+}
+
+/* Row 1: Large landscape (1.5fr) + Portrait (1fr) */
+.corporate-page .corp-row--split-unequal {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+    gap: clamp(24px, 3.5vw, 56px);
+    align-items: center;
+}
+
+/* Row 2: Two balanced professional frames (1fr + 1fr) */
+.corporate-page .corp-row--two-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(24px, 3.5vw, 56px);
+    align-items: center;
+}
+
+/* Row 3: Full width hero landscape */
+.corporate-page .corp-row--full {
+    width: 100%;
+}
+
+/* Row 4: Three column triad (Portrait + Square Detail + Landscape) */
+.corporate-page .corp-row--three-col {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr 1.3fr;
+    gap: clamp(20px, 3vw, 44px);
+    align-items: center;
+}
+
+/* Row 5: Closing landscape + portrait */
+.corporate-page .corp-row--closing {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: clamp(24px, 3.5vw, 56px);
+    align-items: center;
+}
+
+/* Lightbox Clickable Indicator */
+.corporate-page .corp-interactive-item {
+    cursor: pointer;
+    position: relative;
+    outline-offset: 4px;
+}
+
+.corporate-page .corp-interactive-item:focus-visible {
+    outline: 2px solid var(--corp-sage);
+}
+
+/* ==========================================================================
+   SECTION 06 — PEOPLE & LEADERSHIP
+   ========================================================================== */
+.corporate-page .corp-people {
+    padding-block: var(--corp-space);
+}
+
+.corporate-page .corp-people__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: clamp(32px, 5vw, 80px);
+    align-items: end;
+    margin-bottom: clamp(48px, 6vw, 84px);
+}
+
+.corporate-page .corp-people__title {
+    font-size: clamp(38px, 4.4vw, 64px);
+    line-height: 1.05;
+    margin: 0;
+}
+
+.corporate-page .corp-people__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(20px, 2.5vw, 36px);
+    margin-bottom: clamp(32px, 4vw, 56px);
+}
+
+.corporate-page .corp-people__wide {
+    width: 100%;
+    margin-top: clamp(24px, 3.5vw, 48px);
+}
+
+/* ==========================================================================
+   SECTION 07 — EVENTS & BRAND ENVIRONMENT
+   ========================================================================== */
+.corporate-page .corp-events {
+    padding-block: var(--corp-space);
+    background-color: var(--corp-surface-clean);
+    border-top: 1px solid var(--corp-border-subtle);
+    border-bottom: 1px solid var(--corp-border-subtle);
+}
+
+.corporate-page .corp-events__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: clamp(32px, 5vw, 80px);
+    align-items: end;
+    margin-bottom: clamp(48px, 6vw, 84px);
+}
+
+.corporate-page .corp-events__title {
+    font-size: clamp(38px, 4.4vw, 64px);
+    line-height: 1.05;
+    margin: 0;
+}
+
+.corporate-page .corp-events__grid {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(32px, 4vw, 56px);
+}
+
+.corporate-page .corp-events__row-top {
+    width: 100%;
+}
+
+.corporate-page .corp-events__row-mid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(24px, 3.5vw, 56px);
+}
+
+.corporate-page .corp-events__row-bot {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: clamp(24px, 3.5vw, 56px);
+}
+
+/* ==========================================================================
+   SECTION 08 — MORE CORPORATE STORIES
+   ========================================================================== */
+.corporate-page .corp-stories {
+    padding-block: var(--corp-space);
+}
+
+.corporate-page .corp-stories__header {
+    margin-bottom: clamp(40px, 5vw, 68px);
+}
+
+.corporate-page .corp-stories__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(24px, 3vw, 44px);
+}
+
+.corporate-page .corp-story-card {
+    text-decoration: none;
+    color: var(--corp-charcoal);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--corp-surface-clean);
+    border: 1px solid var(--corp-border-subtle);
+    transition: transform .4s cubic-bezier(0.16, 1, 0.3, 1), border-color .3s ease;
+}
+
+.corporate-page .corp-story-card__frame {
+    aspect-ratio: 16 / 10;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--corp-surface);
+}
+
+.corporate-page .corp-story-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(26, 27, 24, 0.45) 100%);
+    opacity: 0;
+    transition: opacity .4s ease;
+    pointer-events: none;
+}
+
+.corporate-page .corp-story-card__content {
+    padding: clamp(20px, 2vw, 28px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid var(--corp-border-subtle);
+    background-color: #fff;
+    flex-grow: 1;
+}
+
+.corporate-page .corp-story-card__eyebrow {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--corp-sage);
+    font-weight: 500;
+}
+
+.corporate-page .corp-story-card__title {
+    font-family: var(--font-display);
+    font-size: clamp(20px, 1.8vw, 26px);
+    line-height: 1.15;
+    margin: 0;
+    color: var(--corp-charcoal);
+    transition: color .3s ease;
+}
+
+.corporate-page .corp-story-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-ui);
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    margin-top: 8px;
+    transition: color .3s ease, transform .3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .corporate-page .corp-story-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(26, 27, 24, 0.2);
+    }
+    
+    .corporate-page .corp-story-card:hover .corp-story-card__overlay {
+        opacity: 1;
+    }
+    
+    .corporate-page .corp-story-card:hover .corp-image {
+        transform: scale(1.02);
+    }
+    
+    .corporate-page .corp-story-card:hover .corp-story-card__title {
+        color: var(--corp-sage);
+    }
+    
+    .corporate-page .corp-story-card:hover .corp-story-card__cta {
+        color: var(--corp-charcoal);
+        transform: translateX(4px);
+    }
+}
+
+/* ==========================================================================
+   ANIMATIONS & SCROLL REVEALS
+   Restrained editorial motion: fade + translateY(8-12px), 650-900ms
+   ========================================================================== */
+.corporate-page [data-reveal] {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1), transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.corporate-page [data-reveal].is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.corporate-page [data-reveal-delay="1"] { transition-delay: 100ms; }
+.corporate-page [data-reveal-delay="2"] { transition-delay: 200ms; }
+.corporate-page [data-reveal-delay="3"] { transition-delay: 300ms; }
+
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM
+   ========================================================================== */
+
+/* Tablet Viewports (768px - 1024px) */
+@media (max-width: 1024px) {
+    .corporate-page .corp-hero__header {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    
+    .corporate-page .corp-intro__grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    
+    .corporate-page .corp-people__header,
+    .corporate-page .corp-events__header {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .corporate-page .corp-people__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .corporate-page .corp-stories__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .corporate-page .corp-row--three-col {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .corporate-page .corp-row--three-col > :last-child {
+        grid-column: span 2;
+    }
+}
+
+/* Mobile Viewports (max-width: 767px) */
+@media (max-width: 767px) {
+    .corporate-page {
+        --corp-space: 64px;
+        --corp-gap: 24px;
+    }
+
+    .corporate-page .corp-container,
+    .corporate-page .corp-container--narrow,
+    .corporate-page .corp-container--wide {
+        width: 100%;
+        padding-inline: 20px;
+    }
+
+    .corporate-page .corp-hero {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+
+    .corporate-page .corp-hero__header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 36px;
+    }
+
+    .corporate-page .corp-hero__heading {
+        font-size: clamp(38px, 11vw, 54px);
+        line-height: 1.02;
+    }
+
+    .corporate-page .corp-featured__wrapper {
+        width: 100%;
+    }
+
+    .corporate-page .corp-featured__meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* Clean mobile gallery layout */
+    .corporate-page .corp-row--split-unequal,
+    .corporate-page .corp-row--two-col,
+    .corporate-page .corp-row--three-col,
+    .corporate-page .corp-row--closing,
+    .corporate-page .corp-events__row-mid,
+    .corporate-page .corp-events__row-bot {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .corporate-page .corp-row--three-col > :last-child {
+        grid-column: auto;
+    }
+
+    .corporate-page .corp-people__grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .corporate-page .corp-stories__grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    /* Mobile Story Card: Content permanently visible */
+    .corporate-page .corp-story-card__content {
+        background-color: #fff;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .corporate-page [data-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+    
+    .corporate-page .corp-image,
+    .corporate-page .corp-story-card,
+    .corporate-page .corp-link span[aria-hidden="true"] {
+        transition: none !important;
+        transform: none !important;
+    }
+}
