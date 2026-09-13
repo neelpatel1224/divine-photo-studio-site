@@ -1,0 +1,1333 @@
+/* ==========================================================================
+   DIVINE PHOTO STUDIO — INDIVIDUAL COUPLE GALLERY STYLESHEET (V1 Refined)
+   Page: Hitanshi & Vaidik (css/couple-gallery.css)
+   Aesthetic: Image-first, Minimal, Clean, Immersive, Fast, Premium, Timeless
+   Palette: Clean Surface (#FFFDF8), Warm Ivory (#F6F4EE), Soft Charcoal (#1A1B18),
+            Heritage Sage (#5A7262), Earthy Taupe (#91876E), Terracotta Accent (#B4794B)
+   ========================================================================== */
+
+.couple-gallery-page {
+    --cgl-bg: #FFFDF8;
+    --cgl-surface: #F6F4EE;
+    --cgl-charcoal: #1A1B18;
+    --cgl-sage: #5A7262;
+    --cgl-taupe: #91876E;
+    --cgl-accent: #B4794B;
+    --cgl-border: rgba(26, 27, 24, 0.08);
+    --cgl-border-subtle: rgba(26, 27, 24, 0.04);
+    --cgl-gap: 6px;
+    --cgl-gap-mobile: 4px;
+
+    background-color: var(--cgl-bg);
+    color: var(--cgl-charcoal);
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Section 00 — Page Layout & Spacing Reset (Rule 8)
+   Remove old navbar height offsets and any lingering spacing
+   -------------------------------------------------------------------------- */
+.couple-gallery-page main {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Section 01 — Minimal Gallery Navigation (Rules 1–6, 12–14, 28)
+   Desktop (>= 1024px): REMOVED / HIDDEN per Rule 2 (hero is immediate first element)
+   Tablet / Mobile (< 1024px): Preserved minimal gallery header
+   -------------------------------------------------------------------------- */
+.cgl-nav {
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    background-color: var(--cgl-surface);
+    border-bottom: 1px solid rgba(90, 114, 98, 0.10);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding-top: env(safe-area-inset-top);
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+}
+
+.cgl-nav__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cgl-nav__link {
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #666B61;
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 4px;
+    transition: color 0.25s ease;
+}
+
+.cgl-nav__link:hover,
+.cgl-nav__link:focus-visible {
+    color: #B4794B;
+}
+
+.cgl-nav__link:focus-visible {
+    outline: 2px solid #B4794B;
+    outline-offset: 2px;
+}
+
+.cgl-nav__text--mobile {
+    display: none;
+}
+
+.cgl-nav__text--desktop {
+    display: inline;
+}
+
+/* DESKTOP / LAPTOP: REMOVE TOP UTILITY BAR (Rule 2) */
+@media (min-width: 1024px) {
+    .cgl-nav {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cgl-nav {
+        height: 56px;
+        min-height: 56px;
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+    }
+}
+
+@media (max-width: 767px) {
+    .cgl-nav {
+        height: 50px;
+        min-height: 50px;
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right));
+    }
+
+    .cgl-nav__text--desktop {
+        display: none;
+    }
+
+    .cgl-nav__text--mobile {
+        display: inline;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Section 02 — Hero Cover Photograph (Rules 3, 4, 16)
+   Desktop / Laptop (>= 1024px):
+     Top margin from browser content edge: 22px (Rule 3: 18px–28px)
+     Side margins: 22px (Rule 3: 18px–28px)
+     Height: 78vh (Rule 4: 72–82vh)
+     No border radius, no shadow, no overlay text
+   Tablet / Mobile (< 1024px):
+     Preserved spacing under minimal navigation
+   -------------------------------------------------------------------------- */
+.cgl-cover {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.cgl-cover__wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--cgl-surface);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.cgl-cover__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 38%;
+}
+
+@media (min-width: 1024px) {
+    .cgl-cover {
+        padding-top: 22px; /* Rule 3: 18px–28px */
+        padding-inline: 22px; /* Rule 3: 18px–28px */
+    }
+    .cgl-cover__wrap {
+        height: clamp(540px, 78vh, 900px); /* Rule 4: 72–82vh */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cgl-cover {
+        padding-top: 12px;
+        padding-inline: 16px;
+    }
+    .cgl-cover__wrap {
+        height: clamp(460px, 70dvh, 720px);
+    }
+}
+
+@media (max-width: 767px) {
+    .cgl-cover {
+        padding-top: 10px;
+        padding-inline: 8px;
+    }
+    .cgl-cover__wrap {
+        height: clamp(360px, 60dvh, 520px);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Section 03 — Editorial Identity Strip Below Hero (Rules 5–13, 17, 19)
+   Desktop (>= 1024px):
+     3-column grid on #F6F4EE:
+     LEFT: DIVINE PHOTO STUDIO (8px–10px, uppercase, #1A1B18)
+     CENTER: Date (#91876E) + Couple Name (Cormorant Garamond clamp(34px, 3vw, 50px))
+     RIGHT: VIEW GALLERY (Compact rectangular button, #1A1B18, hover #B4794B)
+     Spacing to gallery: 44px (Rule 17: 36px–56px)
+   Mobile (< 1024px):
+     Preserved stacked identity hierarchy with full mobile action row
+   -------------------------------------------------------------------------- */
+.cgl-identity {
+    width: 100%;
+    transition: background-color 0.25s ease;
+}
+
+.cgl-identity__inner {
+    width: 100%;
+}
+
+/* 3-Column Desktop Grid Layout (Rules 5, 6) */
+@media (min-width: 1024px) {
+    .cgl-identity {
+        background-color: #F6F4EE; /* Rule 6 */
+        padding: 28px 34px 32px; /* Rule 6 */
+        margin-bottom: 44px; /* Rule 17: 36px–56px before masonry start */
+    }
+
+    .cgl-identity__grid {
+        display: grid;
+        grid-template-columns: 1fr minmax(420px, 1.4fr) 1fr; /* Rule 6 */
+        align-items: center;
+        width: 100%;
+    }
+
+    .cgl-identity__col--left {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .cgl-identity__studio {
+        font-family: var(--font-accent, "Montserrat", sans-serif);
+        font-size: 9px; /* Rule 7: 8px–10px */
+        font-weight: 400;
+        letter-spacing: 0.24em; /* Rule 7: 0.20em–0.26em */
+        text-transform: uppercase;
+        color: #1A1B18; /* Rule 7: #1A1B18 */
+        margin: 0;
+        display: block;
+    }
+
+    .cgl-identity__col--center {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cgl-identity__date {
+        font-family: var(--font-ui, "Inter", sans-serif);
+        font-size: 10px; /* Rule 9: 9px–10px */
+        font-weight: 500;
+        letter-spacing: 0.20em; /* Rule 9: 0.18em–0.22em */
+        text-transform: uppercase;
+        color: #91876E; /* Rule 9: #91876E */
+        margin: 0 0 10px 0; /* Rule 9: 8px–12px */
+    }
+
+    .cgl-identity__title {
+        font-family: var(--font-display, "Cormorant Garamond", serif);
+        font-size: clamp(34px, 3vw, 50px); /* Rule 10: clamp(34px, 3vw, 50px) */
+        font-weight: 400;
+        line-height: 1; /* Rule 10: line-height 1 */
+        letter-spacing: 0.03em; /* Rule 10: 0.02em–0.05em */
+        color: #1A1B18; /* Rule 10: #1A1B18 */
+        text-transform: uppercase;
+        margin: 0;
+        word-break: break-word;
+    }
+
+    .cgl-identity__col--right {
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .cgl-btn-view-gallery {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1A1B18; /* Rule 11: #1A1B18 */
+        color: #FFFDF8; /* Rule 11: #FFFDF8 */
+        font-family: var(--font-ui, "Inter", sans-serif);
+        font-size: 10px; /* Rule 11: 9px–10px */
+        font-weight: 500;
+        letter-spacing: 0.18em; /* Rule 11: 0.16em–0.20em */
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 11px 18px; /* Rule 11: 11px 18px */
+        border: none;
+        border-radius: 0; /* Rule 11: 0–2px */
+        cursor: pointer;
+        transition: background-color 0.25s ease, transform 0.2s ease;
+    }
+
+    .cgl-btn-view-gallery:hover,
+    .cgl-btn-view-gallery:focus-visible {
+        background-color: #B4794B; /* Rule 11: #B4794B */
+        color: #FFFDF8;
+        transform: translateY(-1px);
+    }
+
+    .cgl-identity__mobile-actions {
+        display: none; /* Rule 13: Hide mobile action buttons on desktop */
+    }
+}
+
+/* Tablet & Mobile Layout (< 1024px) (Rule 19) */
+@media (max-width: 1023px) {
+    .cgl-identity {
+        padding-inline: clamp(16px, 3vw, 40px);
+        padding-top: clamp(28px, 4vw, 48px);
+        padding-bottom: clamp(24px, 3vw, 36px);
+        background-color: var(--cgl-bg);
+        text-align: center;
+    }
+
+    .cgl-identity__inner {
+        max-width: 860px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cgl-identity__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cgl-identity__col--center {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cgl-identity__date {
+        font-family: var(--font-ui, "Inter", sans-serif);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--cgl-sage);
+        margin: 0 0 10px 0;
+    }
+
+    .cgl-identity__title {
+        font-family: var(--font-display, "Cormorant Garamond", serif);
+        font-size: clamp(30px, 8.5vw, 44px);
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        line-height: 1.05;
+        margin: 0 0 10px 0;
+        color: var(--cgl-charcoal);
+        text-transform: uppercase;
+        word-break: break-word;
+    }
+
+    .cgl-identity__col--left {
+        order: 2;
+        margin-bottom: 24px;
+    }
+
+    .cgl-identity__studio {
+        font-family: var(--font-accent, "Montserrat", sans-serif);
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--cgl-taupe);
+        margin: 0;
+    }
+
+    .cgl-identity__col--right {
+        display: none; /* Merged into mobile-actions */
+    }
+
+    .cgl-identity__mobile-actions {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+    }
+}
+
+/* Action Controls Shared Styles */
+.cgl-action-btn,
+.cgl-tool-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 44px;
+    padding: 12px 20px;
+    border: 1px solid rgba(26, 27, 24, 0.14);
+    background-color: var(--cgl-surface);
+    color: var(--cgl-charcoal);
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.cgl-action-btn svg,
+.cgl-tool-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    flex-shrink: 0;
+}
+
+.cgl-action-btn:hover,
+.cgl-tool-btn:hover {
+    border-color: var(--cgl-accent);
+    color: var(--cgl-accent);
+    transform: translateY(-1px);
+}
+
+.cgl-action-btn--primary {
+    background-color: var(--cgl-charcoal);
+    color: #FFFDF8;
+    border-color: var(--cgl-charcoal);
+}
+
+.cgl-action-btn--primary:hover {
+    background-color: #2F312B;
+    color: #FFFDF8;
+    border-color: #2F312B;
+    transform: translateY(-1px);
+}
+
+.cgl-action-btn.is-active,
+.cgl-tool-btn.is-active {
+    background-color: var(--cgl-sage);
+    border-color: var(--cgl-sage);
+    color: #FFFDF8;
+}
+
+.cgl-action-btn.is-active svg,
+.cgl-tool-btn.is-active svg {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.cgl-tool-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    padding: 2px 6px;
+    background-color: rgba(26, 27, 24, 0.08);
+    color: var(--cgl-charcoal);
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+@media (max-width: 767px) {
+    .cgl-action-btn,
+    .cgl-tool-btn {
+        padding: 10px 14px;
+        font-size: 9.5px;
+        letter-spacing: 0.14em;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Section 04 — Quiet Desktop Return Bar & Floating Edge Back (Rules 14, 15)
+   Desktop: secondary utility access post-gallery
+   -------------------------------------------------------------------------- */
+.cgl-desktop-exit-nav {
+    display: none;
+}
+
+.cgl-desktop-floating-back {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .cgl-desktop-exit-nav {
+        display: block;
+        width: 100%;
+        padding: 34px 40px;
+        background-color: var(--cgl-surface);
+        border-top: 1px solid rgba(90, 114, 98, 0.10);
+    }
+
+    .cgl-desktop-exit-nav__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cgl-exit-link {
+        font-family: var(--font-ui, "Inter", sans-serif);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #666B61;
+        transition: color 0.25s ease;
+    }
+
+    .cgl-exit-link:hover,
+    .cgl-exit-link:focus-visible {
+        color: #B4794B;
+    }
+
+    .cgl-desktop-floating-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        position: fixed;
+        top: 24px;
+        left: 24px;
+        z-index: 40;
+        font-family: var(--font-ui, "Inter", sans-serif);
+        font-size: 9.5px;
+        font-weight: 500;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #666B61;
+        background-color: rgba(246, 244, 238, 0.92);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 9px 15px;
+        border: 1px solid rgba(90, 114, 98, 0.12);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-4px);
+        transition: opacity 0.3s ease, transform 0.3s ease, color 0.25s ease, background-color 0.25s ease;
+    }
+
+    .cgl-desktop-floating-back.is-visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .cgl-desktop-floating-back:hover,
+    .cgl-desktop-floating-back:focus-visible {
+        color: #B4794B;
+        background-color: #FFFDF8;
+        border-color: #B4794B;
+    }
+}
+
+.cgl-action-btn,
+.cgl-tool-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 44px; /* Rule 13 & 46: min 44px tap target */
+    padding: 12px 22px;
+    border: 1px solid rgba(26, 27, 24, 0.14);
+    background-color: var(--cgl-surface);
+    color: var(--cgl-charcoal);
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.cgl-action-btn svg,
+.cgl-tool-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    flex-shrink: 0;
+}
+
+.cgl-action-btn:hover,
+.cgl-tool-btn:hover {
+    border-color: var(--cgl-accent);
+    color: var(--cgl-accent);
+    transform: translateY(-1px);
+}
+
+.cgl-action-btn:focus-visible,
+.cgl-tool-btn:focus-visible {
+    outline: 2px solid var(--cgl-accent);
+    outline-offset: 2px;
+}
+
+/* Primary View Gallery CTA Button */
+.cgl-action-btn--primary,
+.cgl-btn-primary {
+    background-color: var(--cgl-charcoal);
+    color: #FFFDF8;
+    border-color: var(--cgl-charcoal);
+}
+
+.cgl-action-btn--primary:hover,
+.cgl-btn-primary:hover {
+    background-color: #2F312B;
+    color: #FFFDF8;
+    border-color: #2F312B;
+    transform: translateY(-1px);
+}
+
+.cgl-action-btn.is-active,
+.cgl-tool-btn.is-active {
+    background-color: var(--cgl-sage);
+    border-color: var(--cgl-sage);
+    color: #FFFDF8;
+}
+
+.cgl-action-btn.is-active svg,
+.cgl-tool-btn.is-active svg {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.cgl-tool-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    padding: 2px 6px;
+    background-color: rgba(26, 27, 24, 0.08);
+    color: var(--cgl-charcoal);
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+@media (max-width: 767px) {
+    .cgl-identity {
+        padding-top: 28px;
+        padding-bottom: 24px;
+        padding-inline: 14px;
+    }
+
+    .cgl-identity__title {
+        font-size: clamp(30px, 9vw, 42px); /* Rule 17: Mobile clamp */
+        line-height: 1.04;
+        margin-bottom: 10px;
+    }
+
+    .cgl-identity__studio {
+        margin-bottom: 24px;
+    }
+
+    .cgl-identity__actions {
+        gap: 8px;
+    }
+
+    .cgl-action-btn,
+    .cgl-tool-btn {
+        padding: 10px 14px;
+        font-size: 9.5px;
+        letter-spacing: 0.14em;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Section 05 — Main Mixed-Height Masonry Wall
+   Natural aspect ratios, dense continuous proof gallery, tight 4px-8px gap
+   -------------------------------------------------------------------------- */
+.cgl-gallery {
+    padding-inline: clamp(14px, 2.4vw, 28px);
+    padding-top: var(--cgl-gap);
+    padding-bottom: clamp(64px, 7vw, 110px);
+    background-color: var(--cgl-bg);
+}
+
+.cgl-masonry {
+    column-count: 4;
+    column-gap: var(--cgl-gap);
+    width: 100%;
+}
+
+@media (min-width: 1600px) {
+    .cgl-masonry {
+        column-count: 5;
+    }
+}
+
+@media (max-width: 1180px) {
+    .cgl-masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 767px) {
+    .cgl-gallery {
+        padding-inline: 6px;
+    }
+    .cgl-masonry {
+        column-count: 2; /* Rule 29 & 43: 2 columns on mobile */
+        column-gap: var(--cgl-gap-mobile);
+    }
+}
+
+@media (max-width: 340px) {
+    .cgl-masonry {
+        column-count: 1; /* Fallback for very narrow devices */
+    }
+}
+
+/* Masonry Item */
+.cgl-item {
+    break-inside: avoid;
+    margin-bottom: var(--cgl-gap);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--cgl-surface);
+    cursor: zoom-in;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .cgl-item {
+        margin-bottom: var(--cgl-gap-mobile);
+    }
+}
+
+.cgl-item__link {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.cgl-item__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: var(--cgl-surface);
+    transition: transform .6s cubic-bezier(0.16, 1, 0.3, 1), opacity .4s ease;
+    will-change: transform;
+}
+
+/* Subtle Hover Effect (Desktop only) */
+@media (hover: hover) and (pointer: fine) {
+    .cgl-item:hover .cgl-item__img {
+        transform: scale(1.018);
+    }
+}
+
+/* Interactive Favorite Heart at Bottom Right */
+.cgl-item__fav {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(255, 253, 248, 0.9);
+    border: 1px solid rgba(26, 27, 24, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity .25s ease, transform .25s ease, background-color .2s ease;
+    z-index: 2;
+    padding: 0;
+    color: var(--cgl-charcoal);
+}
+
+.cgl-item__fav svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
+
+.cgl-item__fav.is-favorite {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #FFFDF8;
+    color: var(--cgl-accent);
+}
+
+.cgl-item__fav.is-favorite svg {
+    fill: var(--cgl-accent);
+    stroke: var(--cgl-accent);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cgl-item:hover .cgl-item__fav {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (hover: none) {
+    .cgl-item__fav.is-favorite {
+        opacity: 1;
+    }
+}
+
+/* Empty Favorites State */
+.cgl-empty-favorites {
+    display: none;
+    text-align: center;
+    padding-block: 80px;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 14px;
+    color: var(--cgl-taupe);
+}
+
+/* --------------------------------------------------------------------------
+   Section 06 — Back to Top Action
+   -------------------------------------------------------------------------- */
+.cgl-back-to-top-wrap {
+    display: flex;
+    justify-content: center;
+    padding-bottom: clamp(48px, 6vw, 84px);
+    background-color: var(--cgl-bg);
+}
+
+.cgl-back-to-top-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cgl-charcoal);
+    color: #FFFDF8;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    padding: 13px 26px;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .2s ease;
+}
+
+.cgl-back-to-top-btn:hover {
+    background-color: #2F312B;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Section 07 — Pixieset-Style Pure Light Fullscreen Viewer
+   Background: #FFFDF8 / pure white (NOT dark black lightbox)
+   100dvh viewport support, safe-area-inset padding, Fullscreen API support
+   ========================================================================== */
+.cgl-viewer {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh; /* Rule 19: 100dvh modern viewport */
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #FFFDF8;
+    color: var(--cgl-charcoal);
+    z-index: 99999;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cgl-viewer::backdrop {
+    background-color: #FFFDF8;
+}
+
+.cgl-viewer.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Viewer Top Bar */
+.cgl-viewer__topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: clamp(56px, 7vh, 68px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: max(10px, env(safe-area-inset-top));
+    padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right));
+    z-index: 20;
+    background: linear-gradient(180deg, rgba(255, 253, 248, 0.96) 0%, rgba(255, 253, 248, 0) 100%);
+    transition: opacity .35s ease;
+}
+
+.cgl-viewer__close-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--cgl-charcoal);
+    cursor: pointer;
+    padding: 10px 14px;
+    min-height: 44px;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.cgl-viewer__close-btn:hover {
+    color: var(--cgl-accent);
+    transform: translateX(-2px);
+}
+
+.cgl-viewer__top-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cgl-viewer__icon-btn {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--cgl-charcoal);
+    transition: color .2s ease, transform .2s ease;
+    padding: 0;
+}
+
+.cgl-viewer__icon-btn:hover {
+    color: var(--cgl-accent);
+    transform: scale(1.08);
+}
+
+.cgl-viewer__icon-btn svg {
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+}
+
+.cgl-viewer__icon-btn.is-active svg {
+    fill: var(--cgl-accent);
+    stroke: var(--cgl-accent);
+}
+
+/* Viewer Main Stage */
+.cgl-viewer__stage {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: clamp(60px, 7vh, 80px);
+    padding-bottom: clamp(48px, 6vh, 64px);
+    padding-inline: clamp(16px, 4vw, 80px);
+    touch-action: pan-y pinch-zoom;
+}
+
+.cgl-viewer__img-wrap {
+    position: relative;
+    max-width: min(82vw, 1500px);
+    max-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cgl-viewer__img {
+    display: block;
+    max-width: min(82vw, 1500px);
+    max-height: 82vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    background-color: transparent;
+    transition: opacity 250ms ease;
+    box-shadow: 0 12px 36px -16px rgba(26, 27, 24, 0.08);
+    transform-origin: center center;
+}
+
+/* Subtle Ken Burns during Slideshow Mode (Rule 34) */
+.cgl-viewer.is-slideshow-active .cgl-viewer__img {
+    transform: scale(1.025);
+    transition: transform 6000ms cubic-bezier(0.16, 1, 0.3, 1), opacity 700ms ease; /* Rule 32 & 35 */
+}
+
+/* Viewer Edge Controls */
+.cgl-viewer__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--cgl-charcoal);
+    opacity: 0.6;
+    transition: opacity .2s ease, transform .2s ease, color .2s ease;
+    z-index: 15;
+    padding: 0;
+}
+
+.cgl-viewer__nav--prev {
+    left: max(8px, env(safe-area-inset-left));
+}
+
+.cgl-viewer__nav--next {
+    right: max(8px, env(safe-area-inset-right));
+}
+
+.cgl-viewer__nav:hover {
+    opacity: 1;
+    color: var(--cgl-accent);
+}
+
+.cgl-viewer__nav--prev:hover {
+    transform: translateY(-50%) translateX(-2px);
+}
+
+.cgl-viewer__nav--next:hover {
+    transform: translateY(-50%) translateX(2px);
+}
+
+.cgl-viewer__nav svg {
+    width: 26px;
+    height: 26px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+/* Viewer Bottom Metadata Bar */
+.cgl-viewer__bottombar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: clamp(48px, 6vh, 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
+    padding-inline: max(20px, env(safe-area-inset-left)) max(20px, env(safe-area-inset-right));
+    z-index: 20;
+    background: linear-gradient(0deg, rgba(255, 253, 248, 0.96) 0%, rgba(255, 253, 248, 0) 100%);
+    transition: opacity .35s ease;
+}
+
+.cgl-viewer__meta-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cgl-viewer__meta {
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .16em;
+    color: var(--cgl-taupe);
+    text-transform: uppercase;
+}
+
+.cgl-viewer__bottom-tools {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cgl-viewer__slideshow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--cgl-charcoal);
+    cursor: pointer;
+    padding: 8px 12px;
+    min-height: 40px;
+    transition: color .2s ease;
+}
+
+.cgl-viewer__slideshow-btn:hover {
+    color: var(--cgl-accent);
+}
+
+.cgl-viewer__slideshow-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+/* Auto-Hide Chrome during Slideshow (Rule 33) */
+.cgl-viewer.is-idle .cgl-viewer__topbar,
+.cgl-viewer.is-idle .cgl-viewer__bottombar,
+.cgl-viewer.is-idle .cgl-viewer__nav {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Close button remains accessible on mobile tap */
+.cgl-viewer.is-idle .cgl-viewer__close-btn {
+    pointer-events: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Share Fallback Modal & Toast (Rules 9–13)
+   -------------------------------------------------------------------------- */
+.cgl-share-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(26, 27, 24, 0.35);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 100001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease;
+}
+
+.cgl-share-modal.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cgl-share-card {
+    background-color: #FFFDF8;
+    border: 1px solid var(--cgl-border);
+    width: min(92vw, 380px);
+    padding: 28px 24px 24px;
+    position: relative;
+    box-shadow: 0 20px 48px -12px rgba(26, 27, 24, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cgl-share-card__title {
+    font-family: var(--font-display, "Cormorant Garamond", serif);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+    color: var(--cgl-charcoal);
+    text-transform: uppercase;
+}
+
+.cgl-share-card__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--cgl-taupe);
+    cursor: pointer;
+    padding: 8px;
+    min-height: 40px;
+}
+
+.cgl-share-card__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cgl-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 18px;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--cgl-charcoal);
+    background-color: #FFFDF8;
+    color: var(--cgl-charcoal);
+    transition: background-color .2s ease, color .2s ease;
+    min-height: 44px;
+}
+
+.cgl-share-btn--primary {
+    background-color: var(--cgl-charcoal);
+    color: #FFFDF8;
+}
+
+.cgl-share-btn:hover {
+    background-color: var(--cgl-accent);
+    border-color: var(--cgl-accent);
+    color: #FFFDF8;
+}
+
+/* Floating Toast Notification */
+.cgl-toast {
+    position: fixed;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%) translateY(24px);
+    background-color: var(--cgl-charcoal);
+    color: #FFFDF8;
+    padding: 10px 22px;
+    font-family: var(--font-ui, "Inter", sans-serif);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    z-index: 100005;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease, transform .3s ease;
+    box-shadow: 0 8px 24px rgba(26, 27, 24, 0.2);
+}
+
+.cgl-toast.is-visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Specific Viewer Layout (Rules 21–25, 62, 67)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .cgl-viewer__stage {
+        padding-top: max(56px, env(safe-area-inset-top));
+        padding-bottom: max(56px, env(safe-area-inset-bottom));
+        padding-inline: max(8px, env(safe-area-inset-left)) max(8px, env(safe-area-inset-right));
+    }
+
+    .cgl-viewer__img-wrap {
+        max-width: 100vw;
+        max-height: calc(100dvh - 128px); /* Rule 22 */
+        width: 100%;
+        height: 100%;
+    }
+
+    .cgl-viewer__img {
+        max-width: 98vw;
+        max-height: calc(100dvh - 128px);
+    }
+
+    /* Edge arrows stay accessible on tablet/mobile but visually quiet */
+    .cgl-viewer__nav {
+        width: 40px;
+        height: 64px;
+        opacity: 0.45;
+    }
+
+    .cgl-viewer__top-actions {
+        gap: 6px;
+    }
+
+    .cgl-viewer__bottombar {
+        padding-inline: 16px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    .cgl-item__img,
+    .cgl-viewer,
+    .cgl-viewer__img,
+    .cgl-btn-primary,
+    .cgl-back-to-top-btn,
+    .cgl-viewer.is-slideshow-active .cgl-viewer__img {
+        transition: none !important;
+        transform: none !important;
+        animation: none !important;
+    }
+}
